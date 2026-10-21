@@ -543,11 +543,14 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
       </div>
       <form id="pilotForm" style="flex: 1 1 360px; min-width: 0; background: #FFFFFF; color: #14123A; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 16px" aria-label="Start your free pilot">
         <h3 style="margin: 0; font-size: 22px; font-weight: 700">Claim your free pilot</h3>
-        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-name" style="font-weight: 700; font-size: 15px">Your name</label><input id="f-name" type="text" autocomplete="name" style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
-        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-company" style="font-weight: 700; font-size: 15px">Company</label><input id="f-company" type="text" autocomplete="organization" style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
-        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-email" style="font-weight: 700; font-size: 15px">Email</label><input id="f-email" type="email" autocomplete="email" style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
-        <button type="submit" style="font: inherit; background: #3F37C9; color: #FFFFFF; border: 0; font-weight: 700; font-size: 18px; padding: 16px; border-radius: 12px; min-height: 54px; cursor: pointer">Start my free pilot</button>
+        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-name" style="font-weight: 700; font-size: 15px">Your name</label><input id="f-name" type="text" autocomplete="name" required style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
+        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-company" style="font-weight: 700; font-size: 15px">Company</label><input id="f-company" type="text" autocomplete="organization" required style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
+        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-email" style="font-weight: 700; font-size: 15px">Email</label><input id="f-email" type="email" autocomplete="email" required style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
+        <input type="checkbox" name="botcheck" id="f-bot" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none">
+        <button type="submit" id="f-submit" style="font: inherit; background: #3F37C9; color: #FFFFFF; border: 0; font-weight: 700; font-size: 18px; padding: 16px; border-radius: 12px; min-height: 54px; cursor: pointer">Start my free pilot</button>
         <div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #4A4870; line-height: 1.5">
+          <div id="formOk" role="status" hidden style="background: #E6FBF4; color: #0B5E44; border-radius: 12px; padding: 16px; font-size: 15px; line-height: 1.55"><b style="font-size: 16px">You’re in. ✓</b><br>Thanks! Siam will email you within one business day with your setup questions.</div>
+          <div id="formErr" role="alert" hidden style="background: #FFF1E8; color: #9A3412; border-radius: 12px; padding: 12px 14px; font-size: 14px"></div>
           <span>We reply by email within one business day.</span>
           <div id="formDone" hidden style="background: #E6FBF4; color: #0B5E44; border-radius: 12px; padding: 14px; font-size: 14px; line-height: 1.55"><b>One last step.</b> Send these details to <b style="user-select: all">siam@bookedorion.com</b> and we’ll set up your pilot. <button type="button" id="copyBtn" style="font: inherit; font-weight: 700; margin-top: 8px; background: #0B5E44; color: #FFFFFF; border: 0; border-radius: 8px; padding: 9px 12px; min-height: 40px; cursor: pointer">Copy details</button><pre id="formText" style="white-space: pre-wrap; font: inherit; margin: 8px 0 0; user-select: all"></pre></div>
           <span>We never sell your details. We don’t send marketing texts.</span>
@@ -689,9 +692,21 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
   ['calls','ticket','rate'].forEach(function(k){el(k).addEventListener('input',function(e){state[k]=Number(e.target.value);renderCalc();});});
   el('pilotForm').addEventListener('submit',function(e){
     e.preventDefault();
-    var t='Free pilot request\nName: '+el('f-name').value+'\nCompany: '+el('f-company').value+'\nEmail: '+el('f-email').value;
-    el('formText').textContent=t; el('formDone').hidden=false;
-    try{window.location.href='mailto:siam@bookedorion.com?subject='+encodeURIComponent('Free pilot request')+'&body='+encodeURIComponent(t);}catch(_){}
+    var name=el('f-name').value.trim(), company=el('f-company').value.trim(), email=el('f-email').value.trim();
+    var t='Free pilot request\nName: '+name+'\nCompany: '+company+'\nEmail: '+email;
+    var btn=el('f-submit'); btn.disabled=true; btn.textContent='Sending…'; el('formErr').hidden=true;
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+      body:JSON.stringify({access_key:'d2b56b26-ace6-4f6d-a1ac-23340b566c8b',subject:'New pilot request: '+company,from_name:'BookedOrion website',name:name,company:company,email:email,replyto:email,botcheck:el('f-bot').checked})})
+    .then(function(r){return r.json();})
+    .then(function(d){
+      if(d&&d.success){el('formOk').hidden=false;btn.hidden=true;['f-name','f-company','f-email'].forEach(function(id){el(id).disabled=true;});}
+      else{throw new Error((d&&d.message)||'failed');}
+    })
+    .catch(function(){
+      btn.disabled=false; btn.textContent='Start my free pilot';
+      el('formErr').textContent='We couldn’t send that just now. Please email the details below instead.'; el('formErr').hidden=false;
+      el('formText').textContent=t; el('formDone').hidden=false;
+    });
   });
   el('copyBtn').addEventListener('click',function(){
     var t=el('formText').textContent, b=this;
