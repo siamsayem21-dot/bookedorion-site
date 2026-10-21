@@ -119,6 +119,38 @@
  .dline::after{right:-5px;top:auto;bottom:-2px;border-top:9px solid #3F37C9;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:0}
  .dtag{max-width:220px}
 }
+
+.wwk{font-size:12px;font-weight:700;letter-spacing:.14em;color:#6B6990;margin-right:6px}
+.wwi{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#14123A;background:#FFFFFF;border:1px solid #E6E5F2;padding:9px 14px;border-radius:999px}
+.wwi svg{color:#3F37C9}
+.dbw{background:#FFFFFF;border:1px solid #E1E0EE;border-radius:22px;box-shadow:0 40px 90px rgba(15,13,46,.12);overflow:hidden}
+.dbbar{display:flex;align-items:center;gap:7px;padding:12px 16px;background:#F7F7FC;border-bottom:1px solid #ECEBF5}
+.dbbar span{width:10px;height:10px;border-radius:50%;background:#E1E0EE}.dbbar b{margin-left:10px;font-size:13px;color:#4A4870}
+.dbin{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
+.dbl{padding:20px;border-right:1px solid #ECEBF5;min-width:0;overflow-x:auto}
+.dbk{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.dbk div{background:#F7F7FC;border-radius:12px;padding:10px 12px}.dbk em{display:block;font-style:normal;font-size:11px;color:#6B6990}.dbk b{font-size:22px;color:#14123A;font-variant-numeric:tabular-nums}.dbk b.g{color:#0B7A57}.dbk b.o{color:#C2410C}
+.dbh,.dbr{display:grid;grid-template-columns:64px minmax(90px,1fr) minmax(120px,1.4fr) minmax(150px,auto) 28px;gap:10px;align-items:center;min-width:520px}
+.dbh{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8E8CB0;padding:0 10px 8px}
+.dbr{padding:10px;border-radius:12px;font-size:13px;color:#14123A}.dbr+.dbr{margin-top:2px}.dbr.sel{background:#EEEDFB}
+.dbt{color:#6B6990;font-variant-numeric:tabular-nums}.dbn b{display:block;font-size:13px}.dbn em{font-style:normal;font-size:11px;color:#6B6990}.dbi{color:#4A4870}
+.pill{display:inline-flex;align-items:center;justify-self:start;font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px;white-space:nowrap}
+.pill.ok{background:#E6FBF4;color:#0B5E44}.pill.urg{background:#FFF1E8;color:#9A3412}.pill.mut{background:#F1F0F8;color:#6B6990}
+.dbp{width:26px;height:26px;border-radius:50%;background:#14123A;color:#FFFFFF;display:flex;align-items:center;justify-content:center}
+.dbd{padding:20px;display:flex;flex-direction:column;gap:14px;background:#FCFCFE;min-width:0}
+.dbdh{display:flex;justify-content:space-between;align-items:center;gap:8px}.dbdh b{font-size:15px}
+.dbsum{font-size:14px;line-height:1.55;color:#14123A;background:#FFFFFF;border:1px solid #ECEBF5;border-radius:12px;padding:12px}.dbsum em{display:block;font-style:normal;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3F37C9;margin-bottom:4px}
+.dbaud{display:flex;align-items:center;gap:10px;background:#14123A;border-radius:12px;padding:10px 12px;color:#FFFFFF}
+.dbpl{width:30px;height:30px;border-radius:50%;background:#2BD9A0;color:#0B0A24;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.dbwv{flex:1;display:flex;align-items:center;gap:3px;height:24px;min-width:0;overflow:hidden}.dbwv i{display:block;width:3px;border-radius:2px;background:#8F88FF;flex-shrink:0}
+.dbdur{font-size:12px;color:#A9A7D4;font-variant-numeric:tabular-nums}
+.dbtr{display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.5;color:#4A4870}.dbtr p{margin:0}.dbtr b{color:#14123A;margin-right:6px}
+@media (max-width:900px){.dbin{grid-template-columns:1fr}.dbl{border-right:0;border-bottom:1px solid #ECEBF5}.dbk{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.dbh,.dbr{grid-template-columns:54px minmax(0,1fr) auto 26px;min-width:0}.dbi,.dbh span:nth-child(3){display:none}}
+.tsg{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+.tsi{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.tsi b{font-size:18px;color:#FFFFFF}.tsi p{margin:0;font-size:15px;line-height:1.55;color:#B9B7DC}
+.tsic{width:46px;height:46px;border-radius:14px;background:rgba(43,217,160,.14);color:#2BD9A0;display:flex;align-items:center;justify-content:center;margin-bottom:6px}
 </style>
 <title>BookedOrion · AI receptionist for HVAC in Dallas–Fort Worth</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -309,6 +341,13 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
     </div>
   </section>
 
+  <!-- WORKS WITH -->
+  <section class="ww" aria-label="Works with" style="padding: 8px 24px 24px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 12px">
+      <span class="wwk">WORKS WITH WHAT YOU ALREADY USE</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Your current number</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>AT&amp;T · Verizon · T-Mobile</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Google Calendar</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Outlook Calendar</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text alerts</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>Email summaries</span>
+    </div>
+  </section>
+
   <!-- ROUTING + WHAT MOLLY DOES + WHAT WE DO -->
   <section class="bo-reveal rt" id="how" style="padding: 72px 24px 96px">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 72px">
@@ -374,6 +413,34 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
     </div>
   </section>
 
+  <!-- CALL HISTORY MOCK -->
+  <section class="bo-reveal db" style="padding: 104px 24px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 36px">
+      <div style="max-width: 760px; display: flex; flex-direction: column; gap: 12px">
+        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: #3F37C9">EVERY CALL, ON RECORD</div>
+        <h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 700; color: #14123A">See exactly what Molly did, on every call.</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A4870">Each call is saved with a summary, the outcome, a recording and a transcript. Open it anytime.</p>
+      </div>
+      <div class="dbw" role="img" aria-label="Example call history showing five calls with their outcomes, and one call opened with its summary and transcript.">
+        <div class="dbbar"><span></span><span></span><span></span><b>Call history · Tonight</b></div>
+        <div class="dbin">
+          <div class="dbl">
+            <div class="dbk"><div><em>Calls answered</em><b>14</b></div><div><em>Jobs booked</em><b class="g">6</b></div><div><em>Urgent alerts</em><b class="o">1</b></div><div><em>Missed</em><b>0</b></div></div>
+            <div class="dbh"><span>Time</span><span>Caller</span><span>Reason</span><span>Outcome</span><span></span></div>
+            <div class="dbr sel"><span class="dbt">9:47 PM</span><span class="dbn"><b>Maria G.</b><em>Plano</em></span><span class="dbi">AC blowing warm air</span><span class="pill ok">Booked · Wed 8:00 AM</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div><div class="dbr"><span class="dbt">9:12 PM</span><span class="dbn"><b>Robert K.</b><em>Frisco</em></span><span class="dbi">No heat, elderly parent</span><span class="pill urg">Urgent · rang you</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div><div class="dbr"><span class="dbt">7:30 PM</span><span class="dbn"><b>Dana P.</b><em>Allen</em></span><span class="dbi">Tune-up price</span><span class="pill ok">Booked · Thu 1:00 PM</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div><div class="dbr"><span class="dbt">6:58 PM</span><span class="dbn"><b>Unknown</b><em>Waco</em></span><span class="dbi">Wants a quote</span><span class="pill mut">Outside your area</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div><div class="dbr"><span class="dbt">5:41 PM</span><span class="dbn"><b>James T.</b><em>McKinney</em></span><span class="dbi">Thermostat blank</span><span class="pill ok">Booked · Fri 9:00 AM</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div>
+          </div>
+          <div class="dbd">
+            <div class="dbdh"><b>Maria G. · 9:47 PM</b><span class="pill ok">Booked</span></div>
+            <div class="dbsum"><em>Summary</em>AC runs but blows warm air. Two-story home in Plano. Told about the diagnostic fee. Booked Wed 8:00 AM.</div>
+            <div class="dbaud"><span class="dbpl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span><div class="dbwv" aria-hidden="true"><i style="height:6px"></i><i style="height:12px"></i><i style="height:18px"></i><i style="height:9px"></i><i style="height:15px"></i><i style="height:22px"></i><i style="height:11px"></i><i style="height:7px"></i><i style="height:16px"></i><i style="height:20px"></i><i style="height:8px"></i><i style="height:13px"></i><i style="height:19px"></i><i style="height:10px"></i><i style="height:6px"></i><i style="height:14px"></i><i style="height:17px"></i><i style="height:9px"></i><i style="height:12px"></i><i style="height:5px"></i></div><span class="dbdur">1:24</span></div>
+            <div class="dbtr"><p><b>Molly</b> Thanks for calling Lone Star Heating &amp; Air. This is Molly, the AI assistant…</p><p><b>Maria</b> Hi, my AC is running but it’s blowing warm air.</p><p><b>Molly</b> Sorry about that. Can I get your address?</p></div>
+          </div>
+        </div>
+      </div>
+      <div style="font-size: 13px; color: #6B6990; text-align: center">Example view for illustration. Names and calls are not real.</div>
+    </div>
+  </section>
+
   <!-- PROBLEM + CALCULATOR -->
   <section class="bo-reveal" style="padding: 104px 24px">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
@@ -397,6 +464,21 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
           <a href="#start" style="margin-top: 14px; background: #2BD9A0; color: #0F0D2E; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px 22px; border-radius: 12px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center">Win these calls back</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- TRUST & DATA -->
+  <section class="bo-reveal ts" style="padding: 0 24px 104px">
+    <div style="max-width: 1200px; margin: 0 auto; background: #0B0A24; border-radius: 30px; padding: clamp(28px, 5vw, 56px); display: flex; flex-direction: column; gap: 32px; position: relative; overflow: hidden">
+      <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(50% 70% at 0% 0%, rgba(63,55,201,0.5), rgba(63,55,201,0) 70%)"></div>
+      <div style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: flex-end; justify-content: space-between">
+        <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: #2BD9A0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> TRUST &amp; DATA</div>
+          <h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 700; color: #FFFFFF">Your customers trust your name. We protect it.</h2>
+        </div>
+        <a href="/privacy/" style="color: #8FF0CF; font-weight: 700; font-size: 16px; text-decoration: none">Read our privacy policy →</a>
+      </div>
+      <div class="tsg"><div class="tsi"><span class="tsic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg></span><b>Honest with callers</b><p>Molly says she’s an AI assistant and that the call may be recorded.</p></div><div class="tsi"><span class="tsic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg></span><b>No card numbers</b><p>Molly never asks for or takes payment details over the phone.</p></div><div class="tsi"><span class="tsic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><b>Your data stays yours</b><p>We never sell your customers’ details or send them marketing texts.</p></div><div class="tsi"><span class="tsic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg></span><b>You’re in control</b><p>Listen to any call, and ask us to delete call data anytime.</p></div></div>
     </div>
   </section>
 
