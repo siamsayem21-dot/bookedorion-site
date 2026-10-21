@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bookedorion.com/sitemap.xml
