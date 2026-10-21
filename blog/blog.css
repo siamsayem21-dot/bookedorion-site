@@ -106,3 +106,40 @@ tr:last-child td{border-bottom:0}
 .fl a{color:#B9B7DC;text-decoration:none}.fl a:hover{color:#FFF}
 .copy{font-size:14px;color:#8E8CB8;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,.08)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* pages: how it works, legal */
+.pg{display:flex;flex-direction:column;gap:72px;padding-block:64px 8px}
+.blk{display:flex;flex-direction:column;gap:28px}
+.bh{display:flex;flex-direction:column;gap:12px;max-width:760px}
+.bh h2,.two h2{margin:0;font-size:clamp(28px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em}
+.bh p,.two p{margin:0;font-size:18px;line-height:1.65;color:var(--muted)}
+.eyebrow.dk{color:var(--indigo)}
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.mode{border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.mode.pop{background:var(--night);color:#FFF;border-color:var(--night)}
+.mtop{display:flex;justify-content:space-between;gap:10px;align-items:baseline}.mtop b{font-size:22px}.mtop span{font-weight:700;color:var(--indigo)}.pop .mtop span{color:var(--mint)}
+.mk{font-size:14px;font-weight:700;color:var(--mintdk);background:#E6FBF4;align-self:flex-start;padding:5px 10px;border-radius:999px}.pop .mk{color:var(--night);background:var(--mint)}
+.mode p{margin:0;font-size:16px;line-height:1.6;color:var(--muted)}.pop p{color:#C9C7EE}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px}
+.steps li{display:flex;gap:16px;background:var(--wash);border-radius:18px;padding:20px}
+.sn{width:34px;height:34px;flex-shrink:0;border-radius:50%;background:var(--indigo);color:#FFF;font-weight:700;display:inline-flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums}
+.steps b{font-size:17px}.steps p{margin:4px 0 0;font-size:15px;line-height:1.6;color:var(--muted)}
+.blk.two{flex-direction:row;flex-wrap:wrap;gap:48px;align-items:center}
+.two>div:first-child{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.ri{display:flex;gap:10px;align-items:flex-start;font-size:16px;line-height:1.5}.ri svg{flex-shrink:0;margin-top:3px}
+.phone{flex:0 1 340px;min-width:0;margin:0 auto;background:var(--ink);border-radius:40px;padding:12px;box-shadow:0 30px 70px rgba(15,13,46,.25)}
+.pscreen{background:#FFF;border-radius:30px;padding:20px 16px;display:flex;flex-direction:column;gap:12px}
+.ph{text-align:center;font-size:12px;color:var(--soft);font-weight:600}
+.bub{background:#F1F0F8;border-radius:18px 18px 18px 6px;padding:14px 16px;font-size:15px;line-height:1.6}.bub.urg{background:#FFF1E8;color:#7C2D12}.dim{color:var(--muted)}
+.setup{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px}
+.setup li{border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:6px}
+.sk{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--indigo);text-transform:uppercase}.setup b{font-size:17px}.setup p{margin:0;font-size:15px;line-height:1.55;color:var(--muted)}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.rules>div{border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.rk{font-size:13px;font-weight:700;letter-spacing:.12em}.rk.ok{color:#0B7A57}.rk.no{color:#C2410C}
+.fqs{display:flex;flex-direction:column;gap:10px;max-width:860px}
+.fq{background:var(--wash);border-radius:16px;padding:18px 22px}
+.fq summary{list-style:none;cursor:pointer;font-weight:700;font-size:17px;display:flex;justify-content:space-between;gap:16px}.fq summary::-webkit-details-marker{display:none}
+.fq summary span{color:var(--indigo);transition:transform .2s}.fq[open] summary span{transform:rotate(45deg)}
+.fq p{margin:10px 0 0;font-size:16px;line-height:1.6;color:var(--muted)}
+.legal{padding-block:24px 48px}
