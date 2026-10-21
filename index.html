@@ -20,7 +20,45 @@
 <meta name="theme-color" content="#0B0A24">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<style>*,*::before,*::after{box-sizing:border-box}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>*,*::before,*::after{box-sizing:border-box}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+.rt h2{margin:0;font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-0.03em;font-weight:700;color:#14123A}
+.rblk{display:flex;flex-direction:column;gap:28px}
+.rhead{display:flex;flex-direction:column;gap:12px;max-width:760px}
+.rhead p{margin:0;font-size:18px;line-height:1.6;color:#4A4870}
+.rk{font-size:13px;font-weight:700;letter-spacing:.14em;color:#3F37C9}
+.ropts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px}
+.ropt{border:1px solid #E6E5F2;border-radius:24px;padding:28px;background:#FFFFFF;display:flex;flex-direction:column;gap:18px}
+.ropt.dk{background:#0B0A24;border-color:#0B0A24;color:#FFFFFF}
+.rot{display:flex;flex-direction:column;gap:8px;align-items:flex-start}.rot h3{margin:0;font-size:24px;letter-spacing:-0.01em}
+.rtag{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2A23A6;background:#EEEDFB;padding:5px 10px;border-radius:999px}.rtag.mint{color:#0B0A24;background:#2BD9A0}
+.ropt ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.rs{display:flex;gap:14px;align-items:center;background:#F7F7FC;border-radius:16px;padding:14px 16px}
+.dk .rs{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+.rs b{display:flex;align-items:center;gap:8px;font-size:16px}.rs span:not(.rsi){display:block;font-size:14px;color:#6B6990;margin-top:2px}.dk .rs span:not(.rsi){color:#A9A7D4}
+.rs em{font-style:normal;font-size:11px;font-weight:700;color:#6B6990;border:1px solid #D9D8EA;border-radius:6px;padding:1px 6px}.dk .rs em{color:#A9A7D4;border-color:rgba(255,255,255,.2)}
+.rsi{width:42px;height:42px;flex-shrink:0;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#FFFFFF;color:#3F37C9;border:1px solid #E6E5F2}.dk .rsi{background:rgba(255,255,255,.1);border-color:transparent;color:#FFFFFF}
+.rs.m{background:linear-gradient(160deg,#3F37C9,#2A23A6);color:#FFFFFF;border:0;box-shadow:0 14px 34px rgba(63,55,201,.3)}.rs.m span:not(.rsi){color:#E1DFFA}.rs.m em{color:#C9C5FF;border-color:rgba(255,255,255,.3)}
+.rs.m .rsi{background:rgba(255,255,255,.16);border-color:transparent}
+.ra{height:22px;position:relative}.ra::before{content:"";position:absolute;left:36px;top:2px;bottom:6px;width:2px;background:#C9C6F2}.ra::after{content:"";position:absolute;left:32px;bottom:0;border-top:7px solid #C9C6F2;border-left:5px solid transparent;border-right:5px solid transparent}
+.dk .ra::before{background:#2BD9A0}.dk .ra::after{border-top-color:#2BD9A0}
+.rdoes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:900px){.rdoes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.rdoes{grid-template-columns:1fr}}
+.rd{border:1px solid #E6E5F2;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:6px}
+.rd b{font-size:18px}.rd span:not(.rdi){font-size:15px;line-height:1.5;color:#4A4870}
+.rdi{width:46px;height:46px;border-radius:14px;background:#EEEDFB;color:#3F37C9;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.rwe{flex-direction:row;flex-wrap:wrap;gap:40px;align-items:stretch;background:#F7F7FC;border-radius:28px;padding:clamp(24px,4vw,44px)}
+.rwel{flex:1.3 1 420px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.rws{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.rws li{display:flex;gap:14px;align-items:center;background:#FFFFFF;border:1px solid #E6E5F2;border-radius:16px;padding:14px 16px}
+.rwn{width:28px;height:28px;flex-shrink:0;border-radius:50%;background:#3F37C9;color:#FFFFFF;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.rwi{color:#3F37C9;display:flex}.rws b{display:block;font-size:16px}.rws span:not(.rwn):not(.rwi){display:block;font-size:14px;color:#6B6990}
+.rwer{flex:1 1 300px;min-width:0;background:#0B0A24;color:#FFFFFF;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:18px;justify-content:center}
+.rbadge{display:flex;flex-direction:column;gap:10px}
+.rbadge span{display:inline-flex;align-items:center;gap:10px;font-size:20px;font-weight:700}
+.rbadge svg{background:#2BD9A0;border-radius:50%;padding:4px;width:28px;height:28px;box-sizing:border-box;flex-shrink:0}
+.rwer p{margin:0;font-size:15px;line-height:1.6;color:#B9B7DC}
+</style>
 <title>BookedOrion · AI receptionist for HVAC in Dallas–Fort Worth</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -165,6 +203,32 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
     </div>
   </section>
 
+  <!-- ROUTING + WHAT MOLLY DOES + WHAT WE DO -->
+  <section class="bo-reveal rt" id="how" style="padding: 96px 24px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 72px">
+
+      <div class="rblk">
+        <div class="rhead"><div class="rk">HOW CALLS REACH MOLLY</div><h2>You choose who answers first.</h2><p>Same phone number either way. Switch anytime.</p></div>
+        <div class="ropts">
+          <div class="ropt"><div class="rot"><span class="rtag">Most shops</span><h3>Your team first</h3></div><ol><li class="rs"><span class="rsi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><b><em>1</em>A customer calls your number</b><span>Same number as today</span></div></li><li class="ra" aria-hidden="true"></li><li class="rs"><span class="rsi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b><em>2</em>Your phone rings first</b><span>About 20 seconds</span></div></li><li class="ra" aria-hidden="true"></li><li class="rs m"><span class="rsi"><svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="20" fill="none" stroke="#FFFFFF" stroke-width="7"/><path d="M23.5 32.5 L30 39 L41.5 25.5" fill="none" stroke="#2BD9A0" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b><em>3</em>No answer or line busy?</b><span>Molly picks up</span></div></li></ol></div>
+          <div class="ropt dk"><div class="rot"><span class="rtag mint">Busiest shops</span><h3>Molly first</h3></div><ol><li class="rs"><span class="rsi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><b><em>1</em>A customer calls your number</b><span>Same number as today</span></div></li><li class="ra" aria-hidden="true"></li><li class="rs m"><span class="rsi"><svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="20" fill="none" stroke="#FFFFFF" stroke-width="7"/><path d="M23.5 32.5 L30 39 L41.5 25.5" fill="none" stroke="#2BD9A0" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b><em>2</em>Molly answers right away</b><span>Every call, first ring</span></div></li><li class="ra" aria-hidden="true"></li><li class="rs"><span class="rsi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg></span><div><b><em>3</em>Emergency or tricky caller?</b><span>She rings you</span></div></li></ol></div>
+        </div>
+      </div>
+
+      <div class="rblk">
+        <div class="rhead"><div class="rk">WHAT MOLLY DOES</div><h2>She answers like your best office person.</h2></div>
+        <div class="rdoes"><div class="rd"><span class="rdi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span><b>Answers 24/7</b><span>Nights, weekends and holidays</span></div><div class="rd"><span class="rdi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4"/></svg></span><b>Sounds natural</b><span>A warm, human-like voice. Not robotic.</span></div><div class="rd"><span class="rdi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg></span><b>Books the job</b><span>Straight onto your calendar</span></div><div class="rd"><span class="rdi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><b>Texts you</b><span>Who called, what they need, when</span></div></div>
+      </div>
+
+      <div class="rblk rwe">
+        <div class="rwel"><div class="rk">WHAT WE DO</div><h2>Built for your shop. Not a template.</h2><ol class="rws"><li><span class="rwn">1</span><span class="rwi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><b>We meet with you</b><span>Your services, fees, area and emergency rules</span></div></li><li><span class="rwn">2</span><span class="rwi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><div><b>We write Molly’s script</b><span>For your shop, not a template</span></div></li><li><span class="rwn">3</span><span class="rwi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></span><div><b>You hear a test call</b><span>She goes live only when you approve</span></div></li></ol></div>
+        <div class="rwer"><div class="rbadge"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B0A24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>No hidden fees</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B0A24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>No contract</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B0A24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Cancel anytime</span></div><p>Your plan includes a monthly call allowance. We text you before you get close, so there are no surprise bills.</p>
+          <a class="bo-btn" href="/how-it-works/" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; background: #FFFFFF; color: #2A23A6; text-decoration: none; font-weight: 700; font-size: 16px; padding: 14px 20px; border-radius: 12px; min-height: 48px; box-sizing: border-box">See every step, with examples →</a></div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- HEAR MOLLY (interactive) -->
   <section class="bo-reveal" id="demo" style="padding: 104px 24px; background: #F7F7FC">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
@@ -226,65 +290,6 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
     </div>
   </section>
 
-  <!-- WHAT WE DO: CALL FLOW -->
-  <section class="bo-reveal" id="how" style="padding: 96px 24px">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
-      <div style="max-width: 820px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; gap: 16px">
-        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: #3F37C9">WHAT BOOKEDORION DOES</div>
-        <h2 style="margin: 0; font-size: clamp(34px, 4vw, 50px); line-height: 1.06; letter-spacing: -1.6px; font-weight: 700">We turn missed calls into booked jobs.</h2>
-        <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #4A4870">From ring to booked job, in five steps.</p>
-      </div>
-      <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px">
-        <li class="bo-card" style="background: #F7F7FC; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
-          <div style="display: flex; align-items: center; justify-content: space-between"><div style="width: 48px; height: 48px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E6E5F2; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14123A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div><span style="font-size: 13px; font-weight: 700; color: #8E8CB0">01</span></div>
-          <div style="font-size: 19px; font-weight: 700">A homeowner calls</div>
-          <div style="font-size: 15px; line-height: 1.5; color: #4A4870">“My AC stopped working.”</div>
-        </li>
-        <li class="bo-card" style="background: #F7F7FC; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
-          <div style="display: flex; align-items: center; justify-content: space-between"><div style="width: 48px; height: 48px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E6E5F2; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14123A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div><span style="font-size: 13px; font-weight: 700; color: #8E8CB0">02</span></div>
-          <div style="font-size: 19px; font-weight: 700">Your team can’t pick up</div>
-          <div style="font-size: 15px; line-height: 1.5; color: #4A4870">After about 20 seconds, the call rolls to Molly.</div>
-        </li>
-        <li style="background: #3F37C9; color: #FFFFFF; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
-          <div style="display: flex; align-items: center; justify-content: space-between"><div style="width: 48px; height: 48px; border-radius: 14px; background: rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="20" fill="none" stroke="#FFFFFF" stroke-width="7"></circle><path d="M23.5 32.5 L30 39 L41.5 25.5" fill="none" stroke="#2BD9A0" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span style="font-size: 13px; font-weight: 700; color: #C9C5FF">03</span></div>
-          <div style="font-size: 19px; font-weight: 700">Molly answers</div>
-          <div style="font-size: 15px; line-height: 1.5; color: #E1DFFA">She asks the problem, the address and a good time.</div>
-        </li>
-        <li class="bo-card" style="background: #F7F7FC; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
-          <div style="display: flex; align-items: center; justify-content: space-between"><div style="width: 48px; height: 48px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E6E5F2; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14123A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"></path></svg></div><span style="font-size: 13px; font-weight: 700; color: #8E8CB0">04</span></div>
-          <div style="font-size: 19px; font-weight: 700">The job is booked</div>
-          <div style="font-size: 15px; line-height: 1.5; color: #4A4870">It lands on your calendar. Emergencies ring you first.</div>
-        </li>
-        <li class="bo-card" style="background: #F7F7FC; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
-          <div style="display: flex; align-items: center; justify-content: space-between"><div style="width: 48px; height: 48px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E6E5F2; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14123A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div><span style="font-size: 13px; font-weight: 700; color: #8E8CB0">05</span></div>
-          <div style="font-size: 19px; font-weight: 700">You get a text</div>
-          <div style="font-size: 15px; line-height: 1.5; color: #4A4870">Who called, what they need, when you’re going.</div>
-        </li>
-      </ol>
-
-      <!-- before / after -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
-        <div style="border: 1px solid #E6E5F2; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
-          <div style="display: inline-flex; align-self: flex-start; font-size: 13px; font-weight: 700; letter-spacing: 1.2px; color: #9A3412; background: #FFF1E8; padding: 6px 12px; border-radius: 999px">WITHOUT BOOKEDORION</div>
-          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.45">
-            <div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex-shrink: 0"><path d="M6 6l12 12M18 6L6 18"></path></svg>Call goes to voicemail at 9:47 PM</div>
-            <div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex-shrink: 0"><path d="M6 6l12 12M18 6L6 18"></path></svg>Homeowner calls the next shop on Google</div>
-            <div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex-shrink: 0"><path d="M6 6l12 12M18 6L6 18"></path></svg>You call back at 8 AM. Already booked elsewhere.</div>
-          </div>
-        </div>
-        <div style="background: #0F0D2E; color: #FFFFFF; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
-          <div style="display: inline-flex; align-self: flex-start; font-size: 13px; font-weight: 700; letter-spacing: 1.2px; color: #0F0D2E; background: #2BD9A0; padding: 6px 12px; border-radius: 999px">WITH BOOKEDORION</div>
-          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.45">
-            <div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Molly answers at 9:47 PM</div>
-            <div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Visit booked for 8 AM on your calendar</div>
-            <div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>You wake up to a new job, not a lost one</div>
-          </div>
-        </div>
-      </div>
-      <a class="bo-btn" href="/how-it-works/" style="align-self: center; display: inline-flex; align-items: center; gap: 8px; background: #EEEDFB; color: #2A23A6; text-decoration: none; font-weight: 700; font-size: 16px; padding: 14px 20px; border-radius: 12px; min-height: 48px; box-sizing: border-box">See every step, with examples →</a>
-    </div>
-  </section>
-
   <!-- BENTO FEATURES -->
   <section class="bo-reveal" style="background: #F7F7FC; padding: 104px 24px">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
@@ -294,9 +299,7 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
         <div style="background: #3F37C9; color: #FFFFFF; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 14px; min-height: 230px" class="bo-card"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><path d="M12 9v4M12 17h.01"></path></svg><h3 style="margin: 0; font-size: 24px; font-weight: 700">Rings you first for emergencies</h3><p style="margin: 0; font-size: 17px; line-height: 1.55; color: #E1DFFA">Gas smell, no heat, water leak: Molly calls you right away. Routine calls wait for morning.</p></div>
-        <div style="background: #FFFFFF; border: 1px solid #E6E5F2; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 14px; min-height: 230px" class="bo-card"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"></path></svg><h3 style="margin: 0; font-size: 24px; font-weight: 700">Books real appointments</h3><p style="margin: 0; font-size: 17px; line-height: 1.55; color: #4A4870">Name, address, problem and time, straight onto your calendar.</p></div>
         <div style="background: #FFFFFF; border: 1px solid #E6E5F2; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 14px; min-height: 230px" class="bo-card"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg><h3 style="margin: 0; font-size: 24px; font-weight: 700">Hands off to a human</h3><p style="margin: 0; font-size: 17px; line-height: 1.55; color: #4A4870">Upset or tricky callers go to you, not a robot.</p></div>
-        <div style="background: #FFFFFF; border: 1px solid #E6E5F2; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 14px; min-height: 230px" class="bo-card"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><h3 style="margin: 0; font-size: 24px; font-weight: 700">Text summary every call</h3><p style="margin: 0; font-size: 17px; line-height: 1.55; color: #4A4870">Who called, what they need and what Molly did.</p></div>
         <div style="background: #FFFFFF; border: 1px solid #E6E5F2; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 14px; min-height: 230px" class="bo-card"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg><h3 style="margin: 0; font-size: 24px; font-weight: 700">Honest and safe</h3><p style="margin: 0; font-size: 17px; line-height: 1.55; color: #4A4870">Says she’s an AI, mentions recording, never takes card numbers.</p></div>
         <div style="background: #14123A; color: #FFFFFF; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 14px; min-height: 230px" class="bo-card"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"></path><path d="M7 15l4-4 3 3 6-6"></path></svg><h3 style="margin: 0; font-size: 24px; font-weight: 700">Wins back old estimates</h3><p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9C7EE">Revenue Desk follows up on quotes that never booked.</p></div>
       </div>
