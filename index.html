@@ -312,6 +312,28 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
 .pc.fit .fit-tag{display:block}
 @media (max-width:640px){.pf{flex-direction:column;align-items:stretch}.pf-q{text-align:center;padding:6px 0}}
 
+
+.cb{display:flex;flex-direction:column;gap:6px;padding:12px;border-radius:14px;background:#F7F7FC}
+.cb-dk{background:rgba(255,255,255,.06)}
+.cb-bar{display:grid;grid-template-columns:repeat(24,1fr);gap:2px;height:16px}
+.cb-bar i{display:block;border-radius:3px}
+.cb-mo{background:#2BD9A0}.cb-tm{background:#DDDBEF}.cb-dk .cb-tm{background:rgba(255,255,255,.18)}
+.cb-bk{background:repeating-linear-gradient(135deg,#6C63FF 0 3px,#A9A4EE 3px 6px)}
+.cb-ax{display:flex;justify-content:space-between;font-size:11px;color:#8E8CB8}
+.cb-lg{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:#55536F}.cb-dk .cb-lg{color:#C9C7EE}
+.cb-lg span{display:inline-flex;align-items:center;gap:6px}.cb-lg i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.cp{border:1px solid #E1E0EE;border-radius:20px;background:#FFFFFF;overflow:hidden}
+.cp summary{list-style:none;display:flex;justify-content:center;align-items:center;gap:10px;padding:18px;font-weight:700;font-size:16px;color:#3F37C9;cursor:pointer}
+.cp summary::-webkit-details-marker{display:none}.cp[open] .cp-ic{transform:rotate(45deg)}.cp-ic{transition:transform .2s;display:inline-block}
+.cp-wrap{overflow-x:auto;border-top:1px solid #ECEBF5}
+.cp table{width:100%;min-width:560px;border-collapse:collapse;font-size:15px}
+.cp th,.cp td{padding:13px 18px;text-align:center;border-bottom:1px solid #F0EFF7}
+.cp tbody th{text-align:left;font-weight:500;color:#14123A}
+.cp thead th{font-size:15px;color:#14123A;background:#F7F7FC}.cp thead small{display:block;font-weight:500;color:#6B6990;font-size:12.5px}
+.cp .cp-hl{background:#EEEDFB}
+.cp-y{display:inline-flex;width:24px;height:24px;border-radius:50%;background:#E6FBF4;color:#0B7A57;font-weight:700;align-items:center;justify-content:center;font-size:13px}
+.cp-n{color:#B9B7DC;font-weight:700}
+
 @media (prefers-reduced-motion:reduce){.st-pane{transition:none}}
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
@@ -549,6 +571,7 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
           <div><h3 style="margin: 0; font-size: 22px; font-weight: 700">Porchlight</h3><div style="font-size: 15px; color: #4A4870; margin-top: 6px">For after-hours calls</div></div>
           <div style="font-size: 54px; font-weight: 700; letter-spacing: -2px; line-height: 1">$197<span style="font-size: 17px; color: #4A4870; letter-spacing: 0; font-weight: 600"> /month</span></div>
           <div style="font-size: 15px; font-weight: 600; color: #4A4870; margin-top: -10px">That’s about $7 a day</div>
+          <div class="cb"><div class="cb-bar"><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i></div><div class="cb-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cb-lg"><span><i class="cb-mo"></i>Molly</span><span><i class="cb-tm"></i>Your office</span></div></div>
           <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.4">
             <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Nights &amp; weekends answered</div>
             <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Jobs booked on your calendar</div>
@@ -562,6 +585,7 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
           <div><h3 style="margin: 0; font-size: 22px; font-weight: 700">Full Desk</h3><div style="font-size: 15px; color: #C9C7EE; margin-top: 6px">24/7 coverage</div></div>
           <div style="font-size: 54px; font-weight: 700; letter-spacing: -2px; line-height: 1">$397<span style="font-size: 17px; color: #C9C7EE; letter-spacing: 0; font-weight: 600"> /month</span></div>
           <div style="font-size: 15px; font-weight: 600; color: #C9C7EE; margin-top: -10px">That’s about $13 a day</div>
+          <div class="cb cb-dk"><div class="cb-bar"><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i></div><div class="cb-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cb-lg"><span><i class="cb-mo"></i>Molly</span><span><i class="cb-bk"></i>Team first, Molly backup</span></div></div>
           <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.4">
             <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Everything in Porchlight</div>
             <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Answers when your line is busy during the day</div>
@@ -574,6 +598,7 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
           <div><h3 style="margin: 0; font-size: 22px; font-weight: 700">Revenue Desk</h3><div style="font-size: 15px; color: #4A4870; margin-top: 6px">Answer, book and win back jobs</div></div>
           <div style="font-size: 54px; font-weight: 700; letter-spacing: -2px; line-height: 1">$797<span style="font-size: 17px; color: #4A4870; letter-spacing: 0; font-weight: 600"> /month</span></div>
           <div style="font-size: 15px; font-weight: 600; color: #4A4870; margin-top: -10px">That’s about $27 a day</div>
+          <div class="cb"><div class="cb-bar"><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i></div><div class="cb-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cb-lg"><span><i class="cb-mo"></i>Molly</span><span><i class="cb-bk"></i>Team first, Molly backup</span></div></div>
           <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.4">
             <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Everything in Full Desk</div>
             <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Estimate follow-up emails</div>
@@ -583,6 +608,9 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
           <a href="#start" style="margin-top: auto; border: 2px solid #14123A; color: #14123A; text-decoration: none; font-weight: 700; font-size: 17px; padding: 15px; border-radius: 12px; text-align: center; min-height: 52px; box-sizing: border-box">Start free pilot</a>
         </div>
       </div>
+      
+      <details class="cp"><summary><span>Compare all features</span><span class="cp-ic" aria-hidden="true">+</span></summary>
+        <div class="cp-wrap"><table><thead><tr><th></th><th>Porchlight<small>$197/mo</small></th><th class="cp-hl">Full Desk<small>$397/mo</small></th><th>Revenue Desk<small>$797/mo</small></th></tr></thead><tbody><tr><th scope="row">Answers nights, weekends, holidays</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Answers when your team misses a call by day</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Books jobs on your calendar</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Emergencies ring your cell first</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Text and email summary after each call</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Recordings and transcripts</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Upset callers passed to you</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Estimate follow-up emails</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Tune-up reminder campaigns</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Monthly booked-jobs report</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Setup done for you</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Contract</th><td>None</td><td>None</td><td>None</td></tr></tbody></table></div></details>
       
     </div>
   </section>
