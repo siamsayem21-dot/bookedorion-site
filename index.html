@@ -265,6 +265,53 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
 @media (max-width:900px){.st{padding:64px 20px 24px}.st-grid{grid-template-columns:1fr;gap:0}.st-vis{display:none}.st-step{opacity:1;min-height:0;flex-wrap:wrap;padding:20px 0;cursor:default}.st-step:first-child{padding-top:0}.st-step:last-child{min-height:0}.st-step .st-n{background:#3F37C9;color:#FFFFFF}.st-tx{flex:1;min-width:0}.st-tx h3{font-size:22px;margin-top:8px}.st-tx p{font-size:16px}
 .st-mini{display:flex;justify-content:center;width:100%;margin-top:16px;padding:24px 16px;border-radius:24px;background:#0B0A24;background-image:radial-gradient(60% 50% at 80% 10%,rgba(63,55,201,.55),transparent 70%)}
 .st-mini .sv-phone{min-height:0}.st-mini .sv-days{grid-template-columns:repeat(3,1fr)}.st-mini .sv-d:first-child,.st-mini .sv-d:last-child{display:none}}
+
+.sp-bar{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(var(--sp,0));background:linear-gradient(90deg,#2BD9A0,#6C63FF);z-index:70;pointer-events:none}
+.hd{transition:background .25s ease}.hd.glass{background:rgba(11,10,36,.9)!important;-webkit-backdrop-filter:saturate(160%) blur(14px);backdrop-filter:saturate(160%) blur(14px)}
+.bt{padding:80px 24px;background:#F7F7FC}.bt-in{max-width:1200px;margin:0 auto}
+.bt-head{text-align:center;margin-bottom:40px;display:flex;flex-direction:column;gap:12px}.bt-eb{font-size:13px;font-weight:700;letter-spacing:.14em;color:#3F37C9}
+.bt h2{margin:0;font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.03em;font-weight:700;color:#14123A}
+.bt-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.bt-c{background:#FFFFFF;border:1px solid #E7E6F3;border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:8px;transition:transform .25s ease,box-shadow .25s ease}
+.bt-c:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(20,18,58,.08)}
+.bt-c h3{margin:0;font-size:19px;letter-spacing:-.3px;color:#14123A}.bt-c p{margin:0;font-size:15px;line-height:1.55;color:#55536F}
+.bt-big{grid-column:span 2;grid-row:span 2;background:#0B0A24;border-color:#0B0A24;flex-direction:row;align-items:center;gap:24px;padding:32px;background-image:radial-gradient(60% 60% at 90% 10%,rgba(63,55,201,.5),transparent 70%)}
+.bt-big h3{color:#FFFFFF;font-size:28px;letter-spacing:-.7px;line-height:1.15}.bt-big p{color:#C9C7EE;font-size:17px;margin-top:10px}
+.bt-tx{flex:1;min-width:0}.bt-ring{width:300px;max-width:48%;flex-shrink:0}
+#ringNow{transition:transform .6s ease}
+.bt-leg{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:20px;font-size:13px;color:#C9C7EE}.bt-leg span{display:inline-flex;align-items:center;gap:7px}.bt-leg i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.bt-vis{border-radius:16px;padding:14px;margin-bottom:10px;display:flex;align-items:center;gap:12px}
+.bt-alert{background:#FFF1E8;color:#9A3412}.bt-alert b{display:block;font-size:15px}.bt-alert span{font-size:13px}
+.bt-ai{width:40px;height:40px;border-radius:12px;background:#EA580C;display:flex;align-items:center;justify-content:center;flex-shrink:0;animation:boPulse 1.8s infinite}
+.bt-slot{background:#E6FBF4;border-left:4px solid #2BD9A0;color:#0B5E44}.bt-slot>div{flex:1}.bt-slot b{display:block;font-size:15px;color:#14123A}.bt-slot span{font-size:13px}
+.bt-day{font-size:11px;font-weight:700;letter-spacing:.08em;background:#3F37C9;color:#FFFFFF;border-radius:8px;padding:6px 8px}
+.bt-ok{width:26px;height:26px;border-radius:50%;background:#2BD9A0;display:flex;align-items:center;justify-content:center}
+.bt-note{flex-direction:column;align-items:stretch;gap:3px;background:linear-gradient(180deg,#26236B,#14123A);padding:14px}
+.bt-note>*{background:transparent}.bt-nh{display:flex;align-items:center;gap:7px;font-size:12px;color:#C9C7EE}.bt-nh b{flex:1;color:#FFFFFF}
+.bt-app{width:18px;height:18px;border-radius:5px;background:#3F37C9;display:flex;align-items:center;justify-content:center}
+.bt-nt{color:#FFFFFF;font-size:14px}.bt-nb{color:#C9C7EE;font-size:12.5px}
+.bt-wide{grid-column:span 2;flex-direction:row;align-items:center;gap:24px}
+.bt-log{flex:1.3;min-width:0;background:#F7F7FC;border-radius:16px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.bt-row{display:grid;grid-template-columns:64px 80px minmax(0,1fr) auto;gap:10px;align-items:center;background:#FFFFFF;border-radius:10px;padding:9px 12px;font-size:13px}
+.bt-row b{color:#14123A}.bt-t{color:#6B6990}.bt-r{color:#4A4870;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bt-p{font-size:11.5px;font-weight:700;border-radius:999px;padding:4px 9px}.bt-pg{background:#E6FBF4;color:#0B7A57}.bt-po{background:#FFF1E8;color:#C2410C}
+.bt-wave{display:flex;align-items:center;gap:3px;background:#14123A;border-radius:10px;padding:10px 12px;height:44px;box-sizing:border-box}
+.bt-wave i{width:3px;border-radius:2px;background:#8F88FF;display:block}.bt-wave span{margin-left:auto;font-size:12px;color:#A9A7D4}
+.bt-tx2{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px}.bt-cap{font-size:12px;color:#8E8CB8}
+.bt-full{grid-column:span 3;flex-direction:row;align-items:center;flex-wrap:wrap;gap:16px 24px}.bt-full h3{white-space:nowrap}
+.bt-chips{display:flex;flex-wrap:wrap;gap:8px}.bt-chips span{display:inline-flex;align-items:center;gap:8px;border:1px solid #E1E0EE;border-radius:999px;padding:7px 13px;font-size:14px;font-weight:600;color:#14123A;background:#FFFFFF}
+@media (max-width:980px){.bt-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bt-big,.bt-wide,.bt-full{grid-column:span 2}.bt-big{grid-row:auto}}
+@media (max-width:640px){.bt{padding:56px 16px}.bt-grid{grid-template-columns:1fr;gap:14px}.bt-big,.bt-wide,.bt-full{grid-column:auto}.bt-big,.bt-wide{flex-direction:column;align-items:stretch}.bt-ring{max-width:240px;margin:0 auto}.bt-big h3{font-size:24px}.bt-row{grid-template-columns:56px minmax(0,1fr) auto}.bt-row .bt-r{display:none}.bt-full h3{white-space:normal}}
+.pf{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin:-16px auto 0;background:#F4F3FA;border:1px solid #E7E6F3;border-radius:16px;padding:8px}
+.pf-q{font-weight:700;font-size:15px;color:#14123A;padding:0 10px}
+.pf-b{font:inherit;font-size:15px;font-weight:600;color:#4A4870;background:transparent;border:0;border-radius:11px;padding:10px 16px;min-height:44px;cursor:pointer;transition:background .2s,color .2s}
+.pf-b:hover{background:#FFFFFF}.pf-b.on{background:#3F37C9;color:#FFFFFF;box-shadow:0 6px 16px rgba(63,55,201,.3)}
+.pc{position:relative;transition:transform .3s ease,box-shadow .3s ease}
+.pc.fit{transform:translateY(-6px);box-shadow:0 0 0 3px #2BD9A0,0 30px 60px rgba(20,18,58,.15)!important}
+.pc .fit-tag{position:absolute;top:-13px;right:24px;background:#2BD9A0;color:#0B0A24;font-weight:700;font-size:12px;letter-spacing:.06em;padding:6px 12px;border-radius:999px;display:none}
+.pc.fit .fit-tag{display:block}
+@media (max-width:640px){.pf{flex-direction:column;align-items:stretch}.pf-q{text-align:center;padding:6px 0}}
+
 @media (prefers-reduced-motion:reduce){.st-pane{transition:none}}
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
@@ -277,7 +324,8 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
 <div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14123A; background: #FFFFFF">
 
   <!-- HEADER -->
-  <header style="position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: #0B0A24; padding: 0 24px; border-bottom: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 30px rgba(11,10,36,0.18)">
+  <div class="sp-bar" aria-hidden="true"></div>
+  <header class="hd" style="position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: #0B0A24; padding: 0 24px; border-bottom: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 30px rgba(11,10,36,0.18)">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0" class="bo-hrow">
       <a href="#top" aria-label="BookedOrion home" style="display: flex; align-items: center; gap: 1px; font-size: 25px; font-weight: 700; letter-spacing: -0.8px; color: #FFFFFF; text-decoration: none"><span>Booked</span><svg width="23" height="23" viewBox="0 0 64 64" aria-hidden="true" style="margin: 0 2px"><circle cx="32" cy="32" r="26" fill="none" stroke="#2BD9A0" stroke-width="8"></circle><path d="M21 33 L29 41 L44 23" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>rion</span></a>
       <nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 26px">
@@ -394,10 +442,42 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
     </div>
   </section>
 
-  <!-- WORKS WITH -->
-  <section class="ww" aria-label="Works with" style="padding: 8px 24px 24px">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 12px">
-      <span class="wwk">WORKS WITH WHAT YOU ALREADY USE</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Your current number</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>AT&amp;T · Verizon · T-Mobile</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Google Calendar</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Outlook Calendar</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text alerts</span><span class="wwi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>Email summaries</span>
+  <!-- WHAT MOLLY HANDLES (BENTO) -->
+  <section class="bt" aria-labelledby="bt-h">
+    <div class="bt-in">
+      <div class="bt-head"><div class="bt-eb">WHAT YOU GET</div><h2 id="bt-h">One receptionist. Every job covered.</h2></div>
+      <div class="bt-grid">
+        <div class="bt-c bt-big">
+          <div class="bt-tx"><h3>Every call answered, day and night</h3><p>Your team answers first during the day. Molly covers the misses, the nights and the weekends.</p>
+          <div class="bt-leg"><span><i style="background:#6C63FF"></i>Your team first</span><span><i style="background:#2BD9A0"></i>Molly answers</span><span><i style="background:#FFFFFF"></i>Now in Dallas</span></div></div>
+          <svg class="bt-ring" viewBox="-20 -20 300 300" role="img" aria-label="24-hour coverage: your team answers first during office hours, Molly covers the rest"><circle cx="130" cy="130" r="100" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="26"/><path d="M30.0 130.0 A100 100 0 1 1 226.6 155.9" fill="none" stroke="#2BD9A0" stroke-width="26" stroke-linecap="butt"/><path d="M226.6 155.9 A100 100 0 0 1 30.0 130.0" fill="none" stroke="#6C63FF" stroke-width="26"/><text x="130" y="0" text-anchor="middle" font-size="12" fill="#8E8CB8">12a</text><text x="264" y="134" text-anchor="middle" font-size="12" fill="#8E8CB8">6a</text><text x="130" y="268" text-anchor="middle" font-size="12" fill="#8E8CB8">12p</text><text x="-4" y="134" text-anchor="middle" font-size="12" fill="#8E8CB8">6p</text><g id="ringNow" style="transform-origin:130px 130px"><line x1="130" y1="12" x2="130" y2="48" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/><circle cx="130" cy="8" r="5" fill="#FFFFFF"/></g><text x="130" y="126" text-anchor="middle" font-size="44" font-weight="700" fill="#FFFFFF">24/7</text><text x="130" y="152" text-anchor="middle" font-size="13" fill="#A9A7D4" id="ringLbl">every call covered</text></svg>
+        </div>
+        <div class="bt-c">
+          <div class="bt-vis bt-alert"><span class="bt-ai"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><div><b>Gas smell reported</b><span>Calling the owner now…</span></div></div>
+          <h3>Emergencies reach you first</h3><p>You pick the words. She rings your cell right away.</p>
+        </div>
+        <div class="bt-c">
+          <div class="bt-vis bt-slot"><span class="bt-day">WED</span><div><b>8:00 – 10:00 AM</b><span>AC repair · Maria G.</span></div><span class="bt-ok"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0B0A24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span></div>
+          <h3>Booked on your calendar</h3><p>Google or Outlook. Only the times you leave open.</p>
+        </div>
+        <div class="bt-c">
+          <div class="bt-vis bt-note"><div class="bt-nh"><span class="bt-app"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><b>BookedOrion</b><span>now</span></div><b class="bt-nt">New job · Wed 8:00 AM</b><span class="bt-nb">Maria G. · Plano · AC blowing warm air</span></div>
+          <h3>A text after every call</h3><p>Name, number, address, problem and outcome.</p>
+        </div>
+        <div class="bt-c bt-wide">
+          <div class="bt-log">
+            <div class="bt-row"><span class="bt-t">9:47 PM</span><b>Maria G.</b><span class="bt-r">AC blowing warm air</span><span class="bt-p bt-pg">Booked</span></div>
+            <div class="bt-row"><span class="bt-t">9:12 PM</span><b>Robert K.</b><span class="bt-r">No heat, elderly parent</span><span class="bt-p bt-po">Rang you</span></div>
+            <div class="bt-row"><span class="bt-t">7:30 PM</span><b>Dana P.</b><span class="bt-r">Tune-up price</span><span class="bt-p bt-pg">Booked</span></div>
+            <div class="bt-wave" aria-hidden="true"><i style="height:8px"></i><i style="height:14px"></i><i style="height:22px"></i><i style="height:12px"></i><i style="height:26px"></i><i style="height:18px"></i><i style="height:10px"></i><i style="height:24px"></i><i style="height:16px"></i><i style="height:8px"></i><i style="height:20px"></i><i style="height:28px"></i><i style="height:14px"></i><i style="height:10px"></i><i style="height:22px"></i><i style="height:12px"></i><i style="height:18px"></i><i style="height:8px"></i><i style="height:16px"></i><i style="height:24px"></i><i style="height:10px"></i><i style="height:14px"></i><span>1:24</span></div>
+          </div>
+          <div class="bt-tx2"><h3>Every call on record</h3><p>Summary, outcome, recording and transcript for each call. Open any of them anytime.</p><span class="bt-cap">Example view for illustration</span></div>
+        </div>
+        <div class="bt-c bt-full">
+          <h3>Works with what you already use</h3>
+          <div class="bt-chips"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Your current number</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M12 19.5h.01"/></svg>AT&amp;T · Verizon · T-Mobile</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Google Calendar</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Outlook Calendar</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text alerts</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>Email summaries</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -438,33 +518,6 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
     </div>
   </section>
 
-  <!-- CALL HISTORY MOCK -->
-  <section class="bo-reveal db" style="padding: 80px 24px">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 36px">
-      <div style="max-width: 760px; display: flex; flex-direction: column; gap: 12px">
-        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: #3F37C9">EVERY CALL, ON RECORD</div>
-        <h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 700; color: #14123A">See exactly what Molly did, on every call.</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A4870">Each call is saved with a summary, the outcome, a recording and a transcript. Open it anytime.</p>
-      </div>
-      <div class="dbw" role="img" aria-label="Example call history showing five calls with their outcomes, and one call opened with its summary and transcript.">
-        <div class="dbbar"><span></span><span></span><span></span><b>Call history · Tonight</b></div>
-        <div class="dbin">
-          <div class="dbl">
-            <div class="dbk"><div><em>Calls answered</em><b>14</b></div><div><em>Jobs booked</em><b class="g">6</b></div><div><em>Urgent alerts</em><b class="o">1</b></div><div><em>Missed</em><b>0</b></div></div>
-            <div class="dbh"><span>Time</span><span>Caller</span><span>Reason</span><span>Outcome</span><span></span></div>
-            <div class="dbr sel"><span class="dbt">9:47 PM</span><span class="dbn"><b>Maria G.</b><em>Plano</em></span><span class="dbi">AC blowing warm air</span><span class="pill ok">Booked · Wed 8:00 AM</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div><div class="dbr"><span class="dbt">9:12 PM</span><span class="dbn"><b>Robert K.</b><em>Frisco</em></span><span class="dbi">No heat, elderly parent</span><span class="pill urg">Urgent · rang you</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div><div class="dbr"><span class="dbt">7:30 PM</span><span class="dbn"><b>Dana P.</b><em>Allen</em></span><span class="dbi">Tune-up price</span><span class="pill ok">Booked · Thu 1:00 PM</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div><div class="dbr"><span class="dbt">6:58 PM</span><span class="dbn"><b>Unknown</b><em>Waco</em></span><span class="dbi">Wants a quote</span><span class="pill mut">Outside your area</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div><div class="dbr"><span class="dbt">5:41 PM</span><span class="dbn"><b>James T.</b><em>McKinney</em></span><span class="dbi">Thermostat blank</span><span class="pill ok">Booked · Fri 9:00 AM</span><span class="dbp" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></div>
-          </div>
-          <div class="dbd">
-            <div class="dbdh"><b>Maria G. · 9:47 PM</b><span class="pill ok">Booked</span></div>
-            <div class="dbsum"><em>Summary</em>AC runs but blows warm air. Two-story home in Plano. Told about the diagnostic fee. Booked Wed 8:00 AM.</div>
-            <div class="dbaud"><span class="dbpl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span><div class="dbwv" aria-hidden="true"><i style="height:6px"></i><i style="height:12px"></i><i style="height:18px"></i><i style="height:9px"></i><i style="height:15px"></i><i style="height:22px"></i><i style="height:11px"></i><i style="height:7px"></i><i style="height:16px"></i><i style="height:20px"></i><i style="height:8px"></i><i style="height:13px"></i><i style="height:19px"></i><i style="height:10px"></i><i style="height:6px"></i><i style="height:14px"></i><i style="height:17px"></i><i style="height:9px"></i><i style="height:12px"></i><i style="height:5px"></i></div><span class="dbdur">1:24</span></div>
-            <div class="dbtr"><p><b>Molly</b> Thanks for calling ABC Heating &amp; Air. This is Molly, the AI assistant…</p><p><b>Maria</b> Hi, my AC is running but it’s blowing warm air.</p><p><b>Molly</b> Sorry about that. Can I get your address?</p></div>
-          </div>
-        </div>
-      </div>
-      <div style="font-size: 13px; color: #6B6990; text-align: center">Example view for illustration. Names and calls are not real.</div>
-    </div>
-  </section>
 
   <!-- TRUST & DATA -->
   <section class="bo-reveal ts" style="padding: 0 24px 80px">
@@ -490,8 +543,9 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
         <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A4870">We set it up · no contract · cancel anytime</p>
         <div style="align-self: center; display: inline-flex; align-items: center; gap: 10px; margin-top: 6px; background: #E6FBF4; color: #0B5E44; border: 1px solid #BDEFD9; border-radius: 999px; padding: 9px 16px; font-size: 15px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B7A57" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Every plan starts with a free 14-day pilot. No job booked, you pay $0.</div>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; align-items: stretch">
-        <div class="bo-card" style="border: 1px solid #E1E0EE; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 20px">
+      <div class="pf" role="group" aria-label="Find your plan"><span class="pf-q">When do you miss calls?</span><button type="button" class="pf-b" data-plan="0">Only after hours</button><button type="button" class="pf-b on" data-plan="1">After hours + busy days</button><button type="button" class="pf-b" data-plan="2">Both, and I want follow-ups</button></div>
+      <div class="pf-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; align-items: stretch">
+        <div class="bo-card pc" data-plan="0" style="border: 1px solid #E1E0EE; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 20px">
           <div><h3 style="margin: 0; font-size: 22px; font-weight: 700">Porchlight</h3><div style="font-size: 15px; color: #4A4870; margin-top: 6px">For after-hours calls</div></div>
           <div style="font-size: 54px; font-weight: 700; letter-spacing: -2px; line-height: 1">$197<span style="font-size: 17px; color: #4A4870; letter-spacing: 0; font-weight: 600"> /month</span></div>
           <div style="font-size: 15px; font-weight: 600; color: #4A4870; margin-top: -10px">That’s about $7 a day</div>
@@ -503,7 +557,7 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
           </div>
           <a href="#start" style="margin-top: auto; border: 2px solid #14123A; color: #14123A; text-decoration: none; font-weight: 700; font-size: 17px; padding: 15px; border-radius: 12px; text-align: center; min-height: 52px; box-sizing: border-box">Start free pilot</a>
         </div>
-        <div style="background: linear-gradient(#0F0D2E, #0F0D2E) padding-box, linear-gradient(140deg, #2BD9A0, #3F37C9 55%, #8F88FF) border-box; border: 2px solid transparent; color: #FFFFFF; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 20px; position: relative; box-shadow: 0 30px 80px rgba(63,55,201,0.35); transform: translateY(-8px)">
+        <div class="pc fit" data-plan="1" style="background: linear-gradient(#0F0D2E, #0F0D2E) padding-box, linear-gradient(140deg, #2BD9A0, #3F37C9 55%, #8F88FF) border-box; border: 2px solid transparent; color: #FFFFFF; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 20px; position: relative; box-shadow: 0 30px 80px rgba(63,55,201,0.35); transform: translateY(-8px)">
           <div style="position: absolute; top: -13px; left: 34px; background: #2BD9A0; color: #0F0D2E; font-weight: 700; font-size: 12px; letter-spacing: 1.2px; padding: 6px 12px; border-radius: 999px">RECOMMENDED</div>
           <div><h3 style="margin: 0; font-size: 22px; font-weight: 700">Full Desk</h3><div style="font-size: 15px; color: #C9C7EE; margin-top: 6px">24/7 coverage</div></div>
           <div style="font-size: 54px; font-weight: 700; letter-spacing: -2px; line-height: 1">$397<span style="font-size: 17px; color: #C9C7EE; letter-spacing: 0; font-weight: 600"> /month</span></div>
@@ -516,7 +570,7 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
           </div>
           <a href="#start" style="margin-top: auto; background: #2BD9A0; color: #0F0D2E; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px; border-radius: 12px; text-align: center; min-height: 52px; box-sizing: border-box">Start free pilot</a>
         </div>
-        <div class="bo-card" style="border: 1px solid #E1E0EE; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 20px">
+        <div class="bo-card pc" data-plan="2" style="border: 1px solid #E1E0EE; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 20px">
           <div><h3 style="margin: 0; font-size: 22px; font-weight: 700">Revenue Desk</h3><div style="font-size: 15px; color: #4A4870; margin-top: 6px">Answer, book and win back jobs</div></div>
           <div style="font-size: 54px; font-weight: 700; letter-spacing: -2px; line-height: 1">$797<span style="font-size: 17px; color: #4A4870; letter-spacing: 0; font-weight: 600"> /month</span></div>
           <div style="font-size: 15px; font-weight: 600; color: #4A4870; margin-top: -10px">That’s about $27 a day</div>
@@ -741,6 +795,22 @@ details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[ari
   if(steps.length&&'IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting)act(Number(en.target.getAttribute('data-i')));});},{rootMargin:'-45% 0px -45% 0px'});
     steps.forEach(function(s){io.observe(s);s.addEventListener('click',function(){act(Number(s.getAttribute('data-i')));});});}
+})();
+</script>
+<script>
+(function(){
+  var bar=document.querySelector('.sp-bar'),hd=document.querySelector('.hd');
+  function sc(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;if(bar)bar.style.setProperty('--sp',m>0?(h.scrollTop/m):0);if(hd)hd.classList.toggle('glass',h.scrollTop>40);}
+  addEventListener('scroll',sc,{passive:true});sc();
+  var g=document.getElementById('ringNow'),lb=document.getElementById('ringLbl');
+  function ring(){try{var d=new Date();var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(d);var h=0,m=0;p.forEach(function(x){if(x.type==='hour')h=Number(x.value);if(x.type==='minute')m=Number(x.value);});
+    var deg=((h+m/60)/24)*360;g.style.transform='rotate('+deg+'deg)';
+    var wd=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short'}).format(d);var open=wd!=='Sun'&&h>=7&&h<18;
+    lb.textContent=open?'now: team first, Molly backs up':'now: Molly is answering';}catch(e){}}
+  if(g&&lb){ring();setInterval(ring,60000);}
+  var bs=[].slice.call(document.querySelectorAll('.pf-b')),cs=[].slice.call(document.querySelectorAll('.pc'));
+  cs.forEach(function(c){var s=document.createElement('span');s.className='fit-tag';s.textContent='✓ BEST FIT';c.appendChild(s);});
+  bs.forEach(function(b){b.addEventListener('click',function(){var k=b.getAttribute('data-plan');bs.forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false');});cs.forEach(function(c){c.classList.toggle('fit',c.getAttribute('data-plan')===k);});});});
 })();
 </script>
 </body>
