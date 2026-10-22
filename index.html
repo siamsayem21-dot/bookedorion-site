@@ -16,830 +16,259 @@
 <link rel="canonical" href="https://bookedorion.com/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "BookedOrion", "url": "https://bookedorion.com/", "logo": "https://bookedorion.com/apple-touch-icon.png", "email": "siam@bookedorion.com"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "AI receptionist for HVAC companies", "provider": {"@type": "Organization", "name": "BookedOrion"}, "areaServed": "Dallas–Fort Worth, Texas", "offers": [{"@type": "Offer", "name": "Porchlight", "price": "197", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Full Desk", "price": "397", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Revenue Desk", "price": "797", "priceCurrency": "USD"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can my team still answer first?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Your phone rings as usual. If nobody picks up in about 20 seconds, or the line is busy, the call goes to Molly. After hours, she can answer every call. You choose, and you can switch anytime."}}, {"@type": "Question", "name": "How is Molly different from other AI receptionists?", "acceptedAnswer": {"@type": "Answer", "text": "Most AI receptionist apps are built for any business and you set them up yourself. Molly is built only for HVAC, a real person sets her up for your shop, your team can still answer first, and you pay nothing if she doesn’t book a job in your pilot."}}, {"@type": "Question", "name": "Will callers know it’s an AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Molly says she’s an AI assistant and that the call may be recorded."}}, {"@type": "Question", "name": "Do I change my phone number?", "acceptedAnswer": {"@type": "Answer", "text": "No. You keep your number and your Google listing. Unanswered calls forward to Molly."}}, {"@type": "Question", "name": "What if a caller has a real emergency?", "acceptedAnswer": {"@type": "Answer", "text": "You pick the emergency words. When Molly hears one, she rings your phone first."}}, {"@type": "Question", "name": "What does the pilot cost?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing if Molly doesn’t book a job in 14 days. After that, pick a plan or walk away."}}, {"@type": "Question", "name": "Does it work with ServiceTitan, Jobber or Housecall Pro?", "acceptedAnswer": {"@type": "Answer", "text": "Every booking is sent to you by text and email with all the details, ready to add. Ask us about direct integration."}}, {"@type": "Question", "name": "What if Molly gets something wrong?", "acceptedAnswer": {"@type": "Answer", "text": "Tell us and we fix her script, usually the same day. If she isn’t sure, she takes a message and you call back."}}]}</script>
 <meta name="theme-color" content="#0B0A24">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<style>*,*::before,*::after{box-sizing:border-box}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
-.rt h2{margin:0;font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-0.03em;font-weight:700;color:#14123A}
-.rblk{display:flex;flex-direction:column;gap:28px}
-.rhead{display:flex;flex-direction:column;gap:12px;max-width:760px}
-.rhead p{margin:0;font-size:18px;line-height:1.6;color:#4A4870}
-.rk{font-size:13px;font-weight:700;letter-spacing:.14em;color:#3F37C9}
-.ropts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px}
-.ropt{border:1px solid #E6E5F2;border-radius:24px;padding:28px;background:#FFFFFF;display:flex;flex-direction:column;gap:18px}
-.ropt.dk{background:#0B0A24;border-color:#0B0A24;color:#FFFFFF}
-.rot{display:flex;flex-direction:column;gap:8px;align-items:flex-start}.rot h3{margin:0;font-size:24px;letter-spacing:-0.01em}
-.rtag{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2A23A6;background:#EEEDFB;padding:5px 10px;border-radius:999px}.rtag.mint{color:#0B0A24;background:#2BD9A0}
-.ropt ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
-.rs{display:flex;gap:14px;align-items:center;background:#F7F7FC;border-radius:16px;padding:14px 16px}
-.dk .rs{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
-.rs b{display:flex;align-items:center;gap:8px;font-size:16px}.rs span:not(.rsi){display:block;font-size:14px;color:#6B6990;margin-top:2px}.dk .rs span:not(.rsi){color:#A9A7D4}
-.rs em{font-style:normal;font-size:11px;font-weight:700;color:#6B6990;border:1px solid #D9D8EA;border-radius:6px;padding:1px 6px}.dk .rs em{color:#A9A7D4;border-color:rgba(255,255,255,.2)}
-.rsi{width:42px;height:42px;flex-shrink:0;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#FFFFFF;color:#3F37C9;border:1px solid #E6E5F2}.dk .rsi{background:rgba(255,255,255,.1);border-color:transparent;color:#FFFFFF}
-.rs.m{background:linear-gradient(160deg,#3F37C9,#2A23A6);color:#FFFFFF;border:0;box-shadow:0 14px 34px rgba(63,55,201,.3)}.rs.m span:not(.rsi){color:#E1DFFA}.rs.m em{color:#C9C5FF;border-color:rgba(255,255,255,.3)}
-.rs.m .rsi{background:rgba(255,255,255,.16);border-color:transparent}
-.ra{height:22px;position:relative}.ra::before{content:"";position:absolute;left:36px;top:2px;bottom:6px;width:2px;background:#C9C6F2}.ra::after{content:"";position:absolute;left:32px;bottom:0;border-top:7px solid #C9C6F2;border-left:5px solid transparent;border-right:5px solid transparent}
-.dk .ra::before{background:#2BD9A0}.dk .ra::after{border-top-color:#2BD9A0}
-.rdoes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-@media (max-width:900px){.rdoes{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:480px){.rdoes{grid-template-columns:1fr}}
-.rd{border:1px solid #E6E5F2;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:6px}
-.rd b{font-size:18px}.rd span:not(.rdi){font-size:15px;line-height:1.5;color:#4A4870}
-.rdi{width:46px;height:46px;border-radius:14px;background:#EEEDFB;color:#3F37C9;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
-.rwe{flex-direction:row;flex-wrap:wrap;gap:40px;align-items:stretch;background:#F7F7FC;border-radius:28px;padding:clamp(24px,4vw,44px)}
-.rwel{flex:1.3 1 420px;min-width:0;display:flex;flex-direction:column;gap:20px}
-.rws{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
-.rws li{display:flex;gap:14px;align-items:center;background:#FFFFFF;border:1px solid #E6E5F2;border-radius:16px;padding:14px 16px}
-.rwn{width:28px;height:28px;flex-shrink:0;border-radius:50%;background:#3F37C9;color:#FFFFFF;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
-.rwi{color:#3F37C9;display:flex}.rws b{display:block;font-size:16px}.rws span:not(.rwn):not(.rwi){display:block;font-size:14px;color:#6B6990}
-.rwer{flex:1 1 300px;min-width:0;background:#0B0A24;color:#FFFFFF;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:18px;justify-content:center}
-.rbadge{display:flex;flex-direction:column;gap:10px}
-.rbadge span{display:inline-flex;align-items:center;gap:10px;font-size:20px;font-weight:700}
-.rbadge svg{background:#2BD9A0;border-radius:50%;padding:4px;width:28px;height:28px;box-sizing:border-box;flex-shrink:0}
-.rwer p{margin:0;font-size:15px;line-height:1.6;color:#B9B7DC}
-
-.ropts{gap:24px!important}
-.rc{position:relative;background:#FFFFFF;border:1px solid #E6E5F2;border-radius:24px;padding:30px;display:flex;flex-direction:column;gap:22px;box-shadow:0 1px 2px rgba(15,13,46,.04);transition:box-shadow .2s,transform .2s}
-.rc:hover{transform:translateY(-3px);box-shadow:0 22px 50px rgba(15,13,46,.08)}
-.rc.rec{border:2px solid #3F37C9;box-shadow:0 22px 50px rgba(63,55,201,.12)}
-.rch{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
-.rct{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2A23A6;background:#EEEDFB;padding:5px 10px;border-radius:999px}
-.rec .rct{background:#3F37C9;color:#FFFFFF}
-.rch h3{margin:0;font-size:24px;letter-spacing:-0.01em;color:#14123A}
-.rch p{margin:0;font-size:15px;line-height:1.55;color:#4A4870}
-.tlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:22px;position:relative}
-.tlist::before{content:"";position:absolute;left:21px;top:22px;bottom:22px;width:2px;background:linear-gradient(180deg,#E1DFFA,#3F37C9)}
-.tl{display:flex;gap:16px;align-items:center;position:relative}
-.tdotx{width:44px;height:44px;flex-shrink:0;border-radius:50%;background:#FFFFFF;border:2px solid #E1DFFA;color:#3F37C9;display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
-.tl.m .tdotx{background:#3F37C9;border-color:#3F37C9;box-shadow:0 0 0 6px rgba(63,55,201,.12)}
-.tl b{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:17px;color:#14123A}
-.tl span:not(.tdotx):not(.tmolly){display:block;font-size:14px;color:#6B6990;margin-top:2px}
-.tmolly{font-size:11px;font-weight:700;letter-spacing:.06em;color:#0B5E44;background:#C9F7E8;padding:2px 8px;border-radius:999px}
-.rco{display:flex;align-items:center;gap:8px;margin-top:auto;background:#E6FBF4;color:#0B5E44;font-weight:700;font-size:15px;padding:12px 14px;border-radius:12px}
-.rnote{margin:0;text-align:center;font-size:15px;color:#4A4870}
-
-.dgrid{display:grid;grid-template-columns:minmax(0,1fr) 120px minmax(0,1.05fr) 120px minmax(0,1.1fr);align-items:center;gap:0;background:linear-gradient(180deg,#F7F7FC,#FFFFFF);border:1px solid #E6E5F2;border-radius:32px;padding:40px 32px}
-.dcol{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:0}
-.dlbl{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#14123A;letter-spacing:.02em}
-.dlbl span{width:24px;height:24px;border-radius:50%;background:#3F37C9;color:#FFF;display:inline-flex;align-items:center;justify-content:center;font-size:12px}
-.dcap{font-size:13px;color:#6B6990;text-align:center}
-.dphone{width:200px;max-width:100%;background:#14123A;border-radius:34px;padding:9px;box-shadow:0 26px 60px rgba(15,13,46,.25)}
-.dscr{background:linear-gradient(180deg,#2A2766,#14123A);border-radius:26px;padding:20px 14px 18px;display:flex;flex-direction:column;align-items:center;gap:6px;color:#FFF;text-align:center}
-.dtime{font-size:12px;color:#A9A7D4}
-.dav{width:56px;height:56px;border-radius:50%;background:#6C63FF;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;margin:6px 0 2px}
-.dscr b{font-size:17px}.dscr em{font-style:normal;font-size:12px;color:#C9C7EE}
-.dquote{margin-top:8px;background:rgba(255,255,255,.1);border-radius:12px;padding:8px 10px;font-size:12px;line-height:1.4}
-.dbtns{display:flex;gap:34px;margin-top:12px}
-.dbtns span{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center}.dno{background:#EF4444}.dyes{background:#10B981}
-.darr{position:relative;height:100%;min-height:60px;display:flex;align-items:center;justify-content:center}
-.dline{position:absolute;left:6px;right:6px;top:50%;height:2px;background:repeating-linear-gradient(90deg,#3F37C9 0 7px,transparent 7px 12px)}
-.dline::after{content:"";position:absolute;right:-2px;top:-5px;border-left:9px solid #3F37C9;border-top:6px solid transparent;border-bottom:6px solid transparent}
-.dtag{position:relative;z-index:1;display:inline-flex;align-items:center;gap:5px;max-width:110px;text-align:center;font-size:11px;font-weight:700;line-height:1.3;color:#9A3412;background:#FFF1E8;border:1px solid #FBD9C5;padding:6px 8px;border-radius:10px}
-.dtag.ok{color:#0B5E44;background:#E6FBF4;border-color:#9EEBCF}
-.dmolly{width:100%;max-width:290px;background:linear-gradient(160deg,#3F37C9,#2A23A6);border-radius:24px;padding:22px;color:#FFF;box-shadow:0 30px 70px rgba(63,55,201,.35);display:flex;flex-direction:column;gap:14px}
-.dmh{display:flex;align-items:center;gap:12px}.dmh b{display:block;font-size:20px}.dmh em{font-style:normal;font-size:13px;color:#C9C5FF}
-.dwave{display:flex;align-items:center;gap:4px;height:36px}.dwave i{display:block;width:4px;border-radius:2px;background:#2BD9A0;opacity:.85}
-.dmolly ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.dmolly li{display:flex;gap:8px;align-items:center;font-size:14px;background:rgba(255,255,255,.1);border-radius:10px;padding:8px 10px}
-.dres{width:100%;max-width:300px;display:flex;flex-direction:column;gap:12px}
-.dcard{background:#FFF;border:1px solid #E6E5F2;border-radius:16px;padding:12px 14px;box-shadow:0 10px 26px rgba(15,13,46,.06);display:flex;flex-direction:column;gap:8px}
-.dch{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#3F37C9;letter-spacing:.02em}
-.dcal{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
-.dd{font-size:11px;text-align:center;color:#6B6990;background:#F7F7FC;border-radius:6px;padding:4px 0}.dd.on{background:#3F37C9;color:#FFF;font-weight:700}
-.devt{border-left:3px solid #2BD9A0;background:#E6FBF4;border-radius:6px;padding:6px 8px}.devt b{display:block;font-size:13px;color:#0B5E44}.devt span{font-size:12px;color:#4A4870}
-.dsms{background:#F1F0F8;border-radius:12px 12px 12px 4px;padding:8px 10px;font-size:13px;line-height:1.45;color:#14123A}
-.dcard.urg{border-color:#FBD9C5;background:#FFF7F2}.urg .dch{color:#C2410C}
-.dring{display:flex;gap:10px;align-items:center}.dring b{display:block;font-size:14px;color:#7C2D12}.dring span:not(.dpulse){font-size:12px;color:#9A3412}
-.dpulse{width:34px;height:34px;flex-shrink:0;border-radius:50%;background:#EA580C;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px rgba(234,88,12,.15)}
-@media (max-width:980px){
- .dgrid{grid-template-columns:1fr;gap:6px;padding:28px 18px;justify-items:center}
- .darr{min-height:84px;width:100%}
- .dline{left:50%;right:auto;top:6px;bottom:6px;width:2px;height:auto;background:repeating-linear-gradient(180deg,#3F37C9 0 7px,transparent 7px 12px)}
- .dline::after{right:-5px;top:auto;bottom:-2px;border-top:9px solid #3F37C9;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:0}
- .dtag{max-width:220px}
-}
-
-.wwk{font-size:12px;font-weight:700;letter-spacing:.14em;color:#6B6990;margin-right:6px}
-.wwi{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#14123A;background:#FFFFFF;border:1px solid #E6E5F2;padding:9px 14px;border-radius:999px}
-.wwi svg{color:#3F37C9}
-.dbw{background:#FFFFFF;border:1px solid #E1E0EE;border-radius:22px;box-shadow:0 40px 90px rgba(15,13,46,.12);overflow:hidden}
-.dbbar{display:flex;align-items:center;gap:7px;padding:12px 16px;background:#F7F7FC;border-bottom:1px solid #ECEBF5}
-.dbbar span{width:10px;height:10px;border-radius:50%;background:#E1E0EE}.dbbar b{margin-left:10px;font-size:13px;color:#4A4870}
-.dbin{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
-.dbl{padding:20px;border-right:1px solid #ECEBF5;min-width:0;overflow-x:auto}
-.dbk{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px}
-.dbk div{background:#F7F7FC;border-radius:12px;padding:10px 12px}.dbk em{display:block;font-style:normal;font-size:11px;color:#6B6990}.dbk b{font-size:22px;color:#14123A;font-variant-numeric:tabular-nums}.dbk b.g{color:#0B7A57}.dbk b.o{color:#C2410C}
-.dbh,.dbr{display:grid;grid-template-columns:64px minmax(90px,1fr) minmax(120px,1.4fr) minmax(150px,auto) 28px;gap:10px;align-items:center;min-width:520px}
-.dbh{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8E8CB0;padding:0 10px 8px}
-.dbr{padding:10px;border-radius:12px;font-size:13px;color:#14123A}.dbr+.dbr{margin-top:2px}.dbr.sel{background:#EEEDFB}
-.dbt{color:#6B6990;font-variant-numeric:tabular-nums}.dbn b{display:block;font-size:13px}.dbn em{font-style:normal;font-size:11px;color:#6B6990}.dbi{color:#4A4870}
-.pill{display:inline-flex;align-items:center;justify-self:start;font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px;white-space:nowrap}
-.pill.ok{background:#E6FBF4;color:#0B5E44}.pill.urg{background:#FFF1E8;color:#9A3412}.pill.mut{background:#F1F0F8;color:#6B6990}
-.dbp{width:26px;height:26px;border-radius:50%;background:#14123A;color:#FFFFFF;display:flex;align-items:center;justify-content:center}
-.dbd{padding:20px;display:flex;flex-direction:column;gap:14px;background:#FCFCFE;min-width:0}
-.dbdh{display:flex;justify-content:space-between;align-items:center;gap:8px}.dbdh b{font-size:15px}
-.dbsum{font-size:14px;line-height:1.55;color:#14123A;background:#FFFFFF;border:1px solid #ECEBF5;border-radius:12px;padding:12px}.dbsum em{display:block;font-style:normal;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3F37C9;margin-bottom:4px}
-.dbaud{display:flex;align-items:center;gap:10px;background:#14123A;border-radius:12px;padding:10px 12px;color:#FFFFFF}
-.dbpl{width:30px;height:30px;border-radius:50%;background:#2BD9A0;color:#0B0A24;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.dbwv{flex:1;display:flex;align-items:center;gap:3px;height:24px;min-width:0;overflow:hidden}.dbwv i{display:block;width:3px;border-radius:2px;background:#8F88FF;flex-shrink:0}
-.dbdur{font-size:12px;color:#A9A7D4;font-variant-numeric:tabular-nums}
-.dbtr{display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.5;color:#4A4870}.dbtr p{margin:0}.dbtr b{color:#14123A;margin-right:6px}
-@media (max-width:900px){.dbin{grid-template-columns:1fr}.dbl{border-right:0;border-bottom:1px solid #ECEBF5}.dbk{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:600px){.dbh,.dbr{grid-template-columns:54px minmax(0,1fr) auto 26px;min-width:0}.dbi,.dbh span:nth-child(3){display:none}}
-.tsg{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
-.tsi{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:8px}
-.tsi b{font-size:18px;color:#FFFFFF}.tsi p{margin:0;font-size:15px;line-height:1.55;color:#B9B7DC}
-.tsic{width:46px;height:46px;border-radius:14px;background:rgba(43,217,160,.14);color:#2BD9A0;display:flex;align-items:center;justify-content:center;margin-bottom:6px}
-</style>
 <title>BookedOrion · AI receptionist for HVAC in Dallas–Fort Worth</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#FFFFFF;--fg:#14123A;--accent:#3F37C9;--mint:#2BD9A0;--night:#0B0A24;color-scheme:light}
-body{background:var(--bg);color:var(--fg)}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--night)}
-.bo-mcta{bottom:calc(12px + env(safe-area-inset-bottom, 0px))!important}
-
-body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#FFFFFF;color:#14123A}
-a{color:#3F37C9}a:hover{color:#2A23A6}
-input[type=range]{accent-color:#2BD9A0;width:100%;height:28px}
-details summary{list-style:none}details summary::-webkit-details-marker{display:none}
-html{scroll-behavior:smooth}
-body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
-a,button{transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease,border-color .15s ease}
-@media (max-width:760px){.bo-nav{display:none}.bo-mcta{display:flex!important}.bo-footer{padding-bottom:110px!important}}
-@media (max-width:560px){.bo-hide-sm{display:none}}
-.bo-card{transition:transform .2s ease,box-shadow .2s ease}.bo-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(15,13,46,0.10)}
-.bo-stat+.bo-stat{border-left:1px solid #ECEBF5}
-#biz::placeholder{color:#8E8CB8}
-.bo-flink:hover{color:#FFFFFF!important}
-.bo-nav:hover{color:#FFFFFF!important}
-.bo-btn:hover{transform:translateY(-1px)}
-details{transition:background-color .15s ease}details:hover{background:#F1F0FA!important}
-details[open] summary span[aria-hidden]{transform:rotate(45deg)}summary span[aria-hidden]{display:inline-block;transition:transform .2s ease}
-:focus-visible{outline:3px solid #2BD9A0;outline-offset:2px}
-@keyframes boPulse{0%{box-shadow:0 0 0 0 rgba(16,185,129,.6)}70%{box-shadow:0 0 0 8px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
-@keyframes boWave{0%,100%{transform:scaleY(.45)}50%{transform:scaleY(1)}}
-@keyframes boIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@keyframes boPop{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
-@keyframes boScroll{to{transform:translateX(-50%)}}
-@keyframes boReveal{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
-.bo-pulse{animation:boPulse 1.8s infinite}
-.bo-wave>span:not(:last-child){transform-origin:center;animation:boWave 1.1s ease-in-out infinite}
-.bo-wave>span:nth-child(2n){animation-delay:-.3s}.bo-wave>span:nth-child(3n){animation-delay:-.6s}.bo-wave>span:nth-child(5n){animation-delay:-.85s}
-.bo-msg{animation:boIn .5s ease both}.bo-d0{animation-delay:.1s}.bo-d1{animation-delay:.4s}.bo-d2{animation-delay:1.2s}.bo-d3{animation-delay:2s}
-.bo-pop{animation:boPop .6s cubic-bezier(.2,.8,.2,1) 2.6s both}
-.bo-track{animation:boScroll 45s linear infinite}.bo-marquee:hover .bo-track{animation-play-state:paused}
-@supports (animation-timeline: view()){.bo-reveal>*{animation:boReveal linear both;animation-timeline:view();animation-range:entry 0% entry 35%}}
-.cmt{border:1px solid #E1E0EE;border-radius:20px;overflow:hidden;font-size:16px}.cmr{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;border-top:1px solid #ECEBF5}.cmr:first-child{border-top:0}.cmr>div{padding:16px 22px}.cmh{background:#F7F7FC;font-weight:700}.cmn{font-weight:600;color:#14123A}.cmc span{display:none}.cmus{background:#EEEDFB;font-weight:700;color:#14123A}.cmus .cmn{color:#3F37C9}@media (max-width:720px){.cmh{display:none}.cmr{grid-template-columns:1fr 1fr 1fr;padding:6px 0}.cmr .cmn{grid-column:1/-1;padding:12px 16px 2px}.cmr .cmc{padding:6px 16px 12px;font-size:14px}.cmc span{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6B6990;margin-bottom:3px}}@media (max-width:760px){.bo-hrow{flex-wrap:nowrap!important;padding:12px 0!important}.bo-hrow nav{flex-wrap:nowrap!important;gap:10px!important}.bo-ntxt{display:none}.bo-ncall{width:44px;height:44px;justify-content:center;border:1px solid rgba(255,255,255,.18);border-radius:10px}}.bo-mcta{transform:translateY(140%);transition:transform .25s ease}.bo-mcta.on{transform:none}@media (max-width:380px){.bo-hrow>a{font-size:22px!important}}@media (max-width:760px){.bo-hrow nav>a:last-child{white-space:nowrap;padding:10px 14px!important}}@media (max-width:560px){.bo-stat{padding:22px 18px!important}.bo-stat>div:first-child{font-size:30px!important}.bo-stat>div:last-child{font-size:14px!important}}
-.tb{padding:72px 24px 8px}.tb-in{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:center;background:linear-gradient(135deg,#F4F3FF 0%,#EEFBF6 100%);border:1px solid #E4E2F7;border-radius:28px;padding:44px}.tb-l{display:flex;flex-direction:column;gap:14px;min-width:0}.tb-eb{font-size:13px;font-weight:700;letter-spacing:.14em;color:#3F37C9}.tb h2{margin:0;font-size:clamp(30px,3.4vw,42px);line-height:1.08;letter-spacing:-1.2px;font-weight:700;color:#14123A}.tb-l>p{margin:0;font-size:18px;line-height:1.6;color:#4A4870}.tb-btn{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;background:#2BD9A0;color:#0B0A24;font-weight:700;font-size:18px;padding:16px 24px;border-radius:12px;text-decoration:none;white-space:nowrap;box-shadow:0 10px 30px rgba(43,217,160,.3);margin-top:4px}.tb-btn:hover{transform:translateY(-1px)}.tb-l small{font-size:13px;color:#6B6990}.tb-r{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}.tb-s{display:flex;gap:16px;align-items:flex-start;background:#FFFFFF;border:1px solid #E7E6F3;border-radius:18px;padding:18px 20px;box-shadow:0 6px 20px rgba(20,18,58,.05)}.tb-n{width:34px;height:34px;flex-shrink:0;border-radius:10px;background:#3F37C9;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}.tb-s b{display:block;font-size:17px;color:#14123A}.tb-s p{margin:4px 0 0;font-size:15px;line-height:1.55;color:#55536F}.tb-s a{color:#3F37C9;font-weight:700;text-decoration:none;white-space:nowrap}.tb-chips{max-width:1200px;margin:18px auto 0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 8px;font-size:14px;color:#4A4870}.tb-chips b{font-weight:600;margin-right:4px}.tb-chips span{background:#FFFFFF;border:1px solid #E1E0EE;border-radius:999px;padding:6px 12px;font-weight:600;color:#14123A}@media (max-width:900px){.tb-in{grid-template-columns:1fr;padding:28px 22px;gap:24px}.tb{padding-top:48px}.tb-btn{align-self:stretch;justify-content:center}.tb-chips{justify-content:flex-start;padding:0 2px}}
-@media (max-width:600px){section[style*="padding: 80px 24px"]{padding-top:56px!important;padding-bottom:56px!important}section[style*="padding: 0 24px 80px"]{padding-bottom:56px!important}}
-
-.dl{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-size:14px;line-height:1.45;color:#C9C7EE;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px 14px;max-width:560px}
-.dl b{color:#FFFFFF}.dl-dot{width:8px;height:8px;border-radius:50%;background:#2BD9A0;flex-shrink:0;box-shadow:0 0 0 4px rgba(43,217,160,.18);animation:boPulse 1.8s infinite}
-.spot{position:absolute;inset:0;pointer-events:none;background:radial-gradient(420px circle at var(--mx,70%) var(--my,30%),rgba(108,99,255,.16),transparent 60%);transition:background .1s}
-.ba{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.ba-c{border-radius:24px;padding:26px 26px 22px;display:flex;flex-direction:column;gap:18px}
-.ba-no{background:#FFF7F3;border:1px solid #F6DCCF}.ba-yes{background:#EFFCF6;border:1px solid #BFEFD9}
-.ba-h{display:flex;justify-content:space-between;align-items:center}.ba-tag{font-size:12px;font-weight:700;letter-spacing:.14em}.ba-no .ba-tag{color:#B4471B}.ba-yes .ba-tag{color:#0B7A57}
-.ba-t{font-size:13px;font-weight:600;color:#6B6990}
-.ba ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;position:relative}
-.ba li{display:flex;gap:14px;align-items:flex-start;position:relative}
-.ba li:not(:last-child)::after{content:"";position:absolute;left:19px;top:42px;bottom:-12px;width:2px;background:currentColor;opacity:.15}
-.ba-no li{color:#B4471B}.ba-yes li{color:#0B7A57}
-.ba-i{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#FFFFFF;box-shadow:0 2px 8px rgba(20,18,58,.06)}
-.ba li b{display:block;font-size:17px;color:#14123A}.ba li span{font-size:15px;color:#55536F;line-height:1.5}
-.ba-r{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;border-radius:12px;padding:12px 14px}
-.ba-rn{background:#FDE6DC;color:#9A3412}.ba-ry{background:#2BD9A0;color:#0B0A24}
-@media (max-width:760px){.ba{grid-template-columns:1fr}}
-.st{padding:88px 24px 40px;background:#FFFFFF}.st-in{max-width:1200px;margin:0 auto}
-.st-head{max-width:720px;margin:0 auto 48px;text-align:center;display:flex;flex-direction:column;gap:12px}
-.st-eb{font-size:13px;font-weight:700;letter-spacing:.14em;color:#3F37C9}
-.st h2{margin:0;font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.03em;font-weight:700;color:#14123A}
-.st-head p{margin:0;font-size:19px;line-height:1.6;color:#4A4870}
-.st-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
-.st-steps{list-style:none;margin:0;padding:0}
-.st-step{display:flex;gap:18px;align-items:flex-start;min-height:46vh;padding:24px 0;opacity:.38;transition:opacity .35s ease;cursor:pointer}
-.st-step.on{opacity:1}.st-step:first-child{padding-top:8vh}.st-step:last-child{min-height:58vh}
-.st-n{width:44px;height:44px;border-radius:14px;background:#EEEDFB;color:#3F37C9;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .3s,color .3s}
-.st-step.on .st-n{background:#3F37C9;color:#FFFFFF;box-shadow:0 10px 24px rgba(63,55,201,.3)}
-.st-tx h3{margin:6px 0 10px;font-size:26px;line-height:1.2;letter-spacing:-.6px;color:#14123A}.st-tx p{margin:0;font-size:18px;line-height:1.6;color:#4A4870;max-width:440px}
-.st-mini{display:none}.st-vis{align-self:stretch}
-.st-sticky{position:sticky;top:110px;height:560px;border-radius:32px;background:#0B0A24;overflow:hidden;box-shadow:0 40px 100px rgba(15,13,46,.3)}
-.st-glow{position:absolute;inset:0;background:radial-gradient(60% 50% at 80% 10%,rgba(63,55,201,.6),transparent 70%),radial-gradient(50% 45% at 10% 100%,rgba(43,217,160,.22),transparent 70%)}
-.st-pane{position:absolute;inset:0 0 28px;display:flex;align-items:center;justify-content:center;padding:28px;opacity:0;transform:translateY(16px) scale(.98);transition:opacity .45s ease,transform .45s ease}
-.st-pane.on{opacity:1;transform:none}
-.st-cap{position:absolute;left:0;right:0;bottom:14px;text-align:center;font-size:12px;color:#8E8CB8}
-.st-more{display:block;text-align:center;margin-top:24px;font-weight:700;font-size:16px;color:#3F37C9;text-decoration:none}
-.sv{width:100%;max-width:380px;background:#FFFFFF;border-radius:24px;padding:22px;box-shadow:0 30px 70px rgba(0,0,0,.35);color:#14123A;display:flex;flex-direction:column;gap:12px}
-.sv-call{background:#17153F;color:#FFFFFF;align-items:center;text-align:center;border:1px solid rgba(255,255,255,.1)}
-.sv-top{width:100%;display:flex;justify-content:space-between;font-size:12px;color:#A9A7D4}
-.sv-av{width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,#6C63FF,#3F37C9);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;margin-top:6px}
-.sv-name{font-size:22px}.sv-sub{font-size:13px;color:#A9A7D4;margin-top:-6px}
-.sv-quote{background:rgba(255,255,255,.08);border-radius:12px;padding:10px 14px;font-size:15px}
-.sv-miss{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#FDBA9B;background:rgba(253,186,155,.12);border-radius:999px;padding:6px 12px}
-.sv-fwd{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#0B0A24;background:#2BD9A0;border-radius:999px;padding:7px 13px}
-.sv-hd{display:flex;align-items:center;gap:10px}.sv-hd>div{flex:1;display:flex;flex-direction:column}.sv-hd b{font-size:15px}.sv-hd>div span{font-size:12px;color:#6B6990}
-.sv-logo{width:32px;height:32px;border-radius:50%;background:#3F37C9;display:flex;align-items:center;justify-content:center}
-.sv-live{font-size:12px;font-weight:700;color:#0B7A57;background:#E6FBF4;border-radius:999px;padding:4px 9px}
-.sv-b{max-width:86%;font-size:14px;line-height:1.5;padding:9px 12px;border-radius:14px}
-.sv-m{align-self:flex-end;background:#3F37C9;color:#FFFFFF;border-bottom-right-radius:4px}.sv-c{align-self:flex-start;background:#F3F2FA;border-bottom-left-radius:4px}
-.sv-safe{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:#9A3412;background:#FFF1E8;border-radius:10px;padding:8px 10px}
-.sv-cal{max-width:430px}.sv-hd2{display:flex;align-items:center;gap:8px;color:#3F37C9}.sv-hd2 b{color:#14123A;font-size:15px;flex:1}.sv-hd2 span{font-size:12px;color:#6B6990}
-.sv-days{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
-.sv-d{display:flex;flex-direction:column;gap:6px}.sv-d>span{font-size:12px;font-weight:600;color:#6B6990;text-align:center;padding:4px 0;border-radius:8px}
-.sv-d.on>span{background:#3F37C9;color:#FFFFFF}
-.sv-slot{display:block;height:46px;border-radius:8px;background:#F4F3FA;font-style:normal}
-.sv-slotx{background:repeating-linear-gradient(135deg,#ECEBF5 0 6px,#F7F7FC 6px 12px)}
-.sv-new{height:auto;min-height:46px;word-break:normal;background:#E6FBF4;border-left:3px solid #2BD9A0;font-size:11px;line-height:1.35;color:#0B5E44;padding:6px 6px 6px 7px}.sv-new b{display:block;font-size:11.5px}
-.sv-ok{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:#0B5E44;background:#E6FBF4;border-radius:10px;padding:9px 11px}
-.sv-phone{background:linear-gradient(180deg,#26236B,#14123A);color:#FFFFFF;min-height:400px;border:1px solid rgba(255,255,255,.12)}
-.sv-lock{text-align:center;padding:18px 0 10px;display:flex;flex-direction:column}.sv-clock{font-size:56px;font-weight:600;letter-spacing:-2px;line-height:1}.sv-date{font-size:14px;color:#C9C7EE;margin-top:4px}
-.sv-note{background:rgba(255,255,255,.94);color:#14123A;border-radius:18px;padding:12px 14px;display:flex;flex-direction:column;gap:3px}
-.sv-note2{opacity:.8;transform:scale(.97)}
-.sv-nh{display:flex;align-items:center;gap:7px;font-size:12px}.sv-nh b{flex:1}.sv-nh span{color:#6B6990}
-.sv-app{width:20px;height:20px;border-radius:6px;background:#3F37C9;display:flex;align-items:center;justify-content:center}
-.sv-nt{font-size:15px}.sv-nb{font-size:13px;color:#4A4870;line-height:1.45}
-@media (max-width:900px){.st{padding:64px 20px 24px}.st-grid{grid-template-columns:1fr;gap:0}.st-vis{display:none}.st-step{opacity:1;min-height:0;flex-wrap:wrap;padding:20px 0;cursor:default}.st-step:first-child{padding-top:0}.st-step:last-child{min-height:0}.st-step .st-n{background:#3F37C9;color:#FFFFFF}.st-tx{flex:1;min-width:0}.st-tx h3{font-size:22px;margin-top:8px}.st-tx p{font-size:16px}
-.st-mini{display:flex;justify-content:center;width:100%;margin-top:16px;padding:24px 16px;border-radius:24px;background:#0B0A24;background-image:radial-gradient(60% 50% at 80% 10%,rgba(63,55,201,.55),transparent 70%)}
-.st-mini .sv-phone{min-height:0}.st-mini .sv-days{grid-template-columns:repeat(3,1fr)}.st-mini .sv-d:first-child,.st-mini .sv-d:last-child{display:none}}
-
-.sp-bar{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(var(--sp,0));background:linear-gradient(90deg,#2BD9A0,#6C63FF);z-index:70;pointer-events:none}
-.hd{transition:background .25s ease}.hd.glass{background:rgba(11,10,36,.9)!important;-webkit-backdrop-filter:saturate(160%) blur(14px);backdrop-filter:saturate(160%) blur(14px)}
-.bt{padding:80px 24px;background:#F7F7FC}.bt-in{max-width:1200px;margin:0 auto}
-.bt-head{text-align:center;margin-bottom:40px;display:flex;flex-direction:column;gap:12px}.bt-eb{font-size:13px;font-weight:700;letter-spacing:.14em;color:#3F37C9}
-.bt h2{margin:0;font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.03em;font-weight:700;color:#14123A}
-.bt-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.bt-c{background:#FFFFFF;border:1px solid #E7E6F3;border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:8px;transition:transform .25s ease,box-shadow .25s ease}
-.bt-c:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(20,18,58,.08)}
-.bt-c h3{margin:0;font-size:19px;letter-spacing:-.3px;color:#14123A}.bt-c p{margin:0;font-size:15px;line-height:1.55;color:#55536F}
-.bt-big{grid-column:span 2;grid-row:span 2;background:#0B0A24;border-color:#0B0A24;flex-direction:row;align-items:center;gap:24px;padding:32px;background-image:radial-gradient(60% 60% at 90% 10%,rgba(63,55,201,.5),transparent 70%)}
-.bt-big h3{color:#FFFFFF;font-size:28px;letter-spacing:-.7px;line-height:1.15}.bt-big p{color:#C9C7EE;font-size:17px;margin-top:10px}
-.bt-tx{flex:1;min-width:0}.bt-ring{width:300px;max-width:48%;flex-shrink:0}
-#ringNow{transition:transform .6s ease}
-.bt-leg{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:20px;font-size:13px;color:#C9C7EE}.bt-leg span{display:inline-flex;align-items:center;gap:7px}.bt-leg i{width:10px;height:10px;border-radius:3px;display:inline-block}
-.bt-vis{border-radius:16px;padding:14px;margin-bottom:10px;display:flex;align-items:center;gap:12px}
-.bt-alert{background:#FFF1E8;color:#9A3412}.bt-alert b{display:block;font-size:15px}.bt-alert span{font-size:13px}
-.bt-ai{width:40px;height:40px;border-radius:12px;background:#EA580C;display:flex;align-items:center;justify-content:center;flex-shrink:0;animation:boPulse 1.8s infinite}
-.bt-slot{background:#E6FBF4;border-left:4px solid #2BD9A0;color:#0B5E44}.bt-slot>div{flex:1}.bt-slot b{display:block;font-size:15px;color:#14123A}.bt-slot span{font-size:13px}
-.bt-day{font-size:11px;font-weight:700;letter-spacing:.08em;background:#3F37C9;color:#FFFFFF;border-radius:8px;padding:6px 8px}
-.bt-ok{width:26px;height:26px;border-radius:50%;background:#2BD9A0;display:flex;align-items:center;justify-content:center}
-.bt-note{flex-direction:column;align-items:stretch;gap:3px;background:linear-gradient(180deg,#26236B,#14123A);padding:14px}
-.bt-note>*{background:transparent}.bt-nh{display:flex;align-items:center;gap:7px;font-size:12px;color:#C9C7EE}.bt-nh b{flex:1;color:#FFFFFF}
-.bt-app{width:18px;height:18px;border-radius:5px;background:#3F37C9;display:flex;align-items:center;justify-content:center}
-.bt-nt{color:#FFFFFF;font-size:14px}.bt-nb{color:#C9C7EE;font-size:12.5px}
-.bt-wide{grid-column:span 2;flex-direction:row;align-items:center;gap:24px}
-.bt-log{flex:1.3;min-width:0;background:#F7F7FC;border-radius:16px;padding:10px;display:flex;flex-direction:column;gap:6px}
-.bt-row{display:grid;grid-template-columns:64px 80px minmax(0,1fr) auto;gap:10px;align-items:center;background:#FFFFFF;border-radius:10px;padding:9px 12px;font-size:13px}
-.bt-row b{color:#14123A}.bt-t{color:#6B6990}.bt-r{color:#4A4870;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.bt-p{font-size:11.5px;font-weight:700;border-radius:999px;padding:4px 9px}.bt-pg{background:#E6FBF4;color:#0B7A57}.bt-po{background:#FFF1E8;color:#C2410C}
-.bt-wave{display:flex;align-items:center;gap:3px;background:#14123A;border-radius:10px;padding:10px 12px;height:44px;box-sizing:border-box}
-.bt-wave i{width:3px;border-radius:2px;background:#8F88FF;display:block}.bt-wave span{margin-left:auto;font-size:12px;color:#A9A7D4}
-.bt-tx2{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px}.bt-cap{font-size:12px;color:#8E8CB8}
-.bt-full{grid-column:span 3;flex-direction:row;align-items:center;flex-wrap:wrap;gap:16px 24px}.bt-full h3{white-space:nowrap}
-.bt-chips{display:flex;flex-wrap:wrap;gap:8px}.bt-chips span{display:inline-flex;align-items:center;gap:8px;border:1px solid #E1E0EE;border-radius:999px;padding:7px 13px;font-size:14px;font-weight:600;color:#14123A;background:#FFFFFF}
-@media (max-width:980px){.bt-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bt-big,.bt-wide,.bt-full{grid-column:span 2}.bt-big{grid-row:auto}}
-@media (max-width:640px){.bt{padding:56px 16px}.bt-grid{grid-template-columns:1fr;gap:14px}.bt-big,.bt-wide,.bt-full{grid-column:auto}.bt-big,.bt-wide{flex-direction:column;align-items:stretch}.bt-ring{max-width:240px;margin:0 auto}.bt-big h3{font-size:24px}.bt-row{grid-template-columns:56px minmax(0,1fr) auto}.bt-row .bt-r{display:none}.bt-full h3{white-space:normal}}
-.pf{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin:-16px auto 0;background:#F4F3FA;border:1px solid #E7E6F3;border-radius:16px;padding:8px}
-.pf-q{font-weight:700;font-size:15px;color:#14123A;padding:0 10px}
-.pf-b{font:inherit;font-size:15px;font-weight:600;color:#4A4870;background:transparent;border:0;border-radius:11px;padding:10px 16px;min-height:44px;cursor:pointer;transition:background .2s,color .2s}
-.pf-b:hover{background:#FFFFFF}.pf-b.on{background:#3F37C9;color:#FFFFFF;box-shadow:0 6px 16px rgba(63,55,201,.3)}
-.pc{position:relative;transition:transform .3s ease,box-shadow .3s ease}
-.pc.fit{transform:translateY(-6px);box-shadow:0 0 0 3px #2BD9A0,0 30px 60px rgba(20,18,58,.15)!important}
-.pc .fit-tag{position:absolute;top:-13px;right:24px;background:#2BD9A0;color:#0B0A24;font-weight:700;font-size:12px;letter-spacing:.06em;padding:6px 12px;border-radius:999px;display:none}
-.pc.fit .fit-tag{display:block}
-@media (max-width:640px){.pf{flex-direction:column;align-items:stretch}.pf-q{text-align:center;padding:6px 0}}
-
-
-.cb{display:flex;flex-direction:column;gap:6px;padding:12px;border-radius:14px;background:#F7F7FC}
-.cb-dk{background:rgba(255,255,255,.06)}
-.cb-bar{display:grid;grid-template-columns:repeat(24,1fr);gap:2px;height:16px}
-.cb-bar i{display:block;border-radius:3px}
-.cb-mo{background:#2BD9A0}.cb-tm{background:#DDDBEF}.cb-dk .cb-tm{background:rgba(255,255,255,.18)}
-.cb-bk{background:repeating-linear-gradient(135deg,#6C63FF 0 3px,#A9A4EE 3px 6px)}
-.cb-ax{display:flex;justify-content:space-between;font-size:11px;color:#8E8CB8}
-.cb-lg{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:#55536F}.cb-dk .cb-lg{color:#C9C7EE}
-.cb-lg span{display:inline-flex;align-items:center;gap:6px}.cb-lg i{width:10px;height:10px;border-radius:3px;display:inline-block}
-.cp{border:1px solid #E1E0EE;border-radius:20px;background:#FFFFFF;overflow:hidden}
-.cp summary{list-style:none;display:flex;justify-content:center;align-items:center;gap:10px;padding:18px;font-weight:700;font-size:16px;color:#3F37C9;cursor:pointer}
-.cp summary::-webkit-details-marker{display:none}.cp[open] .cp-ic{transform:rotate(45deg)}.cp-ic{transition:transform .2s;display:inline-block}
-.cp-wrap{overflow-x:auto;border-top:1px solid #ECEBF5}
-.cp table{width:100%;min-width:560px;border-collapse:collapse;font-size:15px}
-.cp th,.cp td{padding:13px 18px;text-align:center;border-bottom:1px solid #F0EFF7}
-.cp tbody th{text-align:left;font-weight:500;color:#14123A}
-.cp thead th{font-size:15px;color:#14123A;background:#F7F7FC}.cp thead small{display:block;font-weight:500;color:#6B6990;font-size:12.5px}
-.cp .cp-hl{background:#EEEDFB}
-.cp-y{display:inline-flex;width:24px;height:24px;border-radius:50%;background:#E6FBF4;color:#0B7A57;font-weight:700;align-items:center;justify-content:center;font-size:13px}
-.cp-n{color:#B9B7DC;font-weight:700}
-
-@media (prefers-reduced-motion:reduce){.st-pane{transition:none}}
-
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
-
-</style>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/blog.css?v=9">
+<link rel="stylesheet" href="/home.css?v=9">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is Molly different from other AI receptionists?", "acceptedAnswer": {"@type": "Answer", "text": "Most AI receptionist apps are built for any business and you set them up yourself. Molly is built only for HVAC, a real person sets her up for your shop, and your team can still answer first."}}, {"@type": "Question", "name": "Can my team still answer first?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Your phone rings as usual. If nobody picks up in about 20 seconds, or the line is busy, the call goes to Molly. After hours, she can answer every call. You choose, and you can switch anytime."}}, {"@type": "Question", "name": "Will callers know it\u2019s an AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Molly says she\u2019s an AI assistant and that the call may be recorded."}}, {"@type": "Question", "name": "Do I change my phone number?", "acceptedAnswer": {"@type": "Answer", "text": "No. You keep your number and your Google listing. Unanswered calls forward to Molly."}}, {"@type": "Question", "name": "What if a caller has a real emergency?", "acceptedAnswer": {"@type": "Answer", "text": "You pick the emergency words. When Molly hears one, she tells the caller how to stay safe and rings your phone first."}}, {"@type": "Question", "name": "What does the pilot cost?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing if Molly doesn\u2019t book a job in 14 days. After that, pick a plan or walk away."}}, {"@type": "Question", "name": "Does it work with ServiceTitan, Jobber or Housecall Pro?", "acceptedAnswer": {"@type": "Answer", "text": "Every booking is sent to you by text and email with all the details, ready to add. Ask us about direct integration."}}, {"@type": "Question", "name": "What if Molly gets something wrong?", "acceptedAnswer": {"@type": "Answer", "text": "Tell us and we fix her script, usually the same day. If she isn\u2019t sure, she takes a message and you call back."}}]}</script>
 </head>
-<body>
+<body class="home">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap topin"><a href="/" class="logo" aria-label="BookedOrion home"><span>Booked</span><svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#2BD9A0" stroke-width="8"/><path d="M21 33 L29 41 L44 23" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>rion</span></a>
+<nav><a class="nav" href="/how-it-works/">How it works</a><a class="nav" href="#pricing">Pricing</a><a class="nav" href="/about/">About</a><a class="nav" href="/blog/">Blog</a><a class="ncall" href="tel:+15705219710" aria-label="Call Molly at (570) 521-9710"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(570) 521-9710</span></a><a class="btn" href="/#start">Start free pilot</a></nav></div></header>
+<main id="main">
 
-
-<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14123A; background: #FFFFFF">
-
-  <!-- HEADER -->
-  <div class="sp-bar" aria-hidden="true"></div>
-  <header class="hd" style="position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: #0B0A24; padding: 0 24px; border-bottom: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 30px rgba(11,10,36,0.18)">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0" class="bo-hrow">
-      <a href="#top" aria-label="BookedOrion home" style="display: flex; align-items: center; gap: 1px; font-size: 25px; font-weight: 700; letter-spacing: -0.8px; color: #FFFFFF; text-decoration: none"><span>Booked</span><svg width="23" height="23" viewBox="0 0 64 64" aria-hidden="true" style="margin: 0 2px"><circle cx="32" cy="32" r="26" fill="none" stroke="#2BD9A0" stroke-width="8"></circle><path d="M21 33 L29 41 L44 23" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>rion</span></a>
-      <nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 26px">
-        <a href="/how-it-works/" style="color: #C9C7EE; text-decoration: none; font-weight: 500; font-size: 15px" class="bo-nav">How it works</a>
-        <a href="#pricing" style="color: #C9C7EE; text-decoration: none; font-weight: 500; font-size: 15px" class="bo-nav">Pricing</a>
-        <a href="/about/" style="color: #C9C7EE; text-decoration: none; font-weight: 500; font-size: 15px" class="bo-nav">About</a>
-        <a href="/blog/" style="color: #C9C7EE; text-decoration: none; font-weight: 500; font-size: 15px" class="bo-nav">Blog</a>
-        <a href="tel:+15705219710" class="bo-ncall" aria-label="Call Molly at (570) 521-9710" style="display: inline-flex; align-items: center; gap: 6px; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="bo-ntxt">(570) 521-9710</span></a>
-        <a href="#start" style="background: #2BD9A0; color: #0F0D2E; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 18px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Start free pilot</a>
-      </nav>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="kicker">AI receptionist for HVAC shops in Dallas–Fort Worth</p>
+      <h1>You fix the AC.<br><span>Molly answers the phone.</span></h1>
+      <p class="hero-lede">When your team can’t pick up, Molly answers, books the visit on your calendar and texts you the details. Nights, weekends and busy days.</p>
+      <div class="hero-cta">
+        <a class="b b-mint b-lg" href="#start">Start free pilot <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="b b-ghost b-lg" href="tel:+15705219710"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Hear Molly</a>
+      </div>
+      <ul class="hero-facts"><li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Free 14-day pilot</li><li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Keep your number</li><li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>No contract</li></ul>
+      <p class="hero-call">Hear her live anytime: <a href="tel:+15705219710">(570) 521-9710</a></p>
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section id="top" style="position: relative; overflow: hidden; background: #0B0A24; padding: 88px 24px 104px">
-    <div class="spot" aria-hidden="true"></div>
-    <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(60% 55% at 78% 30%, rgba(63,55,201,0.55) 0%, rgba(63,55,201,0) 70%), radial-gradient(40% 40% at 90% 85%, rgba(43,217,160,0.18) 0%, rgba(43,217,160,0) 70%), radial-gradient(45% 50% at 5% 0%, rgba(63,55,201,0.25) 0%, rgba(63,55,201,0) 70%)"></div>
-    <div aria-hidden="true" style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(70% 60% at 50% 40%, #000 30%, transparent 100%); mask-image: radial-gradient(70% 60% at 50% 40%, #000 30%, transparent 100%)"></div>
-    <div style="position: relative; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
-      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-        <div style="display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.05); color: #DCDAF5; font-size: 14px; font-weight: 600; padding: 7px 14px 7px 8px; border-radius: 999px"><span style="background: #2BD9A0; color: #0B0A24; font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 999px">New</span>AI receptionist for HVAC shops in Dallas–Fort Worth</div>
-        <h1 class="bo-h" style="margin: 0; font-size: clamp(42px, 5.6vw, 72px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 700; color: #FFFFFF">You fix the AC.<br><span style="background: linear-gradient(90deg, #2BD9A0 0%, #8FF0CF 100%); -webkit-background-clip: text; background-clip: text; color: transparent">Molly answers the phone.</span></h1>
-        <p style="margin: 0; font-size: 20px; line-height: 1.6; color: #B9B7DC; max-width: 540px">When your team can’t pick up, Molly answers, books the job on your calendar and texts you the details. Day or night.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 12px">
-          <a class="bo-btn" href="#start" style="background: #2BD9A0; color: #0B0A24; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px 24px; border-radius: 12px; min-height: 54px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 10px 30px rgba(43,217,160,0.25)">Start free 14-day pilot<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B0A24" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-          <a class="bo-btn" href="tel:+15705219710" style="border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 22px; border-radius: 12px; min-height: 54px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px; white-space: nowrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Molly now</a>
-        </div>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px 22px; color: #A9A7D4; font-size: 15px; font-weight: 500">
-          <span style="display: inline-flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>No job booked, no charge</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Keep your number</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>No contract</span>
-        </div>
-        <div class="dl" id="dlClock" hidden><span class="dl-dot"></span><span id="dlText"></span></div>
-      </div>
-
-      <!-- product composition -->
-      <div style="flex: 1 1 440px; min-width: 0; max-width: 540px; margin: 0 auto; position: relative; padding: 0 0 92px">
-        <div style="text-align: right; font-size: 12px; color: #8E8CB8; margin-bottom: 10px">Sample call for illustration</div>
-        <div style="background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03)); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; padding: 8px; box-shadow: 0 50px 120px rgba(0,0,0,0.5)">
-          <div style="background: #FFFFFF; border-radius: 18px; overflow: hidden">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px; border-bottom: 1px solid #EEEDF6">
-              <div style="display: flex; align-items: center; gap: 10px; min-width: 0">
-                <div style="width: 34px; height: 34px; border-radius: 10px; background: #3F37C9; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="20" fill="none" stroke="#FFFFFF" stroke-width="7"></circle><path d="M23.5 32.5 L30 39 L41.5 25.5" fill="none" stroke="#2BD9A0" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
-                <div style="min-width: 0"><div style="font-weight: 700; font-size: 15px; color: #14123A">Molly · Live call</div><div style="font-size: 13px; color: #6B6990">Incoming · 9:47 PM</div></div>
-              </div>
-              <div style="display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 600; color: #0B7A57; background: #E6FBF4; padding: 5px 10px; border-radius: 999px; flex-shrink: 0"><span class="bo-pulse" style="width: 7px; height: 7px; border-radius: 50%; background: #10B981"></span>00:42</div>
-            </div>
-            <div style="padding: 18px; display: flex; flex-direction: column; gap: 12px">
-              <div class="bo-wave" aria-hidden="true" style="display: flex; align-items: center; gap: 3px; height: 28px">
-                <span style="width: 3px; height: 8px; background: #C9C6F2; border-radius: 2px"></span><span style="width: 3px; height: 16px; background: #A9A4EE; border-radius: 2px"></span><span style="width: 3px; height: 24px; background: #3F37C9; border-radius: 2px"></span><span style="width: 3px; height: 14px; background: #3F37C9; border-radius: 2px"></span><span style="width: 3px; height: 20px; background: #3F37C9; border-radius: 2px"></span><span style="width: 3px; height: 10px; background: #A9A4EE; border-radius: 2px"></span><span style="width: 3px; height: 26px; background: #3F37C9; border-radius: 2px"></span><span style="width: 3px; height: 18px; background: #3F37C9; border-radius: 2px"></span><span style="width: 3px; height: 12px; background: #A9A4EE; border-radius: 2px"></span><span style="width: 3px; height: 22px; background: #3F37C9; border-radius: 2px"></span><span style="width: 3px; height: 8px; background: #C9C6F2; border-radius: 2px"></span><span style="width: 3px; height: 16px; background: #A9A4EE; border-radius: 2px"></span><span style="width: 3px; height: 6px; background: #C9C6F2; border-radius: 2px"></span>
-                <span style="margin-left: 8px; font-size: 12px; color: #6B6990">Live transcript</span>
-              </div>
-              <div class="bo-msg bo-d0" style="align-self: flex-end; max-width: 85%; background: #3F37C9; color: #FFFFFF; border-radius: 14px 14px 4px 14px; padding: 10px 13px; font-size: 14px; line-height: 1.5">Thanks for calling ABC Heating &amp; Air. This is Molly, the AI assistant. How can I help?</div>
-              <div class="bo-msg bo-d1" style="align-self: flex-start; max-width: 85%; background: #F3F2FA; color: #14123A; border-radius: 14px 14px 14px 4px; padding: 10px 13px; font-size: 14px; line-height: 1.5">Hi, my AC is running but it’s blowing warm air.</div>
-              <div class="bo-msg bo-d2" style="align-self: flex-end; max-width: 85%; background: #3F37C9; color: #FFFFFF; border-radius: 14px 14px 4px 14px; padding: 10px 13px; font-size: 14px; line-height: 1.5">Sorry about that. I can get a technician out tomorrow at 8 AM. Does that work?</div>
-              <div class="bo-msg bo-d3" style="align-self: flex-start; max-width: 85%; background: #F3F2FA; color: #14123A; border-radius: 14px 14px 14px 4px; padding: 10px 13px; font-size: 14px; line-height: 1.5">Yes, perfect.</div>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #EEEDF6; background: #FAFAFD">
-              <div style="padding: 12px 16px; border-right: 1px solid #EEEDF6; min-width: 0"><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #6B6990">ISSUE</div><div style="font-size: 14px; font-weight: 600; color: #14123A; margin-top: 2px">No cooling</div></div>
-              <div style="padding: 12px 16px; border-right: 1px solid #EEEDF6; min-width: 0"><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #6B6990">AREA</div><div style="font-size: 14px; font-weight: 600; color: #14123A; margin-top: 2px">Plano, TX</div></div>
-              <div style="padding: 12px 16px; min-width: 0"><div style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #6B6990">PRIORITY</div><div style="font-size: 14px; font-weight: 600; color: #14123A; margin-top: 2px">Next day</div></div>
-            </div>
-          </div>
-        </div>
-        <!-- floating: owner text -->
-        <div class="bo-pop" style="position: absolute; left: 20px; bottom: 0; width: min(320px, 84%); background: #FFFFFF; border-radius: 16px; padding: 14px 16px; box-shadow: 0 24px 60px rgba(0,0,0,0.4); display: flex; gap: 12px; align-items: flex-start">
-          <div style="width: 38px; height: 38px; border-radius: 11px; background: #2BD9A0; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B0A24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg></div>
-          <div style="min-width: 0"><div style="display: flex; justify-content: space-between; gap: 8px; font-size: 12px; color: #6B6990"><span>Text to owner</span><span>9:49 PM</span></div><div style="font-weight: 700; font-size: 15px; color: #14123A; margin-top: 2px">New job booked · Wed 8:00 AM</div><div style="font-size: 13px; color: #55536F; margin-top: 1px">AC repair · Plano · customer agreed to diagnostic fee</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROBLEM + CALCULATOR -->
-  <section class="bo-reveal" style="padding: 80px 24px">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
-      <div style="max-width: 760px; display: flex; flex-direction: column; gap: 16px">
-        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: #3F37C9">THE PROBLEM</div>
-        <h2 style="margin: 0; font-size: clamp(34px, 4vw, 50px); line-height: 1.06; letter-spacing: -1.6px; font-weight: 700">A missed call is a job your competitor books.</h2>
-        <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #4A4870">When the AC dies, homeowners don’t leave a voicemail. Here’s the same call, two ways.</p>
-      </div>
-      <div class="ba"><div class="ba-c ba-no"><div class="ba-h"><span class="ba-tag">WITHOUT MOLLY</span><span class="ba-t">9:47 PM</span></div><ol><li><span class="ba-i"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><b>Rings and rings</b><span>Your team is on a roof or in an attic.</span></div></li><li><span class="ba-i"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="3.5"/><circle cx="18" cy="12" r="3.5"/><path d="M6 15.5h12"/></svg></span><div><b>Goes to voicemail</b><span>Most homeowners with a dead AC hang up.</span></div></li><li><span class="ba-i"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span><div><b>Calls the next shop</b><span>They pick another HVAC company on Google.</span></div></li></ol><div class="ba-r ba-rn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Job lost to a competitor</div></div><div class="ba-c ba-yes"><div class="ba-h"><span class="ba-tag">WITH MOLLY</span><span class="ba-t">9:47 PM</span></div><ol><li><span class="ba-i"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><b>Molly answers</b><span>In seconds, with your company name.</span></div></li><li><span class="ba-i"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div><b>Books the visit</b><span>Wed 8:00 AM, right on your calendar.</span></div></li><li><span class="ba-i"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><div><b>You get a text</b><span>Name, address, problem and time.</span></div></li></ol><div class="ba-r ba-ry"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Job booked for you</div></div></div>
-      <div style="background: #0F0D2E; border-radius: 28px; padding: 44px; display: flex; flex-wrap: wrap; gap: 44px; color: #FFFFFF">
-        <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
-          <h3 style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.8px">What are missed calls costing you?</h3>
-          <div style="display: flex; flex-direction: column; gap: 8px"><label for="calls" style="display: flex; justify-content: space-between; font-weight: 700; font-size: 16px; color: #E4E3F7"><span>Missed calls per week</span><span style="color: #2BD9A0"><span id="callsV">8</span></span></label><input id="calls" type="range" min="1" max="40" step="1" value="8"></div>
-          <div style="display: flex; flex-direction: column; gap: 8px"><label for="ticket" style="display: flex; justify-content: space-between; font-weight: 700; font-size: 16px; color: #E4E3F7"><span>Average job value</span><span style="color: #2BD9A0">$<span id="ticketV">350</span></span></label><input id="ticket" type="range" min="100" max="2000" step="50" value="350"></div>
-          <div style="display: flex; flex-direction: column; gap: 8px"><label for="rate" style="display: flex; justify-content: space-between; font-weight: 700; font-size: 16px; color: #E4E3F7"><span>Callers who would have booked</span><span style="color: #2BD9A0"><span id="rateV">40</span>%</span></label><input id="rate" type="range" min="10" max="80" step="5" value="40"></div>
-        </div>
-        <div style="flex: 1 1 320px; min-width: 0; background: #1A1847; border: 1px solid #2E2B72; border-radius: 20px; padding: 34px; display: flex; flex-direction: column; justify-content: center; gap: 10px">
-          <div style="font-size: 15px; font-weight: 700; color: #C9C7EE">Revenue you may be losing</div>
-          <div style="font-size: clamp(46px, 5vw, 66px); font-weight: 700; letter-spacing: -2px; color: #2BD9A0; line-height: 1">$<span id="monthly"></span><span style="font-size: 20px; color: #C9C7EE; letter-spacing: 0"> /month</span></div>
-          <div style="font-size: 18px; font-weight: 700">$<span id="yearly"></span> a year</div>
-          <div style="font-size: 13px; color: #A9A7D4">An estimate from the numbers you set.</div>
-          <a href="#start" style="margin-top: 14px; background: #2BD9A0; color: #0F0D2E; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px 22px; border-radius: 12px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center">Win these calls back</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS STORY -->
-  <section class="st" id="how-story" aria-labelledby="st-h">
-    <div class="st-in">
-      <div class="st-head">
-        <div class="st-eb">HOW IT WORKS</div>
-        <h2 id="st-h">From missed call to booked job, in four steps.</h2>
-        <p>Follow one real-life call. Same phone number, nothing new to learn.</p>
-      </div>
-      <div class="st-grid">
-        <ol class="st-steps"><li class="st-step on" data-i="0"><span class="st-n">1</span><div class="st-tx"><h3>A homeowner calls. Your team is busy.</h3><p>Your phone rings as usual. No answer in about 20 seconds, or after hours? The call goes to Molly.</p></div><div class="st-mini"><div class="sv sv-call"><div class="sv-top"><span>9:47 PM</span><span>Incoming call</span></div><div class="sv-av">MG</div><b class="sv-name">Maria G.</b><span class="sv-sub">Plano, TX · calling your business</span><div class="sv-quote">“My AC is running but blowing warm air.”</div><div class="sv-miss"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Your team: no answer after 20s</div><div class="sv-fwd"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Forwarding to Molly…</div></div></div></li><li class="st-step" data-i="1"><span class="st-n">2</span><div class="st-tx"><h3>Molly answers like your front desk.</h3><p>She greets them with your company name, says she’s an AI, and asks what’s wrong. Gas smell or CO? She tells them to get out and rings you right away.</p></div><div class="st-mini"><div class="sv sv-talk"><div class="sv-hd"><span class="sv-logo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Molly</b><span>AI receptionist · live</span></div><span class="sv-live">● 00:18</span></div><div class="sv-b sv-m">Thanks for calling ABC Heating &amp; Air. This is Molly, the AI assistant. How can I help?</div><div class="sv-b sv-c">My AC is blowing warm air.</div><div class="sv-b sv-m">Sorry about that. Can I get your name and address?</div><div class="sv-b sv-c">Maria, 214 Oak Lane, Plano.</div><div class="sv-safe"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Emergency words ring your phone first</div></div></div></li><li class="st-step" data-i="2"><span class="st-n">3</span><div class="st-tx"><h3>She books the visit on your calendar.</h3><p>She offers open times from your calendar, the caller picks one, and she reads it back.</p></div><div class="st-mini"><div class="sv sv-cal"><div class="sv-hd2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><b>Service visits</b><span>This week</span></div><div class="sv-days"><div class="sv-d"><span>Mon</span><i class="sv-slot sv-slotx"></i><i class="sv-slot"></i></div><div class="sv-d"><span>Tue</span><i class="sv-slot sv-slotx"></i><i class="sv-slot"></i></div><div class="sv-d on"><span>Wed</span><i class="sv-slot sv-new"><b>8:00 AM</b>AC repair<br>Maria G.</i><i class="sv-slot"></i></div><div class="sv-d"><span>Thu</span><i class="sv-slot sv-slotx"></i><i class="sv-slot"></i></div><div class="sv-d"><span>Fri</span><i class="sv-slot sv-slotx"></i><i class="sv-slot"></i></div></div><div class="sv-ok"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Booked by Molly · Wed 8:00–10:00 AM</div></div></div></li><li class="st-step" data-i="3"><span class="st-n">4</span><div class="st-tx"><h3>You get a text in seconds.</h3><p>Name, address, problem and time. The recording and transcript are saved too.</p></div><div class="st-mini"><div class="sv sv-phone"><div class="sv-lock"><span class="sv-clock">9:49</span><span class="sv-date">Tuesday</span></div><div class="sv-note"><div class="sv-nh"><span class="sv-app"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><b>BookedOrion</b><span>now</span></div><b class="sv-nt">New job booked · Wed 8:00 AM</b><span class="sv-nb">Maria G. · 214 Oak Lane, Plano · AC blowing warm air · agreed to diagnostic fee</span></div><div class="sv-note sv-note2"><div class="sv-nh"><span class="sv-app"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><b>BookedOrion</b><span>now</span></div><span class="sv-nb">Recording and transcript saved. Tap to listen.</span></div></div></div></li></ol>
-        <div class="st-vis" aria-hidden="true"><div class="st-sticky"><div class="st-glow"></div><div class="st-pane on" data-i="0"><div class="sv sv-call"><div class="sv-top"><span>9:47 PM</span><span>Incoming call</span></div><div class="sv-av">MG</div><b class="sv-name">Maria G.</b><span class="sv-sub">Plano, TX · calling your business</span><div class="sv-quote">“My AC is running but blowing warm air.”</div><div class="sv-miss"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Your team: no answer after 20s</div><div class="sv-fwd"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Forwarding to Molly…</div></div></div><div class="st-pane" data-i="1"><div class="sv sv-talk"><div class="sv-hd"><span class="sv-logo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Molly</b><span>AI receptionist · live</span></div><span class="sv-live">● 00:18</span></div><div class="sv-b sv-m">Thanks for calling ABC Heating &amp; Air. This is Molly, the AI assistant. How can I help?</div><div class="sv-b sv-c">My AC is blowing warm air.</div><div class="sv-b sv-m">Sorry about that. Can I get your name and address?</div><div class="sv-b sv-c">Maria, 214 Oak Lane, Plano.</div><div class="sv-safe"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Emergency words ring your phone first</div></div></div><div class="st-pane" data-i="2"><div class="sv sv-cal"><div class="sv-hd2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><b>Service visits</b><span>This week</span></div><div class="sv-days"><div class="sv-d"><span>Mon</span><i class="sv-slot sv-slotx"></i><i class="sv-slot"></i></div><div class="sv-d"><span>Tue</span><i class="sv-slot sv-slotx"></i><i class="sv-slot"></i></div><div class="sv-d on"><span>Wed</span><i class="sv-slot sv-new"><b>8:00 AM</b>AC repair<br>Maria G.</i><i class="sv-slot"></i></div><div class="sv-d"><span>Thu</span><i class="sv-slot sv-slotx"></i><i class="sv-slot"></i></div><div class="sv-d"><span>Fri</span><i class="sv-slot sv-slotx"></i><i class="sv-slot"></i></div></div><div class="sv-ok"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Booked by Molly · Wed 8:00–10:00 AM</div></div></div><div class="st-pane" data-i="3"><div class="sv sv-phone"><div class="sv-lock"><span class="sv-clock">9:49</span><span class="sv-date">Tuesday</span></div><div class="sv-note"><div class="sv-nh"><span class="sv-app"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><b>BookedOrion</b><span>now</span></div><b class="sv-nt">New job booked · Wed 8:00 AM</b><span class="sv-nb">Maria G. · 214 Oak Lane, Plano · AC blowing warm air · agreed to diagnostic fee</span></div><div class="sv-note sv-note2"><div class="sv-nh"><span class="sv-app"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><b>BookedOrion</b><span>now</span></div><span class="sv-nb">Recording and transcript saved. Tap to listen.</span></div></div></div><div class="st-cap">Example call for illustration</div></div></div>
-      </div>
-      <a class="st-more" href="/how-it-works/">See every step in detail →</a>
-    </div>
-  </section>
-
-  <!-- WHAT MOLLY HANDLES (BENTO) -->
-  <section class="bt" aria-labelledby="bt-h">
-    <div class="bt-in">
-      <div class="bt-head"><div class="bt-eb">WHAT YOU GET</div><h2 id="bt-h">One receptionist. Every job covered.</h2></div>
-      <div class="bt-grid">
-        <div class="bt-c bt-big">
-          <div class="bt-tx"><h3>Every call answered, day and night</h3><p>Your team answers first during the day. Molly covers the misses, the nights and the weekends.</p>
-          <div class="bt-leg"><span><i style="background:#6C63FF"></i>Your team first</span><span><i style="background:#2BD9A0"></i>Molly answers</span><span><i style="background:#FFFFFF"></i>Now in Dallas</span></div></div>
-          <svg class="bt-ring" viewBox="-20 -20 300 300" role="img" aria-label="24-hour coverage: your team answers first during office hours, Molly covers the rest"><circle cx="130" cy="130" r="100" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="26"/><path d="M30.0 130.0 A100 100 0 1 1 226.6 155.9" fill="none" stroke="#2BD9A0" stroke-width="26" stroke-linecap="butt"/><path d="M226.6 155.9 A100 100 0 0 1 30.0 130.0" fill="none" stroke="#6C63FF" stroke-width="26"/><text x="130" y="0" text-anchor="middle" font-size="12" fill="#8E8CB8">12a</text><text x="264" y="134" text-anchor="middle" font-size="12" fill="#8E8CB8">6a</text><text x="130" y="268" text-anchor="middle" font-size="12" fill="#8E8CB8">12p</text><text x="-4" y="134" text-anchor="middle" font-size="12" fill="#8E8CB8">6p</text><g id="ringNow" style="transform-origin:130px 130px"><line x1="130" y1="12" x2="130" y2="48" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/><circle cx="130" cy="8" r="5" fill="#FFFFFF"/></g><text x="130" y="126" text-anchor="middle" font-size="44" font-weight="700" fill="#FFFFFF">24/7</text><text x="130" y="152" text-anchor="middle" font-size="13" fill="#A9A7D4" id="ringLbl">every call covered</text></svg>
-        </div>
-        <div class="bt-c">
-          <div class="bt-vis bt-alert"><span class="bt-ai"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><div><b>Gas smell reported</b><span>Calling the owner now…</span></div></div>
-          <h3>Emergencies reach you first</h3><p>You pick the words. She rings your cell right away.</p>
-        </div>
-        <div class="bt-c">
-          <div class="bt-vis bt-slot"><span class="bt-day">WED</span><div><b>8:00 – 10:00 AM</b><span>AC repair · Maria G.</span></div><span class="bt-ok"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0B0A24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span></div>
-          <h3>Booked on your calendar</h3><p>Google or Outlook. Only the times you leave open.</p>
-        </div>
-        <div class="bt-c">
-          <div class="bt-vis bt-note"><div class="bt-nh"><span class="bt-app"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><b>BookedOrion</b><span>now</span></div><b class="bt-nt">New job · Wed 8:00 AM</b><span class="bt-nb">Maria G. · Plano · AC blowing warm air</span></div>
-          <h3>A text after every call</h3><p>Name, number, address, problem and outcome.</p>
-        </div>
-        <div class="bt-c bt-wide">
-          <div class="bt-log">
-            <div class="bt-row"><span class="bt-t">9:47 PM</span><b>Maria G.</b><span class="bt-r">AC blowing warm air</span><span class="bt-p bt-pg">Booked</span></div>
-            <div class="bt-row"><span class="bt-t">9:12 PM</span><b>Robert K.</b><span class="bt-r">No heat, elderly parent</span><span class="bt-p bt-po">Rang you</span></div>
-            <div class="bt-row"><span class="bt-t">7:30 PM</span><b>Dana P.</b><span class="bt-r">Tune-up price</span><span class="bt-p bt-pg">Booked</span></div>
-            <div class="bt-wave" aria-hidden="true"><i style="height:8px"></i><i style="height:14px"></i><i style="height:22px"></i><i style="height:12px"></i><i style="height:26px"></i><i style="height:18px"></i><i style="height:10px"></i><i style="height:24px"></i><i style="height:16px"></i><i style="height:8px"></i><i style="height:20px"></i><i style="height:28px"></i><i style="height:14px"></i><i style="height:10px"></i><i style="height:22px"></i><i style="height:12px"></i><i style="height:18px"></i><i style="height:8px"></i><i style="height:16px"></i><i style="height:24px"></i><i style="height:10px"></i><i style="height:14px"></i><span>1:24</span></div>
-          </div>
-          <div class="bt-tx2"><h3>Every call on record</h3><p>Summary, outcome, recording and transcript for each call. Open any of them anytime.</p><span class="bt-cap">Example view for illustration</span></div>
-        </div>
-        <div class="bt-c bt-full">
-          <h3>Works with what you already use</h3>
-          <div class="bt-chips"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Your current number</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M12 19.5h.01"/></svg>AT&amp;T · Verizon · T-Mobile</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Google Calendar</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Outlook Calendar</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text alerts</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>Email summaries</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HEAR MOLLY (interactive) -->
-  <section class="bo-reveal" id="demo" style="padding: 80px 24px; background: #F7F7FC">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
-      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
-        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: #3F37C9">HEAR MOLLY</div>
-        <h2 style="margin: 0; font-size: clamp(34px, 4vw, 50px); line-height: 1.06; letter-spacing: -1.6px; font-weight: 700">Test her yourself in 60 seconds.</h2>
-        <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #4A4870">Call the demo line and talk like a homeowner. No sign-up.</p>
-        <ol class="tb-r"><li class="tb-s"><span class="tb-n">1</span><div><b>Call the demo line</b><p>Any hour. She answers as a sample HVAC shop.</p></div></li><li class="tb-s"><span class="tb-n">2</span><div><b>Talk like a homeowner</b><p>Try “My AC is blowing warm air.”</p></div></li><li class="tb-s"><span class="tb-n">3</span><div><b>Watch her book it</b><p>She asks the right questions and offers a time.</p></div></li></ol>
-        <a class="tb-btn" href="tel:+15705219710"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B0A24" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call (570) 521-9710</span></a>
-        <div style="font-size: 13px; color: #6B6990">It’s a demo line, so no real visit gets booked. She’ll tell you she’s an AI.</div>
-      </div>
-      <div style="flex: 1.3 1 520px; min-width: 0; position: relative; background: #0B0A24; border-radius: 26px; padding: 8px; box-shadow: 0 40px 100px rgba(15,13,46,0.35)">
-        <div aria-hidden="true" style="position: absolute; inset: 0; border-radius: 26px; background: radial-gradient(70% 50% at 100% 0%, rgba(63,55,201,0.55), rgba(63,55,201,0) 70%), radial-gradient(50% 40% at 0% 100%, rgba(43,217,160,0.18), rgba(43,217,160,0) 70%)"></div>
-        <div style="position: relative; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 18px; color: #FFFFFF">
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap">
-            <div style="display: flex; align-items: center; gap: 12px; min-width: 0">
-              <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #3F37C9, #6C63FF); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 0 0 4px rgba(63,55,201,0.25)"><svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="20" fill="none" stroke="#FFFFFF" stroke-width="7"></circle><path d="M23.5 32.5 L30 39 L41.5 25.5" fill="none" stroke="#2BD9A0" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
-              <div style="min-width: 0"><div style="font-weight: 700; font-size: 16px">Molly</div><div style="font-size: 13px; color: #A9A7D4">AI receptionist · sample call</div></div>
-            </div>
-            <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #8FF0CF; background: rgba(43,217,160,0.12); border: 1px solid rgba(43,217,160,0.3); padding: 6px 12px; border-radius: 999px"><span class="bo-pulse" style="width: 7px; height: 7px; border-radius: 50%; background: #2BD9A0"></span>Sample call</div>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 10px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 16px">
-            <label for="biz" style="font-weight: 600; font-size: 14px; color: #DCDAF5">Type your company name. Hear how Molly greets your callers.</label>
-            <input id="biz" type="text" placeholder="e.g. ABC Heating &amp; Air" style="font: inherit; font-size: 16px; padding: 13px 14px; border: 1px solid rgba(255,255,255,0.18); border-radius: 10px; background: rgba(255,255,255,0.08); color: #FFFFFF">
-            <div style="font-size: 15px; line-height: 1.55; color: #FFFFFF; background: #3F37C9; border-radius: 14px 14px 14px 4px; padding: 12px 14px"><b>Molly:</b> “Thanks for calling <span id="bizShown">ABC Heating &amp; Air</span>. This is Molly, the AI assistant. This call may be recorded. How can I help?”</div>
-          </div>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px" role="tablist" aria-label="Sample calls" id="tabs">
-            
-          </div>
-          <div id="lines" aria-live="polite" style="display: flex; flex-direction: column; gap: 10px; min-height: 230px"></div>
-          <div style="display: flex; align-items: center; gap: 10px; background: #2BD9A0; color: #0B0A24; font-weight: 700; font-size: 15px; padding: 14px 16px; border-radius: 12px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B0A24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg><span id="outcome"></span></div>
-          <div style="font-size: 12px; color: #A9A7D4">Sample conversations for illustration.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- TRUST & DATA -->
-  <section class="bo-reveal ts" style="padding: 0 24px 80px">
-    <div style="max-width: 1200px; margin: 0 auto; background: #0B0A24; border-radius: 30px; padding: clamp(28px, 5vw, 56px); display: flex; flex-direction: column; gap: 32px; position: relative; overflow: hidden">
-      <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(50% 70% at 0% 0%, rgba(63,55,201,0.5), rgba(63,55,201,0) 70%)"></div>
-      <div style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: flex-end; justify-content: space-between">
-        <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-          <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: #2BD9A0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> TRUST &amp; DATA</div>
-          <h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 700; color: #FFFFFF">Your customers trust your name. We protect it.</h2>
-        </div>
-        <a href="/privacy/" style="color: #8FF0CF; font-weight: 700; font-size: 16px; text-decoration: none">Read our privacy policy →</a>
-      </div>
-      <div class="tsg"><div class="tsi"><span class="tsic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg></span><b>Honest with callers</b><p>Molly says she’s an AI assistant and that the call may be recorded.</p></div><div class="tsi"><span class="tsic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg></span><b>No card numbers</b><p>Molly never asks for or takes payment details over the phone.</p></div><div class="tsi"><span class="tsic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><b>Your data stays yours</b><p>We never sell your customers’ details or send them marketing texts.</p></div><div class="tsi"><span class="tsic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg></span><b>You’re in control</b><p>Listen to any call, and ask us to delete call data anytime.</p></div></div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section class="bo-reveal" id="pricing" style="padding: 80px 24px">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
-      <div style="max-width: 760px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; gap: 16px">
-        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: #3F37C9">PRICING</div>
-        <h2 style="margin: 0; font-size: clamp(34px, 4vw, 50px); line-height: 1.06; letter-spacing: -1.6px; font-weight: 700">One or two booked jobs pay for the month.</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A4870">We set it up · no contract · cancel anytime</p>
-        <div style="align-self: center; display: inline-flex; align-items: center; gap: 10px; margin-top: 6px; background: #E6FBF4; color: #0B5E44; border: 1px solid #BDEFD9; border-radius: 999px; padding: 9px 16px; font-size: 15px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B7A57" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Every plan starts with a free 14-day pilot. No job booked, you pay $0.</div>
-      </div>
-      <div class="pf" role="group" aria-label="Find your plan"><span class="pf-q">When do you miss calls?</span><button type="button" class="pf-b" data-plan="0">Only after hours</button><button type="button" class="pf-b on" data-plan="1">After hours + busy days</button><button type="button" class="pf-b" data-plan="2">Both, and I want follow-ups</button></div>
-      <div class="pf-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; align-items: stretch">
-        <div class="bo-card pc" data-plan="0" style="border: 1px solid #E1E0EE; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 20px">
-          <div><h3 style="margin: 0; font-size: 22px; font-weight: 700">Porchlight</h3><div style="font-size: 15px; color: #4A4870; margin-top: 6px">For after-hours calls</div></div>
-          <div style="font-size: 54px; font-weight: 700; letter-spacing: -2px; line-height: 1">$197<span style="font-size: 17px; color: #4A4870; letter-spacing: 0; font-weight: 600"> /month</span></div>
-          <div style="font-size: 15px; font-weight: 600; color: #4A4870; margin-top: -10px">That’s about $7 a day</div>
-          <div class="cb"><div class="cb-bar"><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-tm"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i></div><div class="cb-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cb-lg"><span><i class="cb-mo"></i>Molly</span><span><i class="cb-tm"></i>Your office</span></div></div>
-          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.4">
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Nights &amp; weekends answered</div>
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Jobs booked on your calendar</div>
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Emergencies ring you first</div>
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Text summary after each call</div>
-          </div>
-          <a href="#start" style="margin-top: auto; border: 2px solid #14123A; color: #14123A; text-decoration: none; font-weight: 700; font-size: 17px; padding: 15px; border-radius: 12px; text-align: center; min-height: 52px; box-sizing: border-box">Start free pilot</a>
-        </div>
-        <div class="pc fit" data-plan="1" style="background: linear-gradient(#0F0D2E, #0F0D2E) padding-box, linear-gradient(140deg, #2BD9A0, #3F37C9 55%, #8F88FF) border-box; border: 2px solid transparent; color: #FFFFFF; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 20px; position: relative; box-shadow: 0 30px 80px rgba(63,55,201,0.35); transform: translateY(-8px)">
-          <div style="position: absolute; top: -13px; left: 34px; background: #2BD9A0; color: #0F0D2E; font-weight: 700; font-size: 12px; letter-spacing: 1.2px; padding: 6px 12px; border-radius: 999px">RECOMMENDED</div>
-          <div><h3 style="margin: 0; font-size: 22px; font-weight: 700">Full Desk</h3><div style="font-size: 15px; color: #C9C7EE; margin-top: 6px">24/7 coverage</div></div>
-          <div style="font-size: 54px; font-weight: 700; letter-spacing: -2px; line-height: 1">$397<span style="font-size: 17px; color: #C9C7EE; letter-spacing: 0; font-weight: 600"> /month</span></div>
-          <div style="font-size: 15px; font-weight: 600; color: #C9C7EE; margin-top: -10px">That’s about $13 a day</div>
-          <div class="cb cb-dk"><div class="cb-bar"><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i></div><div class="cb-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cb-lg"><span><i class="cb-mo"></i>Molly</span><span><i class="cb-bk"></i>Team first, Molly backup</span></div></div>
-          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.4">
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Everything in Porchlight</div>
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Answers when your line is busy during the day</div>
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Upset callers passed to you</div>
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Alerts if anything goes wrong</div>
-          </div>
-          <a href="#start" style="margin-top: auto; background: #2BD9A0; color: #0F0D2E; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px; border-radius: 12px; text-align: center; min-height: 52px; box-sizing: border-box">Start free pilot</a>
-        </div>
-        <div class="bo-card pc" data-plan="2" style="border: 1px solid #E1E0EE; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 20px">
-          <div><h3 style="margin: 0; font-size: 22px; font-weight: 700">Revenue Desk</h3><div style="font-size: 15px; color: #4A4870; margin-top: 6px">Answer, book and win back jobs</div></div>
-          <div style="font-size: 54px; font-weight: 700; letter-spacing: -2px; line-height: 1">$797<span style="font-size: 17px; color: #4A4870; letter-spacing: 0; font-weight: 600"> /month</span></div>
-          <div style="font-size: 15px; font-weight: 600; color: #4A4870; margin-top: -10px">That’s about $27 a day</div>
-          <div class="cb"><div class="cb-bar"><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-bk"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i><i class="cb-mo"></i></div><div class="cb-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cb-lg"><span><i class="cb-mo"></i>Molly</span><span><i class="cb-bk"></i>Team first, Molly backup</span></div></div>
-          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.4">
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Everything in Full Desk</div>
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Estimate follow-up emails</div>
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Tune-up reminder campaigns</div>
-            <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F37C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M5 12l5 5L20 7"></path></svg>Monthly booked-jobs report</div>
-          </div>
-          <a href="#start" style="margin-top: auto; border: 2px solid #14123A; color: #14123A; text-decoration: none; font-weight: 700; font-size: 17px; padding: 15px; border-radius: 12px; text-align: center; min-height: 52px; box-sizing: border-box">Start free pilot</a>
-        </div>
-      </div>
-      
-      <details class="cp"><summary><span>Compare all features</span><span class="cp-ic" aria-hidden="true">+</span></summary>
-        <div class="cp-wrap"><table><thead><tr><th></th><th>Porchlight<small>$197/mo</small></th><th class="cp-hl">Full Desk<small>$397/mo</small></th><th>Revenue Desk<small>$797/mo</small></th></tr></thead><tbody><tr><th scope="row">Answers nights, weekends, holidays</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Answers when your team misses a call by day</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Books jobs on your calendar</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Emergencies ring your cell first</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Text and email summary after each call</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Recordings and transcripts</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Upset callers passed to you</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Estimate follow-up emails</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Tune-up reminder campaigns</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Monthly booked-jobs report</th><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-n" aria-label="Not included">–</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Setup done for you</th><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td><td><span class="cp-y" aria-label="Included">✓</span></td></tr><tr><th scope="row">Contract</th><td>None</td><td>None</td><td>None</td></tr></tbody></table></div></details>
-      
-    </div>
-  </section>
-
-  <!-- FOUNDER + GUARANTEE + FORM -->
-  <section class="bo-reveal" id="start" style="padding: 0 24px 80px">
-    <div style="max-width: 1200px; margin: 0 auto; background: #0F0D2E; border-radius: 30px; padding: 56px 48px; display: flex; flex-wrap: wrap; gap: 48px; color: #FFFFFF">
-      <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
-        <div style="display: inline-flex; align-self: flex-start; background: #2BD9A0; color: #0F0D2E; font-weight: 700; font-size: 13px; letter-spacing: 1.2px; padding: 8px 14px; border-radius: 999px">FREE 14-DAY PILOT</div>
-        <h2 style="margin: 0; font-size: clamp(34px, 4vw, 52px); line-height: 1.04; letter-spacing: -1.8px; font-weight: 700">If Molly doesn’t book you a job, you pay nothing.</h2>
-        <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #C9C7EE">We set it all up. Run it for 14 days. Keep it only if it books you work.</p>
-        <div style="display: flex; gap: 16px; align-items: center; background: #1A1847; border: 1px solid #2E2B72; border-radius: 18px; padding: 18px">
-          <img src="/siam-2.jpg" alt="Siam Ahmed, founder of BookedOrion" width="64" height="64" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #2BD9A0">
-          <div style="font-size: 15px; line-height: 1.55; color: #E4E3F7">“I set up every pilot myself and check Molly’s calls with you in week one.” <span style="font-weight: 700; color: #FFFFFF">— Siam Ahmed, Founder</span></div>
-        </div>
-        <a href="/getting-started/" style="align-self: flex-start; color: #8FF0CF; font-weight: 700; font-size: 16px; text-decoration: none">Live in days, about 30 minutes of your time. See the plan →</a>
-      </div>
-      <form id="pilotForm" style="flex: 1 1 360px; min-width: 0; background: #FFFFFF; color: #14123A; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 16px" aria-label="Start your free pilot">
-        <h3 style="margin: 0; font-size: 22px; font-weight: 700">Claim your free pilot</h3>
-        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-name" style="font-weight: 700; font-size: 15px">Your name</label><input id="f-name" type="text" autocomplete="name" required style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
-        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-company" style="font-weight: 700; font-size: 15px">Company</label><input id="f-company" type="text" autocomplete="organization" required style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
-        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-email" style="font-weight: 700; font-size: 15px">Email</label><input id="f-email" type="email" autocomplete="email" required style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
-        <div style="display: flex; flex-direction: column; gap: 6px"><label for="f-phone" style="font-weight: 700; font-size: 15px">Phone <span style="font-weight: 500; color: #6B6990">(optional)</span></label><input id="f-phone" type="tel" autocomplete="tel" inputmode="tel" style="font: inherit; font-size: 16px; padding: 14px; border: 1.5px solid #CFCDE3; border-radius: 10px"></div>
-        <input type="checkbox" name="botcheck" id="f-bot" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none">
-        <button type="submit" id="f-submit" style="font: inherit; background: #3F37C9; color: #FFFFFF; border: 0; font-weight: 700; font-size: 18px; padding: 16px; border-radius: 12px; min-height: 54px; cursor: pointer">Start my free pilot</button>
-        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #4A4870; line-height: 1.5">
-          <div id="formOk" role="status" hidden style="background: #E6FBF4; color: #0B5E44; border-radius: 12px; padding: 16px; font-size: 15px; line-height: 1.55"><b style="font-size: 16px">You’re in. ✓</b><br>Thanks! Siam will email you within one business day with your setup questions.</div>
-          <div id="formErr" role="alert" hidden style="background: #FFF1E8; color: #9A3412; border-radius: 12px; padding: 12px 14px; font-size: 14px"></div>
-          <span>We reply within one business day. No sales calls unless you ask.</span>
-          <div id="formDone" hidden style="background: #E6FBF4; color: #0B5E44; border-radius: 12px; padding: 14px; font-size: 14px; line-height: 1.55"><b>One last step.</b> Send these details to <b style="user-select: all">siam@bookedorion.com</b> and we’ll set up your pilot. <button type="button" id="copyBtn" style="font: inherit; font-weight: 700; margin-top: 8px; background: #0B5E44; color: #FFFFFF; border: 0; border-radius: 8px; padding: 9px 12px; min-height: 40px; cursor: pointer">Copy details</button><pre id="formText" style="white-space: pre-wrap; font: inherit; margin: 8px 0 0; user-select: all"></pre></div>
-          <span>We never sell your details. We don’t send marketing texts.</span>
-          <span>Prefer email? Write to <a href="mailto:siam@bookedorion.com" style="font-weight: 700">siam@bookedorion.com</a></span>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="bo-reveal" id="faq" style="padding: 0 24px 80px">
-    <div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
-      <h2 style="margin: 0; text-align: center; font-size: clamp(34px, 4vw, 50px); line-height: 1.06; letter-spacing: -1.6px; font-weight: 700">Questions owners ask</h2>
-      <div style="display: flex; flex-direction: column; gap: 12px">
-        <details style="background: #F7F7FC; border-radius: 16px; padding: 20px 24px"><summary style="font-weight: 700; font-size: 18px; cursor: pointer; display: flex; justify-content: space-between; gap: 16px"><span>How is Molly different from other AI receptionists?</span><span aria-hidden="true" style="color: #3F37C9">+</span></summary><p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #4A4870">Most AI receptionist apps are built for any business and you set them up yourself. Molly is built only for HVAC, a real person sets her up for your shop, your team can still answer first, and you pay nothing if she doesn’t book a job in your pilot.</p></details>
-        <details style="background: #F7F7FC; border-radius: 16px; padding: 20px 24px"><summary style="font-weight: 700; font-size: 18px; cursor: pointer; display: flex; justify-content: space-between; gap: 16px"><span>Can my team still answer first?</span><span aria-hidden="true" style="color: #3F37C9">+</span></summary><p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #4A4870">Yes. Your phone rings as usual. If nobody picks up in about 20 seconds, or the line is busy, the call goes to Molly. After hours, she can answer every call. You choose, and you can switch anytime.</p></details>
-        <details style="background: #F7F7FC; border-radius: 16px; padding: 20px 24px"><summary style="font-weight: 700; font-size: 18px; cursor: pointer; display: flex; justify-content: space-between; gap: 16px"><span>Will callers know it’s an AI?</span><span aria-hidden="true" style="color: #3F37C9">+</span></summary><p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #4A4870">Yes. Molly says she’s an AI assistant and that the call may be recorded.</p></details>
-        <details style="background: #F7F7FC; border-radius: 16px; padding: 20px 24px"><summary style="font-weight: 700; font-size: 18px; cursor: pointer; display: flex; justify-content: space-between; gap: 16px"><span>Do I change my phone number?</span><span aria-hidden="true" style="color: #3F37C9">+</span></summary><p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #4A4870">No. You keep your number and your Google listing. Unanswered calls forward to Molly.</p></details>
-        <details style="background: #F7F7FC; border-radius: 16px; padding: 20px 24px"><summary style="font-weight: 700; font-size: 18px; cursor: pointer; display: flex; justify-content: space-between; gap: 16px"><span>What if a caller has a real emergency?</span><span aria-hidden="true" style="color: #3F37C9">+</span></summary><p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #4A4870">You pick the emergency words. When Molly hears one, she rings your phone first.</p></details>
-        <details style="background: #F7F7FC; border-radius: 16px; padding: 20px 24px"><summary style="font-weight: 700; font-size: 18px; cursor: pointer; display: flex; justify-content: space-between; gap: 16px"><span>What does the pilot cost?</span><span aria-hidden="true" style="color: #3F37C9">+</span></summary><p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #4A4870">Nothing if Molly doesn’t book a job in 14 days. After that, pick a plan or walk away.</p></details>
-        <details style="background: #F7F7FC; border-radius: 16px; padding: 20px 24px"><summary style="font-weight: 700; font-size: 18px; cursor: pointer; display: flex; justify-content: space-between; gap: 16px"><span>Does it work with ServiceTitan, Jobber or Housecall Pro?</span><span aria-hidden="true" style="color: #3F37C9">+</span></summary><p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #4A4870">Every booking is sent to you by text and email with all the details, ready to add. Ask us about direct integration.</p></details>
-        <details style="background: #F7F7FC; border-radius: 16px; padding: 20px 24px"><summary style="font-weight: 700; font-size: 18px; cursor: pointer; display: flex; justify-content: space-between; gap: 16px"><span>What if Molly gets something wrong?</span><span aria-hidden="true" style="color: #3F37C9">+</span></summary><p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #4A4870">Tell us and we fix her script, usually the same day. If she isn’t sure, she takes a message and you call back.</p></details>
-      </div>
-      <a href="/how-it-works/" style="align-self: center; font-weight: 700; font-size: 16px; text-decoration: none">More answers on How it works →</a>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="bo-reveal" style="padding: 0 24px 96px">
-    <div style="position: relative; overflow: hidden; max-width: 1200px; margin: 0 auto; background: #0B0A24; border-radius: 30px; padding: 80px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px; color: #FFFFFF">
-      <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(60% 80% at 50% 0%, rgba(63,55,201,0.75), rgba(63,55,201,0) 70%), radial-gradient(40% 60% at 85% 100%, rgba(43,217,160,0.25), rgba(43,217,160,0) 70%)"></div>
-      <div aria-hidden="true" style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 48px 48px; -webkit-mask-image: radial-gradient(60% 70% at 50% 30%, #000, transparent); mask-image: radial-gradient(60% 70% at 50% 30%, #000, transparent)"></div>
-      <h2 style="margin: 0; font-size: clamp(32px, 4vw, 52px); line-height: 1.06; letter-spacing: -1.6px; font-weight: 700; max-width: 760px; position: relative">Tonight’s calls can be tomorrow’s <span style="background: linear-gradient(90deg, #2BD9A0, #8FF0CF); -webkit-background-clip: text; background-clip: text; color: transparent">booked jobs.</span></h2>
-      <p style="margin: 0; position: relative; font-size: 19px; line-height: 1.6; color: #B9B7DC; max-width: 560px">We set it all up for you. Free for 14 days. No job booked, no charge.</p>
-      <div style="position: relative; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px">
-        <a class="bo-btn" href="#start" style="box-shadow: 0 10px 30px rgba(43,217,160,0.3); background: #2BD9A0; color: #0F0D2E; text-decoration: none; font-weight: 700; font-size: 18px; padding: 18px 26px; border-radius: 12px; min-height: 56px; box-sizing: border-box; display: inline-flex; align-items: center">Start my free 14-day pilot</a>
-        <a class="bo-btn" href="tel:+15705219710" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2); color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 18px; padding: 17px 24px; border-radius: 12px; min-height: 56px; box-sizing: border-box; display: inline-flex; align-items: center"><span style="white-space: nowrap">Call Molly: (570) 521-9710</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bo-footer" style="background: #0B0A24; color: #B9B7DC; padding: 72px 24px 36px; border-top: 1px solid rgba(255,255,255,0.06)">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
-      <div style="display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between">
-        <div style="flex: 1 1 300px; min-width: 0; max-width: 380px; display: flex; flex-direction: column; gap: 14px">
-          <div style="display: flex; align-items: center; gap: 1px; font-size: 24px; font-weight: 700; letter-spacing: -0.8px; color: #FFFFFF"><span>Booked</span><svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true" style="margin: 0 2px"><circle cx="32" cy="32" r="26" fill="none" stroke="#2BD9A0" stroke-width="8"></circle><path d="M21 33 L29 41 L44 23" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>rion</span></div>
-          <div style="font-size: 15px; line-height: 1.6">Every call answered. Every job booked. The AI receptionist made for HVAC shops across Dallas–Fort Worth.</div>
-          <a href="tel:+15705219710" style="color: #2BD9A0; font-weight: 700; font-size: 15px; text-decoration: none">Call Molly: (570) 521-9710</a>
-          <a class="bo-btn" href="#start" style="align-self: flex-start; margin-top: 6px; background: #2BD9A0; color: #0B0A24; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 18px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Start free pilot</a>
-        </div>
-        <div style="display: flex; flex-wrap: wrap; gap: 48px">
-        <div style="display: flex; flex-direction: column; gap: 12px; min-width: 140px">
-          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; color: #FFFFFF">PRODUCT</div>
-          <a href="#demo" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">Hear Molly</a>
-          <a href="/how-it-works/" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">How it works</a>
-          <a href="#pricing" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">Pricing</a>
-          <a href="/getting-started/" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">Getting started</a>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 12px; min-width: 140px">
-          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; color: #FFFFFF">COMPANY</div>
-          <a href="/about/" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">About</a>
-          <a href="/blog/" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">Blog</a>
-          <a href="mailto:siam@bookedorion.com" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">Contact</a>
-          <a href="#start" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">Free pilot</a>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 12px; min-width: 140px">
-          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; color: #FFFFFF">LEGAL</div>
-          <a href="/privacy/" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">Privacy</a>
-          <a href="/terms/" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">Terms</a>
-          <a href="/sms-terms/" style="color: #B9B7DC; text-decoration: none; font-size: 15px" class="bo-flink">SMS terms</a>
-        </div>
-        </div>
-      </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 14px; color: #8E8CB8">
-        <span>© 2026 BookedOrion. All rights reserved.</span>
-        <span>Serving Dallas · Fort Worth · Plano · Frisco · Arlington · Irving · McKinney · Denton</span>
-      </div>
-    </div>
-  </footer>
-  <!-- MOBILE STICKY CTA -->
-  <div class="bo-mcta" style="display: none; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60; background: rgba(11,10,36,0.92); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 10px; gap: 10px; box-shadow: 0 20px 50px rgba(0,0,0,0.35)">
-    <a href="tel:+15705219710" style="flex: 1; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.18)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Molly</a>
-    <a href="#start" style="flex: 1.4; background: #2BD9A0; color: #0B0A24; text-decoration: none; font-weight: 700; font-size: 15px; min-height: 46px; display: flex; align-items: center; justify-content: center; border-radius: 10px">Start free pilot</a>
+    <figure class="console" aria-label="Demo: how one missed call becomes a booked job">
+      <div class="con-bar"><span class="con-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="con-title">Molly · call log</span><span class="con-demo">Demo · sample data</span></div>
+      <ol class="con-steps">
+        <li class="cs cs-call">
+          <time>9:47 PM</time><span class="cs-dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div class="cs-body"><b>Incoming call</b><p>Maria G. · Plano, TX</p><span class="cchip cchip-warn">Office closed</span></div>
+        </li>
+        <li class="cs cs-call">
+          <time>9:47 PM</time><span class="cs-dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5"/></svg></span>
+          <div class="cs-body"><b>Molly answers</b>
+            <p class="tx"><em>Molly</em>Thanks for calling ABC Heating &amp; Air. This is Molly, the AI assistant.</p>
+            <p class="tx"><em>Caller</em>My AC is running but blowing warm air.</p></div>
+        </li>
+        <li class="cs cs-book">
+          <time>9:48 PM</time><span class="cs-dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+          <div class="cs-body"><b>Visit booked</b><div class="slot"><span>WED</span><div><b>8:00–10:00 AM</b><small>AC repair · 214 Oak Ln</small></div></div></div>
+        </li>
+        <li class="cs cs-note">
+          <time>9:48 PM</time><span class="cs-dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <div class="cs-body"><b>Owner notified</b><div class="sms">New job booked: Maria G., 214 Oak Ln, Plano. AC blowing warm air. Wed 8–10 AM.</div></div>
+        </li>
+      </ol>
+      <figcaption>Sample call for illustration. Not live customer data.</figcaption>
+    </figure>
   </div>
-</div>
+</section>
 
-<script>
-(function(){var b=document.querySelector(".bo-mcta"),h=document.getElementById("top"),f=document.getElementById("start");if(!b||!h)return;function u(){var y=h.getBoundingClientRect().bottom;var fv=f&&f.getBoundingClientRect().top<innerHeight&&f.getBoundingClientRect().bottom>0;b.classList.toggle("on",y<0&&!fv);}addEventListener("scroll",u,{passive:true});u();})();
-(function(){
-  var state={calls:8,ticket:350,rate:40,scene:0,company:''};
-  function companyShown(){return (state.company||'').trim()||'ABC Heating & Air';}
-  function scenes(){
-    var companyShown_=companyShown();
-    var scenes=[
-      { label: 'AC not cooling', outcome: 'Job booked · Wed 8:00 AM · owner texted', lines: [
-        ['c', 'Caller:', 'Hi, my AC is running but blowing warm air.'],
-        ['m', 'Molly:', 'Sorry about that. I’m Molly, the AI assistant for ' + companyShown_ + '. Can I get your address?'],
-        ['c', 'Caller:', '214 Oak Lane, Plano.'],
-        ['m', 'Molly:', 'Thanks. I can get a technician out tomorrow at 8 AM. Does that work?']
-      ]},
-      { label: 'Gas smell (emergency)', outcome: 'Owner called in seconds · caller told to leave the house', lines: [
-        ['c', 'Caller:', 'I smell gas near my furnace.'],
-        ['m', 'Molly:', 'Please leave the house now and call 911 or your gas company from outside.'],
-        ['m', 'Molly:', 'I’m calling the owner right now so a technician can reach you.'],
-        ['c', 'Caller:', 'Okay, we’re outside.']
-      ]},
-      { label: 'Price question', outcome: 'Diagnostic visit booked · Thu 1:00 PM', lines: [
-        ['c', 'Caller:', 'How much do you charge to come look at my unit?'],
-        ['m', 'Molly:', 'Our diagnostic visit has a flat fee, paid to the technician on site.'],
-        ['c', 'Caller:', 'That’s fine. Can someone come Thursday?'],
-        ['m', 'Molly:', 'Yes. I have 1 PM open. Shall I book it?']
-      ]}
-    ];
-    return scenes;
-  }
-  var tabBase='font: inherit; font-size: 15px; font-weight: 700; padding: 11px 16px; border-radius: 10px; cursor: pointer; min-height: 44px; ';
-  var on='background: #FFFFFF; color: #0B0A24; border: 1px solid #FFFFFF;';
-  var off='background: rgba(255,255,255,0.06); color: #DCDAF5; border: 1px solid rgba(255,255,255,0.14);';
-  var mStyle='align-self: flex-end; max-width: 86%; background: #3F37C9; color: #FFFFFF; border-radius: 16px 16px 4px 16px; padding: 12px 14px; font-size: 15px; line-height: 1.5; animation: boIn .4s ease both;';
-  var cStyle='align-self: flex-start; max-width: 86%; background: rgba(255,255,255,0.08); color: #FFFFFF; border-radius: 16px 16px 16px 4px; padding: 12px 14px; font-size: 15px; line-height: 1.5; animation: boIn .4s ease both;';
-  function el(id){return document.getElementById(id);}
-  function renderDemo(){
-    var sc=scenes(); var cur=sc[state.scene];
-    el('bizShown').textContent=companyShown();
-    var tabs=el('tabs'); tabs.textContent='';
-    sc.forEach(function(s,i){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',i===state.scene?'true':'false');b.style.cssText=tabBase+(i===state.scene?on:off);b.textContent=s.label;b.onclick=function(){state.scene=i;renderDemo();};tabs.appendChild(b);});
-    var lines=el('lines'); lines.textContent='';
-    cur.lines.forEach(function(l,i){var d=document.createElement('div');d.style.cssText=(l[0]==='m'?mStyle:cStyle)+'animation-delay:'+(i*0.25)+'s';var w=document.createElement('span');w.style.fontWeight='700';w.textContent=l[1];d.appendChild(w);d.appendChild(document.createTextNode(' '+l[2]));lines.appendChild(d);});
-    el('outcome').textContent=cur.outcome;
-  }
-  function fmt(n){return n.toLocaleString('en-US');}
-  function renderCalc(){
-    var monthly=Math.round(state.calls*4.33*(state.rate/100)*state.ticket);
-    el('callsV').textContent=state.calls; el('ticketV').textContent=fmt(state.ticket); el('rateV').textContent=state.rate;
-    el('monthly').textContent=fmt(monthly); el('yearly').textContent=fmt(monthly*12);
-  }
-  el('biz').addEventListener('input',function(e){state.company=e.target.value;renderDemo();});
-  ['calls','ticket','rate'].forEach(function(k){el(k).addEventListener('input',function(e){state[k]=Number(e.target.value);renderCalc();});});
-  el('pilotForm').addEventListener('submit',function(e){
-    e.preventDefault();
-    var name=el('f-name').value.trim(), company=el('f-company').value.trim(), email=el('f-email').value.trim(), phone=el('f-phone').value.trim();
-    var t='Free pilot request\nName: '+name+'\nCompany: '+company+'\nEmail: '+email+'\nPhone: '+phone;
-    var btn=el('f-submit'); btn.disabled=true; btn.textContent='Sending…'; el('formErr').hidden=true;
-    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
-      body:JSON.stringify({access_key:'d2b56b26-ace6-4f6d-a1ac-23340b566c8b',subject:'New pilot request: '+company,from_name:'BookedOrion website',name:name,company:company,email:email,phone:phone,replyto:email,botcheck:el('f-bot').checked})})
-    .then(function(r){return r.json();})
-    .then(function(d){
-      if(d&&d.success){el('formOk').hidden=false;btn.hidden=true;['f-name','f-company','f-email','f-phone'].forEach(function(id){el(id).disabled=true;});}
-      else{throw new Error((d&&d.message)||'failed');}
-    })
-    .catch(function(){
-      btn.disabled=false; btn.textContent='Start my free pilot';
-      el('formErr').textContent='We couldn’t send that just now. Please email the details below instead.'; el('formErr').hidden=false;
-      el('formText').textContent=t; el('formDone').hidden=false;
-    });
-  });
-  el('copyBtn').addEventListener('click',function(){
-    var t=el('formText').textContent, b=this;
-    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';},function(){sel();});}catch(_){sel();}
-    function sel(){var r=document.createRange();r.selectNodeContents(el('formText'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);}
-  });
-  renderDemo(); renderCalc();
-})();
-</script>
+<!-- PROBLEM -->
+<section class="sec sec-paper" id="problem">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-l">
+        <p class="eyebrow-d">The problem</p>
+        <h2>A missed call is a job your competitor books.</h2>
+        <p class="lead">When the AC dies, most homeowners don’t leave a voicemail. They call the next shop on Google.</p>
+      </div>
+      <div class="vs" role="group" aria-label="The same call, two ways">
+        <div class="vs-col vs-no"><p class="vs-h">Without Molly</p>
+          <ol><li>Rings while your team is on a job</li><li>Goes to voicemail</li><li>Caller hangs up</li><li>Books with another shop</li></ol>
+          <p class="vs-r"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Job lost</p></div>
+        <div class="vs-col vs-yes"><p class="vs-h">With Molly</p>
+          <ol><li>Answered in seconds, with your company name</li><li>Gets name, address and problem</li><li>Books a time on your calendar</li><li>You get a text</li></ol>
+          <p class="vs-r"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Job booked</p></div>
+      </div>
+    </div>
 
-<script>
-(function(){
-  var el=document.getElementById('dlClock'),tx=document.getElementById('dlText');
-  function upd(){try{var d=new Date();var tf=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'2-digit'}).format(d);
-    var h=Number(new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',hourCycle:'h23'}).format(d));
-    var wd=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short'}).format(d);
-    var open=wd!=='Sun'&&h>=7&&h<18;
-    tx.innerHTML=open?'Right now in Dallas it’s <b>'+tf+'</b>. Your techs are on jobs, so some calls go unanswered. Molly picks those up.':'Right now in Dallas it’s <b>'+tf+'</b>. Most HVAC offices are closed. Molly would answer that call.';
-    el.hidden=false;}catch(e){}}
-  if(el&&tx){upd();setInterval(upd,30000);}
-  var hero=document.getElementById('top'),sp=hero&&hero.querySelector('.spot');
-  if(sp&&window.matchMedia('(pointer:fine)').matches&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-    hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();sp.style.setProperty('--mx',(e.clientX-r.left)+'px');sp.style.setProperty('--my',(e.clientY-r.top)+'px');});}
-  var steps=[].slice.call(document.querySelectorAll('.st-step')),panes=[].slice.call(document.querySelectorAll('.st-pane'));
-  function act(i){steps.forEach(function(s,k){s.classList.toggle('on',k===i);});panes.forEach(function(p,k){p.classList.toggle('on',k===i);});}
-  if(steps.length&&'IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting)act(Number(en.target.getAttribute('data-i')));});},{rootMargin:'-45% 0px -45% 0px'});
-    steps.forEach(function(s){io.observe(s);s.addEventListener('click',function(){act(Number(s.getAttribute('data-i')));});});}
-})();
-</script>
-<script>
-(function(){
-  var bar=document.querySelector('.sp-bar'),hd=document.querySelector('.hd');
-  function sc(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;if(bar)bar.style.setProperty('--sp',m>0?(h.scrollTop/m):0);if(hd)hd.classList.toggle('glass',h.scrollTop>40);}
-  addEventListener('scroll',sc,{passive:true});sc();
-  var g=document.getElementById('ringNow'),lb=document.getElementById('ringLbl');
-  function ring(){try{var d=new Date();var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(d);var h=0,m=0;p.forEach(function(x){if(x.type==='hour')h=Number(x.value);if(x.type==='minute')m=Number(x.value);});
-    var deg=((h+m/60)/24)*360;g.style.transform='rotate('+deg+'deg)';
-    var wd=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short'}).format(d);var open=wd!=='Sun'&&h>=7&&h<18;
-    lb.textContent=open?'now: team first, Molly backs up':'now: Molly is answering';}catch(e){}}
-  if(g&&lb){ring();setInterval(ring,60000);}
-  var bs=[].slice.call(document.querySelectorAll('.pf-b')),cs=[].slice.call(document.querySelectorAll('.pc'));
-  cs.forEach(function(c){var s=document.createElement('span');s.className='fit-tag';s.textContent='✓ BEST FIT';c.appendChild(s);});
-  bs.forEach(function(b){b.addEventListener('click',function(){var k=b.getAttribute('data-plan');bs.forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false');});cs.forEach(function(c){c.classList.toggle('fit',c.getAttribute('data-plan')===k);});});});
-})();
-</script>
+    <div class="mc" aria-labelledby="mc-h">
+      <div class="mc-in">
+        <h3 id="mc-h">What are missed calls costing you?</h3>
+        <label class="rng" for="calls"><span>Missed calls per week</span><output id="callsV">8</output></label>
+        <input id="calls" type="range" min="1" max="40" step="1" value="8">
+        <label class="rng" for="ticket"><span>Average job value</span><output>$<span id="ticketV">350</span></output></label>
+        <input id="ticket" type="range" min="100" max="2000" step="25" value="350">
+        <label class="rng" for="rate"><span>Callers who would have booked</span><output><span id="rateV">40</span>%</output></label>
+        <input id="rate" type="range" min="10" max="80" step="5" value="40">
+      </div>
+      <div class="mc-out" aria-live="polite">
+        <p class="est">Estimate</p>
+        <p class="mc-big">$<span id="monthly">4,850</span><small>/month</small></p>
+        <p class="yr">$<span id="yearly">58,200</span> a year</p>
+        <p class="how">Missed calls × 4.33 weeks × booking rate × job value. Your numbers, not a promise.</p>
+        <a class="b b-mint" href="#start">Win these calls back</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW MOLLY HANDLES A CALL -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow-d">How it works</p><h2>How Molly handles a call.</h2><p class="lead">Same phone number. Nothing new to install. Here’s one call from ring to booked job.</p></div>
+    <ol class="flow">
+      <li class="flw fl-call"><span class="fl-n">1</span><p class="fl-k">Call handling</p><h3>Answer</h3><p>Your phone rings first. No answer in about 20 seconds, busy, or after hours? Molly picks up with your company name.</p>
+        <div class="frag"><span class="frag-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span>“Thanks for calling ABC Heating &amp; Air…”</span></div></li>
+      <li class="flw fl-call"><span class="fl-n">2</span><p class="fl-k">Call handling</p><h3>Qualify</h3><p>She asks what’s wrong, gets the name, address and ZIP, and checks you serve that area.</p>
+        <div class="frag frag-list"><span>Name</span><span>Address</span><span>Problem</span><span>ZIP ✓</span></div></li>
+      <li class="flw fl-book"><span class="fl-n">3</span><p class="fl-k">Scheduling</p><h3>Book</h3><p>She offers open times from your calendar, the caller picks one, and she reads it back.</p>
+        <div class="frag"><span class="frag-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><span>Wed · 8:00–10:00 AM</span></div></li>
+      <li class="flw fl-note"><span class="fl-n">4</span><p class="fl-k">Owner notification</p><h3>Notify</h3><p>You get a text and email in seconds. The recording and transcript are saved.</p>
+        <div class="frag"><span class="frag-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span>New job booked · Maria G.</span></div></li>
+    </ol>
+    <div class="emerg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><p><b>Emergencies skip the line.</b> Gas smell, CO alarm, smoke or sparks: Molly tells the caller to get safe and calls your cell right away.</p></div>
+    <p class="more-link"><a href="/how-it-works/">See every step in detail →</a></p>
+  </div>
+</section>
+
+<!-- DEMO -->
+<section class="sec sec-navy" id="demo">
+  <div class="wrap demo">
+    <div class="demo-l">
+      <p class="eyebrow-l">Hear Molly</p>
+      <h2>Test her yourself in 60 seconds.</h2>
+      <p class="lead">Call the demo line and talk like a homeowner. No sign-up.</p>
+      <ol class="steps3"><li><b>Call the demo line.</b> Any hour. She answers as a sample HVAC shop.</li><li><b>Say what’s wrong.</b> Try “My AC is blowing warm air.”</li><li><b>Listen to her book it.</b> She asks the right questions and offers a time.</li></ol>
+      <a class="b b-mint b-lg" href="tel:+15705219710"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (570) 521-9710</a>
+      <p class="fine">It’s a demo line, so no real visit gets booked. She’ll tell you she’s an AI.</p>
+    </div>
+    <div class="demo-r">
+      <div class="dm-top"><span class="dm-av"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Molly</b><small>Sample conversations</small></div><span class="con-demo">Demo</span></div>
+      <label class="dm-lbl" for="biz">Type your company name to hear Molly’s greeting</label>
+      <input id="biz" type="text" placeholder="e.g. ABC Heating &amp; Air" autocomplete="organization">
+      <p class="dm-greet"><b>Molly:</b> “Thanks for calling <span id="bizShown">ABC Heating &amp; Air</span>. This is Molly, the AI assistant. This call may be recorded. How can I help?”</p>
+      <div class="dm-tabs" role="tablist" aria-label="Sample calls" id="tabs"></div>
+      <div id="lines" class="dm-lines" aria-live="polite"></div>
+      <p class="dm-out"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span id="outcome"></span></p>
+      <p class="fine">Sample conversations for illustration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES & BOUNDARIES -->
+<section class="sec sec-paper" id="capabilities">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow-d">What you get</p><h2>What Molly does, and what she never does.</h2></div>
+    <div class="cap">
+      <div class="cap-col"><h3>Molly will</h3><ul class="cap-yes">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Answer missed, after-hours and busy-line calls</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Say she’s an AI and that the call may be recorded</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Book visits only into times you leave open</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Quote only the fees you approve</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Ring your cell for emergencies and upset callers</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Send a summary, recording and transcript of every call</li></ul></div>
+      <div class="cap-col"><h3>Molly won’t</h3><ul class="cap-no">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Take card numbers over the phone</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Diagnose a system or promise a repair</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Pretend to be a person</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Make sales calls or send marketing texts</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Sell or share your customers’ details</li></ul></div>
+    </div>
+    <div class="works"><p>Works with what you already use</p><ul><li>Your current number</li><li>AT&amp;T · Verizon · T-Mobile</li><li>Google Calendar</li><li>Outlook Calendar</li><li>Text and email alerts</li></ul><a href="/privacy/">How we handle data →</a></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="sec" id="pricing">
+  <div class="wrap">
+    <div class="sec-head center"><p class="eyebrow-d">Pricing</p><h2>Simple monthly plans.</h2><p class="lead">Every plan starts with a free 14-day pilot. We set it up. No contract, cancel anytime.</p></div>
+    <div class="finder" role="group" aria-label="Find your plan"><span>When do you miss calls?</span>
+      <button type="button" data-plan="0" aria-pressed="false">Only after hours</button>
+      <button type="button" data-plan="1" aria-pressed="true" class="on">After hours + busy days</button>
+      <button type="button" data-plan="2" aria-pressed="false">Both, plus follow-ups</button></div>
+    <div class="plans"><div class="pl" data-plan="0">
+          <div class="pl-tag">Recommended</div>
+          <h3>Porchlight</h3><p class="pl-sub">For after-hours calls</p>
+          <div class="pl-price"><b>$197</b><span>/month</span></div>
+          <p class="pl-day">About $7 a day</p>
+          <div class="cv" aria-hidden="true"><div class="cv-bar"><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-tm"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i></div><div class="cv-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cv-lg"><span><i class="cv-mo"></i>Molly</span><span><i class="cv-tm"></i>Your office</span></div></div>
+          <ul><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Nights & weekends answered</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Jobs booked on your calendar</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Emergencies ring you first</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Text summary after each call</span></li></ul>
+          <a class="b b-line" href="#start">Start free pilot</a>
+        </div><div class="pl is-rec" data-plan="1">
+          <div class="pl-tag">Recommended</div>
+          <h3>Full Desk</h3><p class="pl-sub">After hours + busy daytime</p>
+          <div class="pl-price"><b>$397</b><span>/month</span></div>
+          <p class="pl-day">About $13 a day</p>
+          <div class="cv" aria-hidden="true"><div class="cv-bar"><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i></div><div class="cv-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cv-lg"><span><i class="cv-mo"></i>Molly</span><span><i class="cv-bk"></i>Team first, Molly backup</span></div></div>
+          <ul><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Everything in Porchlight</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Answers when your line is busy during the day</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Upset callers passed to you</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Alerts if anything goes wrong</span></li></ul>
+          <a class="b b-mint" href="#start">Start free pilot</a>
+        </div><div class="pl" data-plan="2">
+          <div class="pl-tag">Recommended</div>
+          <h3>Revenue Desk</h3><p class="pl-sub">Answer, book and win back jobs</p>
+          <div class="pl-price"><b>$797</b><span>/month</span></div>
+          <p class="pl-day">About $27 a day</p>
+          <div class="cv" aria-hidden="true"><div class="cv-bar"><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-bk"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i><i class="cv-mo"></i></div><div class="cv-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cv-lg"><span><i class="cv-mo"></i>Molly</span><span><i class="cv-bk"></i>Team first, Molly backup</span></div></div>
+          <ul><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Everything in Full Desk</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Estimate follow-up emails</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Tune-up reminder campaigns</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Monthly booked-jobs report</span></li></ul>
+          <a class="b b-line" href="#start">Start free pilot</a>
+        </div></div>
+    <details class="cmp"><summary>Compare all features <i aria-hidden="true">+</i></summary>
+      <div class="cmp-wrap"><table><thead><tr><th></th><th>Porchlight<small>$197/mo</small></th><th>Full Desk<small>$397/mo</small></th><th>Revenue Desk<small>$797/mo</small></th></tr></thead><tbody><tr><th scope="row">Answers nights, weekends, holidays</th><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Answers when your team misses a call by day</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Books jobs on your calendar</th><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Emergencies ring your cell first</th><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Text and email summary after each call</th><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Recordings and transcripts</th><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Upset callers passed to you</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Estimate follow-up emails</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Tune-up reminder campaigns</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Monthly booked-jobs report</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Setup done for you</th><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td><td><span class="ok" aria-label="Included">✓</span></td></tr><tr><th scope="row">Contract</th><td>None</td><td>None</td><td>None</td></tr></tbody></table></div></details>
+  </div>
+</section>
+
+<!-- FOUNDER + PILOT -->
+<section class="sec sec-navy" id="start">
+  <div class="wrap pilot">
+    <div class="pilot-l">
+      <p class="eyebrow-l">Free 14-day pilot</p>
+      <h2>If Molly doesn’t book you a job, you pay nothing.</h2>
+      <div class="founder">
+        <img src="/siam-2.jpg" alt="Siam Ahmed, founder of BookedOrion" width="96" height="96">
+        <div><p class="fd-q">“I set up every pilot myself and check Molly’s calls with you in week one.”</p><p class="fd-n"><b>Siam Ahmed</b> · Founder, BookedOrion</p></div>
+      </div>
+      <ol class="pilot-steps"><li><b>Day 1</b><span>Send your details. We reply within one business day.</span></li><li><b>Days 2–3</b><span>We build Molly for your shop. You hear a test call.</span></li><li><b>Day 14</b><span>Keep her, or walk away.</span></li></ol>
+      <a class="link-l" href="/getting-started/">See the full setup plan →</a>
+    </div>
+    <form id="pilotForm" class="form" aria-label="Start your free pilot" novalidate>
+      <h3>Start your free pilot</h3>
+      <label for="f-name">Your name</label><input id="f-name" type="text" autocomplete="name" required>
+      <label for="f-company">Company</label><input id="f-company" type="text" autocomplete="organization" required>
+      <label for="f-email">Email</label><input id="f-email" type="email" autocomplete="email" required>
+      <label for="f-phone">Phone <span>(optional)</span></label><input id="f-phone" type="tel" autocomplete="tel" inputmode="tel">
+      <input type="checkbox" name="botcheck" id="f-bot" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+      <p class="f-err" id="fieldErr" role="alert" hidden></p>
+      <button type="submit" id="f-submit" class="b b-ink b-lg">Start my free pilot</button>
+      <div id="formOk" class="f-ok" role="status" hidden><b>You’re in. ✓</b> Siam will email you within one business day with your setup questions.</div>
+      <div id="formErr" class="f-bad" role="alert" hidden></div>
+      <div id="formDone" class="f-ok" hidden><b>One last step.</b> Send these details to <b>siam@bookedorion.com</b> and we’ll set up your pilot. <button type="button" id="copyBtn">Copy details</button><pre id="formText"></pre></div>
+      <p class="f-fine">We reply within one business day. No sales calls unless you ask. We never sell your details. Prefer email? <a href="mailto:siam@bookedorion.com">siam@bookedorion.com</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-paper" id="faq">
+  <div class="wrap faq">
+    <div class="faq-l"><p class="eyebrow-d">FAQ</p><h2>Questions owners ask.</h2><p class="lead">Still unsure? Email <a href="mailto:siam@bookedorion.com">siam@bookedorion.com</a> or call Molly and hear her for yourself.</p><a class="more-link" href="/how-it-works/">More answers on How it works →</a></div>
+    <div class="faq-r"><details><summary><span>How is Molly different from other AI receptionists?</span><i aria-hidden="true">+</i></summary><p>Most AI receptionist apps are built for any business and you set them up yourself. Molly is built only for HVAC, a real person sets her up for your shop, and your team can still answer first.</p></details><details><summary><span>Can my team still answer first?</span><i aria-hidden="true">+</i></summary><p>Yes. Your phone rings as usual. If nobody picks up in about 20 seconds, or the line is busy, the call goes to Molly. After hours, she can answer every call. You choose, and you can switch anytime.</p></details><details><summary><span>Will callers know it’s an AI?</span><i aria-hidden="true">+</i></summary><p>Yes. Molly says she’s an AI assistant and that the call may be recorded.</p></details><details><summary><span>Do I change my phone number?</span><i aria-hidden="true">+</i></summary><p>No. You keep your number and your Google listing. Unanswered calls forward to Molly.</p></details><details><summary><span>What if a caller has a real emergency?</span><i aria-hidden="true">+</i></summary><p>You pick the emergency words. When Molly hears one, she tells the caller how to stay safe and rings your phone first.</p></details><details><summary><span>What does the pilot cost?</span><i aria-hidden="true">+</i></summary><p>Nothing if Molly doesn’t book a job in 14 days. After that, pick a plan or walk away.</p></details><details><summary><span>Does it work with ServiceTitan, Jobber or Housecall Pro?</span><i aria-hidden="true">+</i></summary><p>Every booking is sent to you by text and email with all the details, ready to add. Ask us about direct integration.</p></details><details><summary><span>What if Molly gets something wrong?</span><i aria-hidden="true">+</i></summary><p>Tell us and we fix her script, usually the same day. If she isn’t sure, she takes a message and you call back.</p></details></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="sec">
+  <div class="wrap"><div class="final"><h2>Tonight’s calls can be tomorrow’s booked jobs.</h2><p>We set it all up. Free for 14 days.</p>
+    <div class="hero-cta"><a class="b b-mint b-lg" href="#start">Start free pilot <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="b b-ghost b-lg" href="tel:+15705219710"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Hear Molly</a></div></div></div>
+</section>
+</main>
+<footer class="foot"><div class="wrap footin">
+<div class="fb"><div class="flogo">Booked<svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#2BD9A0" stroke-width="8"/><path d="M21 33 L29 41 L44 23" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>rion</div>
+<p>Every missed call answered, day or night. The AI receptionist made for HVAC shops across Dallas–Fort Worth.</p>
+<a class="fcall" href="tel:+15705219710">Call Molly: (570) 521-9710</a><a class="btn" href="/#start">Start free pilot</a></div>
+<div class="fcols"><div class="fcol"><div class="fh">PRODUCT</div><a href="/#demo">Hear Molly</a><a href="/how-it-works/">How it works</a><a href="/#pricing">Pricing</a><a href="/getting-started/">Getting started</a></div><div class="fcol"><div class="fh">COMPANY</div><a href="/about/">About</a><a href="/blog/">Blog</a><a href="mailto:siam@bookedorion.com">Contact</a><a href="/#start">Free pilot</a></div><div class="fcol"><div class="fh">LEGAL</div><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/sms-terms/">SMS terms</a></div></div>
+</div><div class="wrap copy"><span>© 2026 BookedOrion. All rights reserved.</span><span>Serving Dallas · Fort Worth · Plano · Frisco · Arlington · Irving · McKinney · Denton</span></div></footer>
+<div class="mcta" aria-label="Quick actions"><a class="b b-ghost" href="tel:+15705219710"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Hear Molly</a><a class="b b-mint" href="#start">Start free pilot</a></div>
+<script src="/home.js?v=9" defer></script>
 </body>
 </html>
