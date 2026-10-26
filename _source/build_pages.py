@@ -7,7 +7,7 @@ import getting_started as GS
 import about as AB
 
 OUT = B.OUT
-UPDATED = 'October 21, 2026'
+UPDATED = 'October 27, 2026'
 
 def page(path, title, desc, inner, extra=''):
     hdr = B.HEADER.replace('class="nav on"','class="nav"')
@@ -38,7 +38,7 @@ def how():
         ('Checks your service area', 'If the ZIP is outside your area, Molly says so politely instead of booking a job you can’t take.'),
         ('Mentions your fee', 'If you charge a diagnostic or trip fee, Molly states it before booking, so there are no surprises at the door.'),
         ('Books the visit', 'She offers open slots from your calendar and books the one the caller picks.'),
-        ('Reads it back', '“So that’s Maria at 214 Oak Lane in Plano, AC blowing warm air, Wednesday at 8 AM. Did I get that right?”'),
+        ('Reads it back', '“So that’s Maria at 214 Oak Lane, AC blowing warm air, Wednesday at 8 AM. Did I get that right?”'),
         ('Texts you', 'Seconds after the call, you get a summary by text and email. The recording and transcript are saved.'),
     ]
     step_html = ''.join(f'<li><span class="sn">{i+1}</span><div><b>{t}</b><p>{d}</p></div></li>' for i,(t,d) in enumerate(steps))
@@ -84,7 +84,7 @@ def how():
 <div class="ri">{CHK}<span><b>Recording and transcript</b> of each call</span></div>
 <div class="ri">{CHK}<span><b>Instant call</b> to you for emergencies</span></div></div>
 <div class="phone"><div class="pscreen"><div class="ph">Text from BookedOrion · 9:49 PM</div>
-<div class="bub"><b>New job booked ✓</b><br><b>Customer:</b> Maria G.<br><b>Problem:</b> AC blowing warm air<br><b>Area:</b> Plano, TX<br><b>Visit:</b> Wed 8:00 AM<br><span class="dim">Told about the diagnostic fee.</span></div>
+<div class="bub"><b>New job booked ✓</b><br><b>Customer:</b> Maria G.<br><b>Problem:</b> AC blowing warm air<br><b>Area:</b> In your service area ✓<br><b>Visit:</b> Wed 8:00 AM<br><span class="dim">Told about the diagnostic fee.</span></div>
 <div class="bub urg"><b>Urgent call · 9:12 PM</b><br>No heat, elderly caller. Molly is ringing you now.</div>
 <div class="ph">Example text for illustration</div></div></div></section>
 
@@ -110,7 +110,7 @@ PRIVACY = '''
 <p>BookedOrion provides an AI receptionist service (“Molly”) for HVAC and home-service businesses. In this policy, “we” means BookedOrion and “you” means a visitor to this website or a business that uses our service.</p>
 <h2>What we collect</h2>
 <ul class="list">
-<li><b>From this website:</b> the name, company and email you enter when you request a pilot or contact us.</li>
+<li><b>From this website:</b> the name, company and email you enter when you request a trial or contact us.</li>
 <li><b>From our business customers:</b> setup details such as business hours, service area, fees, calendar access and the phone numbers to alert.</li>
 <li><b>From calls Molly answers for our customers:</b> the caller’s name, phone number, service address, the problem they describe, call recordings and transcripts. We process this on behalf of the HVAC business the caller contacted.</li>
 <li><b>Basic technical data:</b> our hosting provider may log standard information such as IP address and browser type to keep the site running and secure.</li>
@@ -142,16 +142,28 @@ PRIVACY = '''
 '''
 
 TERMS = '''
-<p class="lede">These terms cover your use of the BookedOrion website and service. By starting a pilot or a plan, you agree to them. Questions: <a href="mailto:siam@bookedorion.com">siam@bookedorion.com</a>.</p>
+<p class="lede">These terms cover your use of the BookedOrion website and service. By starting a trial or a plan, you agree to them. Questions: <a href="mailto:siam@bookedorion.com">siam@bookedorion.com</a>.</p>
 <h2>The service</h2>
 <p>BookedOrion provides an AI receptionist (“Molly”) that answers calls for your business, books appointments on your calendar and sends you call summaries and alerts.</p>
-<h2>Free 14-day pilot</h2>
-<p>We set up the service and run it for 14 days. If Molly does not book at least one appointment on your calendar during the pilot, you pay nothing for the pilot. After the pilot, you can choose a plan or stop.</p>
+<h2>Free 14-day trial</h2>
+<p>We set up the service and run it free for 14 days. There is no setup fee. After the trial, you can choose a plan or stop.</p>
 <h2>Plans and billing</h2>
 <ul class="list">
+<li><b>Pay-per-Job:</b> $79 a month plus $29 for each booked job, never more than $449 in a month. If Molly books no jobs in your first paid month, that month is free.</li>
+<li><b>Flat:</b> $249 a month with unlimited booked jobs.</li>
+<li><b>Night-only:</b> Pay-per-Job with a $49 monthly base, covering nights, weekends and holidays only.</li>
 <li>Plans are month to month. There is no long-term contract.</li>
 <li>You can cancel at any time. Cancellation takes effect at the end of the current billing month.</li>
-<li>Each plan includes a monthly call allowance. We will notify you before you reach it and agree with you on what happens next.</li>
+<li>Each plan includes 400 call minutes a month. We text you when you reach 80% (320 minutes). One busy month is fine. If you go over two months in a row, we agree on a bigger plan together. No surprise bills.</li>
+<li>Spam and wrong-number calls are never counted.</li>
+<li>Payment is by a secure invoice link. Molly never takes payment details on a call.</li>
+</ul>
+<h2>What counts as a booked job</h2>
+<ul class="list">
+<li>A booked job is a new appointment from a call Molly handled. You confirm it with one tap in the text summary. If you don’t reply within 48 hours, it counts as booked. The call recording and summary are the record.</li>
+<li>If you mark a booking as not booked, you pick a reason (spam, duplicate, outside your service area, not a real job, or customer cancelled). We check the recording before removing the charge.</li>
+<li>Cancellations are free when there is a record: the customer called or texted Molly, or you send us the call recording or a screenshot of the text. The cancellation must be before the appointment time and within 7 days.</li>
+<li>A no-show, or a customer who declines at the door, still counts, because the appointment was made.</li>
 </ul>
 <h2>Your responsibilities</h2>
 <ul class="list">
@@ -257,10 +269,10 @@ def main():
     open(os.path.join(OUT,'how-it-works','hiw.css'),'w').write(H2.CSS) if os.makedirs(os.path.join(OUT,'how-it-works'),exist_ok=True) is None else None
     files = {
         'how-it-works/index.html': page('/how-it-works/', 'How BookedOrion Works | AI Receptionist for HVAC', 'Step by step: how Molly answers, triages, books and reports on your HVAC calls, and how setup works in a few days.', *H2.how()),
-        'about/index.html': page('/about/', 'About BookedOrion | AI Receptionist for HVAC', 'BookedOrion helps Dallas–Fort Worth HVAC shops stop losing jobs to voicemail. Meet the founder and our promises.', AB.page(), '<link rel="stylesheet" href="/about/about.css?v=1">'),
+        'about/index.html': page('/about/', 'About BookedOrion | AI Receptionist for HVAC', 'BookedOrion helps HVAC shops stop losing jobs to voicemail. Meet the founder and our promises.', AB.page(), '<link rel="stylesheet" href="/about/about.css?v=1">'),
         'getting-started/index.html': page('/getting-started/', 'Getting Started with BookedOrion | Live in Days', 'The six-step plan to get Molly live for your HVAC shop: what you do, what we do, what we need from you and how long it takes.', GS.page(), '<link rel="stylesheet" href="/getting-started/gs.css?v=1">'),
         'privacy/index.html': legal('/privacy/','Privacy Policy','LEGAL','How BookedOrion collects, uses and protects information, including call data and text messages.',PRIVACY),
-        'terms/index.html': legal('/terms/','Terms of Service','LEGAL','Terms for the BookedOrion website, free pilot, plans and text messaging program.',TERMS),
+        'terms/index.html': legal('/terms/','Terms of Service','LEGAL','Terms for the BookedOrion website, free trial, plans and text messaging program.',TERMS),
         'sms-terms/index.html': legal('/sms-terms/','SMS Terms','LEGAL','Terms for BookedOrion Alerts text messages: frequency, cost, HELP and STOP.',SMS),
         '404.html': NOTFOUND,
     }

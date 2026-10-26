@@ -266,3 +266,8 @@
  .demo-r{padding:18px}
 }
 @media (prefers-reduced-motion:reduce){.cs{animation:none}.mcta{transition:none}}
+
+.plans.two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:900px;margin-inline:auto}
+.pl-note{max-width:900px;margin:16px auto 0;text-align:center;font-size:14.5px;color:var(--muted)}
+.pl-note b{color:var(--ink)}.pl-note a{white-space:nowrap}
+@media (max-width:760px){.plans.two{grid-template-columns:1fr}.plans.two .pl+.pl{border-left:0;border-top:1px solid var(--line)}}

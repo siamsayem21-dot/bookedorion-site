@@ -6,18 +6,18 @@ def page():
     promises = [
         ('chat', 'Honest with your callers', 'Molly says she’s an AI assistant and that the call may be recorded. She never pretends to be a person.'),
         ('dollar', 'No surprises on your bill', 'No hidden fees, no contract. We text you before you reach your call allowance. Cancel anytime.'),
-        ('user', 'A real person behind it', 'I set up every pilot myself and review Molly’s calls with you in week one. You email me, not a ticket queue.'),
-        ('flag', 'You only pay if it works', 'If Molly doesn’t book a job in your 14-day pilot, you pay nothing.'),
+        ('user', 'A real person behind it', 'I set up every shop myself and review Molly’s calls with you in week one. You email me, not a ticket queue.'),
+        ('flag', 'Low risk to start', '14 days free, no setup fee. On Pay-per-Job, if Molly books no jobs in your first month, that month is free.'),
     ]
     pr = ''.join(f'<div class="apr"><span class="apic">{ic(P[k],22)}</span><b>{t}</b><p>{d}</p></div>' for k, t, d in promises)
     focus = [('One trade', 'HVAC only. Molly knows no-cool, no-heat, tune-up and emergency calls.'),
-             ('One region', 'Dallas–Fort Worth. We know the summer rush and the winter freezes.'),
+             ('One setup per shop', 'Molly is set up by hand for your hours, fees and the ZIP codes you serve.'),
              ('One job', 'Answer the calls your team misses and turn them into booked jobs.')]
     fc = ''.join(f'<div class="afc"><em>0{i+1}</em><b>{t}</b><span>{d}</span></div>' for i, (t, d) in enumerate(focus))
     return f'''<section class="bhero"><div class="wrap ahero">
 <div class="atext"><div class="eyebrow">ABOUT BOOKEDORION</div>
 <h1>We help HVAC shops stop losing jobs to voicemail.</h1>
-<p>BookedOrion builds and runs Molly, an AI receptionist set up for each shop by hand. One trade, one region, one job, done well.</p></div>
+<p>BookedOrion builds and runs Molly, an AI receptionist set up for each shop by hand. One trade, one job, done well.</p></div>
 <figure class="afig"><img src="/siam-2.jpg" alt="Siam Ahmed, founder of BookedOrion" width="320" height="320"><figcaption><b>Siam Ahmed</b><span>Founder, BookedOrion</span></figcaption></figure>
 </div></section>
 <div class="wrap pg">
@@ -31,9 +31,7 @@ def page():
 
 <section class="blk"><div class="bh"><div class="eyebrow dk">OUR FOCUS</div><h2>We do one thing, for one trade.</h2></div><div class="afocus">{fc}</div></section>
 
-<section class="blk"><div class="amap"><div class="amtx"><div class="eyebrow">WHERE WE WORK</div><h2>Built for shops across Dallas–Fort Worth.</h2><p>We know DFW summers, winter freezes and the calls they bring. Molly is set up for the cities you actually serve.</p>
-<div class="amchips"><span>Dallas</span><span>Fort Worth</span><span>Plano</span><span>Frisco</span><span>Arlington</span><span>Irving</span><span>McKinney</span><span>Denton</span><span>+ nearby</span></div></div>
-<div class="amvis"><svg class="mp" viewBox="0 0 640 420" role="img" aria-label="Map of cities we serve across Dallas–Fort Worth"><defs><pattern id="mpg" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="rgba(255,255,255,.05)"/></pattern></defs><rect width="640" height="420" fill="url(#mpg)"/><ellipse cx="271" cy="277" rx="300" ry="190" fill="rgba(63,55,201,.18)"/><path d="M116 344 Q 271 304 426 331" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2" stroke-dasharray="4 6"/><g class="mp-c"><circle cx="426" cy="331" r="19" fill="rgba(43,217,160,.12)"/><circle cx="426" cy="331" r="9" fill="#2BD9A0" stroke="#0B0A24" stroke-width="2"/><text x="440" y="336" text-anchor="start" font-size="16" font-weight="700" fill="#FFFFFF">Dallas</text></g><g class="mp-c"><circle cx="116" cy="344" r="19" fill="rgba(43,217,160,.12)"/><circle cx="116" cy="344" r="9" fill="#2BD9A0" stroke="#0B0A24" stroke-width="2"/><text x="102" y="349" text-anchor="end" font-size="16" font-weight="700" fill="#FFFFFF">Fort Worth</text></g><g class="mp-c"><circle cx="483" cy="186" r="16" fill="rgba(43,217,160,.12)"/><circle cx="483" cy="186" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="497" y="191" text-anchor="start" font-size="14" font-weight="600" fill="#FFFFFF">Plano</text></g><g class="mp-c"><circle cx="410" cy="108" r="16" fill="rgba(43,217,160,.12)"/><circle cx="410" cy="108" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="424" y="113" text-anchor="start" font-size="14" font-weight="600" fill="#FFFFFF">Frisco</text></g><g class="mp-c"><circle cx="246" cy="355" r="16" fill="rgba(43,217,160,.12)"/><circle cx="246" cy="355" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="232" y="360" text-anchor="end" font-size="14" font-weight="600" fill="#FFFFFF">Arlington</text></g><g class="mp-c"><circle cx="338" cy="309" r="16" fill="rgba(43,217,160,.12)"/><circle cx="338" cy="309" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="352" y="314" text-anchor="start" font-size="14" font-weight="600" fill="#FFFFFF">Irving</text></g><g class="mp-c"><circle cx="532" cy="81" r="16" fill="rgba(43,217,160,.12)"/><circle cx="532" cy="81" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="546" y="86" text-anchor="start" font-size="14" font-weight="600" fill="#FFFFFF">McKinney</text></g><g class="mp-c"><circle cx="231" cy="70" r="16" fill="rgba(43,217,160,.12)"/><circle cx="231" cy="70" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="217" y="75" text-anchor="end" font-size="14" font-weight="600" fill="#FFFFFF">Denton</text></g><g class="mp-c"><circle cx="465" cy="229" r="16" fill="rgba(43,217,160,.12)"/><circle cx="465" cy="229" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="479" y="234" text-anchor="start" font-size="14" font-weight="600" fill="#FFFFFF">Richardson</text></g><g class="mp-c"><circle cx="518" cy="250" r="16" fill="rgba(43,217,160,.12)"/><circle cx="518" cy="250" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="532" y="255" text-anchor="start" font-size="14" font-weight="600" fill="#FFFFFF">Garland</text></g><g class="mp-c"><circle cx="372" cy="225" r="16" fill="rgba(43,217,160,.12)"/><circle cx="372" cy="225" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="386" y="230" text-anchor="start" font-size="14" font-weight="600" fill="#FFFFFF">Carrollton</text></g><g class="mp-c"><circle cx="499" cy="137" r="16" fill="rgba(43,217,160,.12)"/><circle cx="499" cy="137" r="6" fill="#8F88FF" stroke="#0B0A24" stroke-width="2"/><text x="513" y="142" text-anchor="start" font-size="14" font-weight="600" fill="#FFFFFF">Allen</text></g></svg></div></div></section>
+
 
 
 

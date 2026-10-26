@@ -100,13 +100,11 @@ tabs.forEach(function(t){{t.addEventListener('click',function(){{show(+t.dataset
 
 def how():
     modes = [
-        ('Porchlight','$197/mo','After hours only','Your office answers during the day as usual. When you close, Molly answers.', bar('porch'), ''),
-        ('Full Desk','$397/mo','After hours + daytime overflow','Your team still answers first. If nobody picks up in about 20 seconds, or the line is busy, Molly takes it.', bar('full'), ''),
-        ('Revenue Desk','$797/mo','Everything + follow-ups','Full Desk coverage, plus follow-ups that bring back old estimates and tune-up customers.', bar('full'),
-         '<div class="addons"><span>'+ic(P['mail'],15)+' Estimate follow-ups</span><span>'+ic(P['cal'],15)+' Tune-up reminders</span><span>'+ic(P['flag'],15)+' Monthly report</span></div>'),
+        ('Team first, Molly backup','Pay-per-Job or Flat','All day, every day','Your team still answers first. If nobody picks up in about 10–15 seconds, or the line is busy, Molly takes it. After hours she answers every call.', bar('full'), ''),
+        ('Night-only','$49/mo + $29 per job','After hours only','Your office answers during the day as usual. When you close, Molly answers nights, weekends and holidays.', bar('porch'), ''),
     ]
     BADGE='<div class="badge">RECOMMENDED</div>'
-    mode_html=''.join(f'<div class="mode{" pop" if i==1 else ""}">{BADGE if i==1 else ""}<div class="mtop"><b>{n}</b><span>{p}</span></div><div class="mk">{k}</div>{viz}<p>{d}</p>{extra}</div>' for i,(n,p,k,d,viz,extra) in enumerate(modes))
+    mode_html=''.join(f'<div class="mode{" pop" if i==0 else ""}">{BADGE if i==0 else ""}<div class="mtop"><b>{n}</b><span>{p}</span></div><div class="mk">{k}</div>{viz}<p>{d}</p>{extra}</div>' for i,(n,p,k,d,viz,extra) in enumerate(modes))
     legend = f'<div class="legend"><span><i class="lg m"></i>Molly answers every call</span><span><i class="lg h"></i>Your team first, Molly backs up</span><span><i class="lg t"></i>Your team only</span></div>'
 
     phases = [
@@ -122,7 +120,7 @@ def how():
         ]),
         ('Book', 'Before hanging up', [
             ('cal','Books the visit','Offers open slots from your calendar. The caller picks one.'),
-            ('repeat','Reads it back','“Maria, 214 Oak Lane in Plano, AC blowing warm air, Wednesday 8 AM. Did I get that right?”'),
+            ('repeat','Reads it back','“Maria, 214 Oak Lane, AC blowing warm air, Wednesday 8 AM. Did I get that right?”'),
             ('msg','Texts you','Seconds later you get the summary. Recording and transcript are saved.'),
         ]),
     ]
@@ -139,7 +137,7 @@ def how():
         ('m','Thanks for calling ABC Heating &amp; Air. This is Molly, the AI assistant. This call may be recorded. How can I help?'),
         ('c','Hi, my AC is running but it’s blowing warm air.'),
         ('m','Sorry about that. Can I get your name and the service address?'),
-        ('c','Maria, 214 Oak Lane in Plano.'),
+        ('c','Maria, 214 Oak Lane.'),
         ('m','Thanks, Maria. Our diagnostic visit has a flat fee, paid to the tech on site. I have Wednesday at 8 AM open. Does that work?'),
         ('c','Yes, perfect.'),
         ('m','You’re booked for Wednesday at 8 AM. You’ll get a text confirmation shortly.'),
@@ -153,7 +151,7 @@ def how():
         ('q','Within 1 business day','Setup questions','Hours, service-area ZIPs, fees, emergency words, on-call number, calendar.'),
         ('tool','Next','We build and test','You hear a test call. Nothing goes live until you approve it.'),
         ('fwd','Go live','Forward your calls','Missed or after-hours calls forward to Molly. Same number.'),
-        ('flag','Day 14','You decide','No job booked? You pay nothing.'),
+        ('flag','Day 14','You decide','Keep Molly or walk away. The trial is free.'),
     ]
     setup_html=''.join(f'<li><div class="tdot">{ic(P[k],20)}</div><div class="sk">{a}</div><b>{t}</b><p>{d}</p></li>' for k,a,t,d in setup)
 
@@ -167,9 +165,9 @@ def how():
 
     faq = [
         ('Do I need new software?', 'No. Bookings go on the Google or Outlook calendar you already use, and details come to you by text and email.'),
-        ('What if I use ServiceTitan, Jobber or Housecall Pro?', 'Every booking arrives with all the details, ready for your team to add in seconds. Ask us about a direct integration.'),
+        ('What if I use ServiceTitan, Jobber or Housecall Pro?', 'Every booking arrives with all the details, ready for your team to add in seconds. There’s no direct integration yet.'),
         ('What if Molly isn’t sure?', 'She takes a clear message and tells the caller you’ll call back. You get it by text right away.'),
-        ('Can I change the script later?', 'Yes. Email us what to change and we update it, usually the same day.'),
+        ('Can I change the script later?', 'Yes. Email us what to change and we update it by the next business day.'),
         ('Can I hear every call?', 'Yes. Every call has a summary, a recording and a transcript.'),
     ]
     faq_html=''.join(f'<details class="fq"><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>' for q,a in faq)
@@ -181,7 +179,7 @@ def how():
 {flow()}
 </div></section>
 <div class="wrap pg">
-<section class="blk"><div class="bh"><div class="eyebrow dk">THREE WAYS TO USE MOLLY</div><h2>Pick how much of your day she covers.</h2><p>Each bar is one 24-hour day.</p></div>
+<section class="blk"><div class="bh"><div class="eyebrow dk">TWO WAYS TO USE MOLLY</div><h2>Pick how much of your day she covers.</h2><p>Each bar is one 24-hour day.</p></div>
 {legend}<div class="modes">{mode_html}</div></section>
 
 <section class="blk"><div class="bh"><div class="eyebrow dk">ONE CALL, STEP BY STEP</div><h2>What happens when a homeowner calls at 9:47 PM.</h2></div>

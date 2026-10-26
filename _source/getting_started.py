@@ -8,8 +8,8 @@ def page():
         dict(n=2, when='Day 1–2', title='Setup questions', you='Answer a short checklist about your shop (below).', we='Turn your answers into Molly’s script, rules and booking settings.', yt='~15 min', icon='q'),
         dict(n=3, when='Day 2–4', title='Build and test', you='Listen to a test call. Tell us anything to change.', we='Build Molly, connect your calendar, run test calls for every call type.', yt='~10 min', icon='tool'),
         dict(n=4, when='Go-live day', title='Turn on forwarding', you='Dial one code or change one setting. We stay on the phone with you.', we='Watch the first live calls and confirm texts reach you.', yt='~5 min', icon='fwd'),
-        dict(n=5, when='Week 1', title='Fine-tune', you='Read the text summaries. Reply with anything that looks off.', we='Review every call with you and adjust the script the same day.', yt='As you like', icon='repeat'),
-        dict(n=6, when='Day 14', title='You decide', you='Keep Molly or walk away.', we='Show you every booked job. No job booked? You pay nothing.', yt='1 min', icon='flag'),
+        dict(n=5, when='Week 1', title='Fine-tune', you='Read the text summaries. Reply with anything that looks off.', we='Review every call with you and adjust the script within one business day.', yt='As you like', icon='repeat'),
+        dict(n=6, when='Day 14', title='You decide', you='Keep Molly or walk away.', we='Show you every booked job. The trial is free, with no setup fee.', yt='1 min', icon='flag'),
     ]
     ph = ''
     for p in phases:
@@ -32,7 +32,7 @@ def page():
     cl = ''.join(f'<li><label><input type="checkbox" class="gck"><span class="gbox">{ic(P["check"],14,"#FFFFFF",3.2)}</span><span><b>{t}</b><em>{d}</em></span></label></li>' for t,d in checklist)
 
     carriers = [
-        ('AT&amp;T','Dial <code>*61*</code> + Molly’s number + <code>#</code> for unanswered calls.'),
+        ('AT&amp;T','Dial <code>**61*</code> + Molly’s number + <code>#</code> for unanswered calls. On an iPhone, turn off Live Voicemail first.'),
         ('Verizon','Dial <code>*71</code> + Molly’s number.'),
         ('T-Mobile','We send you the exact code for your line.'),
         ('Office phone','RingCentral, Grasshopper, Google Voice and others: one setting. We send screenshots.'),
@@ -44,7 +44,7 @@ def page():
         ('Do I have to be on a call?','No. You can do everything by email. If you prefer a call, it takes about 15 minutes.'),
         ('What if I’m busy in the middle of summer?','That’s when shops need this most. Your part adds up to about 30 minutes, spread over a few days.'),
         ('Can I turn it off?','Yes. Turning off call forwarding stops Molly right away. Your number never changes.'),
-        ('Who do I talk to?','Siam, the founder, sets up every pilot himself. Email siam@bookedorion.com.'),
+        ('Who do I talk to?','Siam, the founder, sets up every shop himself. Email siam@bookedorion.com.'),
     ]
     fq = ''.join(f'<details class="fq"><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>' for q,a in faq)
 
@@ -71,12 +71,12 @@ def page():
 <p>Your number stays the same. Calls your team misses forward to Molly. To turn her off, cancel forwarding.</p></div>
 <div class="gfwd"><div class="gfwdviz" aria-hidden="true">
 <div class="gfn"><span>{ic(P['phone'],20)}</span><b>Homeowner calls your number</b></div><div class="gfa"></div>
-<div class="gfn"><span>{ic(P['user'],20)}</span><b>Your team gets first try</b><em>~20 seconds</em></div><div class="gfa"></div>
+<div class="gfn"><span>{ic(P['user'],20)}</span><b>Your team gets first try</b><em>~10–15 seconds</em></div><div class="gfa"></div>
 <div class="gfn m"><span>{MOLLY}</span><b>No answer? Molly picks up</b></div></div>
 <div class="gcars">{cr}<p class="gnote">Codes come from carrier help pages and can change. We confirm yours with you on go-live day.</p></div></div></section>
 
 <section class="blk"><div class="gcontact"><img class="gav" src="/siam-2.jpg" alt="Siam Ahmed, founder of BookedOrion" width="84" height="84" style="object-fit:cover"><div><div class="eyebrow dk">YOUR CONTACT</div><h3>One person, start to finish.</h3>
-<p>Siam, the founder, sets up every pilot and checks Molly’s calls with you in week one. No ticket queue.</p><p>Want to hear Molly first? Call <a href="tel:+15705219710">(570) 521-9710</a>.</p>
+<p>Siam, the founder, sets up every shop and checks Molly’s calls with you in week one. No ticket queue.</p><p>Want to hear Molly first? Call <a href="tel:+15705219710">(570) 521-9710</a>.</p>
 <a href="mailto:siam@bookedorion.com">siam@bookedorion.com</a></div></div></section>
 
 <section class="blk"><div class="bh"><div class="eyebrow dk">QUESTIONS</div><h2>Getting started questions</h2></div><div class="fqs">{fq}</div></section>

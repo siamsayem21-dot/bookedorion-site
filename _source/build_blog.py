@@ -7,7 +7,7 @@ SITE = 'https://bookedorion.com'
 DATE = '2026-10-21'
 DATE_H = 'Oct 21, 2026'
 AUTHOR = 'Siam Ahmed'
-CSSV = '9'
+CSSV = '10'
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">'
 
 LOGO = ('<a href="/" class="logo" aria-label="BookedOrion home"><span>Booked</span>'
@@ -16,19 +16,19 @@ LOGO = ('<a href="/" class="logo" aria-label="BookedOrion home"><span>Booked</sp
 
 BANNER = ''
 HEADER = BANNER + f'''<header class="top"><div class="wrap topin">{LOGO}
-<nav><a class="nav" href="/how-it-works/">How it works</a><a class="nav" href="/#pricing">Pricing</a><a class="nav" href="/about/">About</a><a class="nav on" href="/blog/">Blog</a><a class="ncall" href="tel:+15705219710" aria-label="Call Molly at (570) 521-9710"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(570) 521-9710</span></a><a class="btn" href="/#start">Start free pilot</a></nav></div></header>'''
+<nav><a class="nav" href="/how-it-works/">How it works</a><a class="nav" href="/#pricing">Pricing</a><a class="nav" href="/about/">About</a><a class="nav on" href="/blog/">Blog</a><a class="ncall" href="tel:+15705219710" aria-label="Call Molly at (570) 521-9710"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BD9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(570) 521-9710</span></a><a class="btn" href="/#start">Start free trial</a></nav></div></header>'''
 
 FOOTER = '''<footer class="foot"><div class="wrap footin">
 <div class="fb"><div class="flogo">Booked<svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#2BD9A0" stroke-width="8"/><path d="M21 33 L29 41 L44 23" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>rion</div>
-<p>Every missed call answered, day or night. The AI receptionist made for HVAC shops across Dallas–Fort Worth.</p>
-<a class="fcall" href="tel:+15705219710">Call Molly: (570) 521-9710</a><a class="btn" href="/#start">Start free pilot</a></div>
-<div class="fcols"><div class="fcol"><div class="fh">PRODUCT</div><a href="/#demo">Hear Molly</a><a href="/how-it-works/">How it works</a><a href="/#pricing">Pricing</a><a href="/getting-started/">Getting started</a></div><div class="fcol"><div class="fh">COMPANY</div><a href="/about/">About</a><a href="/blog/">Blog</a><a href="mailto:siam@bookedorion.com">Contact</a><a href="/#start">Free pilot</a></div><div class="fcol"><div class="fh">LEGAL</div><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/sms-terms/">SMS terms</a></div></div>
-</div><div class="wrap copy"><span>© 2026 BookedOrion. All rights reserved.</span><span>Serving Dallas · Fort Worth · Plano · Frisco · Arlington · Irving · McKinney · Denton</span></div></footer>'''
+<p>Every missed call answered, day or night. The AI receptionist made for HVAC shops.</p>
+<a class="fcall" href="tel:+15705219710">Call Molly: (570) 521-9710</a><a class="btn" href="/#start">Start free trial</a></div>
+<div class="fcols"><div class="fcol"><div class="fh">PRODUCT</div><a href="/#demo">Hear Molly</a><a href="/how-it-works/">How it works</a><a href="/#pricing">Pricing</a><a href="/getting-started/">Getting started</a></div><div class="fcol"><div class="fh">COMPANY</div><a href="/about/">About</a><a href="/blog/">Blog</a><a href="mailto:siam@bookedorion.com">Contact</a><a href="/#start">Free trial</a></div><div class="fcol"><div class="fh">LEGAL</div><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/sms-terms/">SMS terms</a></div></div>
+</div><div class="wrap copy"><span>© 2026 BookedOrion. All rights reserved.</span><span>AI receptionist for HVAC shops</span></div></footer>'''
 
-CTA = '''<aside class="cta"><div class="ctak">FREE 14-DAY PILOT</div>
+CTA = '''<aside class="cta"><div class="ctak">FREE 14-DAY TRIAL</div>
 <h2>Let Molly catch the calls your team misses.</h2>
-<p>She answers when you can’t, books the visit on your calendar and texts you the details. No job booked in 14 days, no charge.</p>
-<div class="ctab"><a class="btn big" href="/#start">Start free pilot</a><a class="ghost" href="tel:+15705219710">Call Molly: (570) 521-9710</a></div></aside>'''
+<p>She answers when you can’t, books the visit on your calendar and texts you the details. Free for 14 days. No setup fee, no contract.</p>
+<div class="ctab"><a class="btn big" href="/#start">Start free trial</a><a class="ghost" href="tel:+15705219710">Call Molly: (570) 521-9710</a></div></aside>'''
 
 def head(title, desc, path, extra=''):
     return f'''<!doctype html>
@@ -234,7 +234,7 @@ POSTS = [
 <div class="tablewrap"><table>
 <thead><tr><th>Carrier</th><th>Turn on</th><th>Turn off</th></tr></thead>
 <tbody>
-<tr><td>AT&amp;T (no answer)</td><td>*61* + number + #</td><td>##61#</td></tr>
+<tr><td>AT&amp;T (no answer)</td><td>**61* + number + #</td><td>##61#</td></tr>
 <tr><td>AT&amp;T (busy)</td><td>*67* + number + #</td><td>##67#</td></tr>
 <tr><td>Verizon</td><td>*71 + number</td><td>*73</td></tr>
 <tr><td>T-Mobile</td><td colspan="2">Varies by line. Check with T-Mobile.</td></tr>
@@ -245,7 +245,7 @@ POSTS = [
 <p>If your shop uses a business phone app or VoIP system, forwarding is usually a setting rather than a code. Look for “call forwarding”, “no-answer rule” or “ring group overflow” in your admin settings, and set how many seconds it rings before forwarding.</p>
 
 <h2>How long should it ring?</h2>
-<p>About 20 seconds, or four to five rings, works for most shops. Long enough for someone in the office to grab it, short enough that the caller doesn’t give up.</p>
+<p>About 10 to 15 seconds, or two to three rings, works for most shops. Long enough for someone in the office to grab it, short enough that the caller doesn’t give up.</p>
 
 <h2>Test it before you trust it</h2>
 <ol class="list">
@@ -351,7 +351,7 @@ def article(p):
 <div class="prose">{p['body']}
 <div class="src"><h2>Sources</h2><ul>{src}</ul></div>
 </div>
-<div class="author"><img src="/siam-2.jpg" alt="" width="64" height="64"><div><b>Written by {AUTHOR}</b><p>Founder of BookedOrion. I set up Molly, our AI receptionist, for HVAC shops across Dallas–Fort Worth, and review her calls with every owner.</p></div></div>
+<div class="author"><img src="/siam-2.jpg" alt="" width="64" height="64"><div><b>Written by {AUTHOR}</b><p>Founder of BookedOrion. I set up Molly, our AI receptionist, for HVAC shops, and review her calls with every owner.</p></div></div>
 </article>
 <aside class="toc" aria-label="On this page"><div class="tocin">
 <div class="toch">IN THIS ARTICLE</div><nav id="toc"></nav>
@@ -385,7 +385,7 @@ def index():
 <h3>{html.escape(p['title'])}</h3><p>{html.escape(p['desc'])}</p><span class="rm">Read article →</span></div></a>''' for i,p in enumerate(POSTS[1:]))
     cats=['All']+sorted({p['cat'] for p in POSTS})
     chips=''.join(f'<button type="button" class="chip{" on" if c=="All" else ""}" data-f="{c}" aria-pressed="{"true" if c=="All" else "false"}">{c}</button>' for c in cats)
-    desc = 'Practical advice for HVAC owners in Dallas–Fort Worth: missed calls, after-hours answering, emergency triage and growing your shop.'
+    desc = 'Practical advice for HVAC owners: missed calls, after-hours answering, emergency triage and growing your shop.'
     ld = {"@context":"https://schema.org","@type":"Blog","name":"BookedOrion Blog","url":SITE+'/blog/',
           "blogPost":[{"@type":"BlogPosting","headline":p['title'],"url":f"{SITE}/blog/{p['slug']}/","datePublished":DATE} for p in POSTS]}
     return head('HVAC Owner Blog | BookedOrion', desc, '/blog/', f'<script type="application/ld+json">{json.dumps(ld)}</script>') + HEADER + f'''
@@ -393,9 +393,9 @@ def index():
 <section class="bhero"><div class="wrap">
 <div class="eyebrow">THE BOOKEDORION BLOG</div>
 <h1>Practical advice for HVAC owners who hate missed calls.</h1>
-<p>Short, honest guides on phones, after-hours calls and booking more jobs. Written for busy shop owners in Dallas–Fort Worth.</p>
+<p>Short, honest guides on phones, after-hours calls and booking more jobs. Written for busy HVAC shop owners.</p>
 <label class="bsearch"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="bq" type="search" placeholder="Search articles, e.g. after-hours, emergency, forwarding" aria-label="Search articles"></label>
-<div class="bstats"><span><b>{len(POSTS)}</b> guides</span><span><b>5 min</b> average read</span><span><b>DFW</b> focused</span></div>
+<div class="bstats"><span><b>{len(POSTS)}</b> guides</span><span><b>5 min</b> average read</span><span><b>HVAC</b> only</span></div>
 </div></section>
 <section class="wrap list-area">
 <div class="chips" role="group" aria-label="Filter articles">{chips}</div>

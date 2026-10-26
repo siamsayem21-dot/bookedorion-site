@@ -20,13 +20,14 @@ def ic(d, s=18, w=2.2, c='currentColor'):
 
 FAQ = [
  ('How is Molly different from other AI receptionists?', 'Most AI receptionist apps are built for any business and you set them up yourself. Molly is built only for HVAC, a real person sets her up for your shop, and your team can still answer first.'),
- ('Can my team still answer first?', 'Yes. Your phone rings as usual. If nobody picks up in about 20 seconds, or the line is busy, the call goes to Molly. After hours, she can answer every call. You choose, and you can switch anytime.'),
+ ('Can my team still answer first?', 'Yes. Your phone rings as usual. If nobody picks up in about 10–15 seconds, or the line is busy, the call goes to Molly. After hours, she can answer every call. You choose, and you can switch anytime.'),
  ('Will callers know it’s an AI?', 'Yes. Molly says she’s an AI assistant and that the call may be recorded.'),
  ('Do I change my phone number?', 'No. You keep your number and your Google listing. Unanswered calls forward to Molly.'),
  ('What if a caller has a real emergency?', 'You pick the emergency words. When Molly hears one, she tells the caller how to stay safe and rings your phone first.'),
- ('What does the pilot cost?', 'Nothing if Molly doesn’t book a job in 14 days. After that, pick a plan or walk away.'),
- ('Does it work with ServiceTitan, Jobber or Housecall Pro?', 'Every booking is sent to you by text and email with all the details, ready to add. Ask us about direct integration.'),
- ('What if Molly gets something wrong?', 'Tell us and we fix her script, usually the same day. If she isn’t sure, she takes a message and you call back.'),
+ ('What does it cost to try?', 'Nothing. The first 14 days are free, with no setup fee and no contract. On Pay-per-Job, if Molly books no jobs in your first paid month, that month is free too.'),
+ ('What counts as a booked job?', 'A new appointment from a call Molly handled, which you confirm with one tap in the text summary. Spam and wrong-number calls never count. If the customer cancels and there’s a record of it, you aren’t charged.'),
+ ('Does it work with ServiceTitan, Jobber or Housecall Pro?', 'Every booking is sent to you by text and email with all the details, ready to add. There’s no direct integration yet.'),
+ ('What if Molly gets something wrong?', 'Tell us and we fix her script by the next business day. If she isn’t sure, she takes a message and you call back.'),
 ]
 
 def faq_ld():
@@ -44,32 +45,31 @@ def coverage(mode):
     return f'<div class="cv" aria-hidden="true"><div class="cv-bar">{segs}</div><div class="cv-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cv-lg">{lg}</div></div>'
 
 PLANS = [
- ('0', 'Porchlight', 'For after-hours calls', '197', '7', 'porch', ['Nights & weekends answered', 'Jobs booked on your calendar', 'Emergencies ring you first', 'Text summary after each call']),
- ('1', 'Full Desk', 'After hours + busy daytime', '397', '13', 'full', ['Everything in Porchlight', 'Answers when your line is busy during the day', 'Upset callers passed to you', 'Alerts if anything goes wrong']),
- ('2', 'Revenue Desk', 'Answer, book and win back jobs', '797', '27', 'full', ['Everything in Full Desk', 'Estimate follow-up emails', 'Tune-up reminder campaigns', 'Monthly booked-jobs report']),
+ ('0', 'Pay-per-Job', 'Pay when Molly books a job', '79', '/month + $29 per booked job', 'Never more than $449 a month', 'full', ['Your team rings first, Molly answers what you miss', 'Nights, weekends and holidays answered', 'Jobs booked on your calendar', 'Emergencies ring you first', 'Text summary after every call, one-tap confirm', 'No jobs booked in your first month? That month is free']),
+ ('1', 'Flat', 'One price, unlimited bookings', '249', '/month', 'Unlimited booked jobs', 'full', ['Everything in Pay-per-Job', 'No per-job charge, however many she books', 'Usually the better deal at 6+ booked jobs a month', 'Same setup, same rules, same support']),
 ]
 
-CMP = [('Answers nights, weekends, holidays','y','y','y'),('Answers when your team misses a call by day','n','y','y'),('Books jobs on your calendar','y','y','y'),('Emergencies ring your cell first','y','y','y'),('Text and email summary after each call','y','y','y'),('Recordings and transcripts','y','y','y'),('Upset callers passed to you','n','y','y'),('Estimate follow-up emails','n','n','y'),('Tune-up reminder campaigns','n','n','y'),('Monthly booked-jobs report','n','n','y'),('Setup done for you','y','y','y'),('Contract','None','None','None')]
+CMP = [('Monthly price','$79 + $29 per booked job','$249'),('Most you can pay in a month','$449','$249'),('Booked jobs','Charged per job','Unlimited'),('Call minutes included','400','400'),('Answers when your team misses a call by day','y','y'),('Answers nights, weekends, holidays','y','y'),('Books jobs on your calendar','y','y'),('Emergencies ring your cell first','y','y'),('Text summary after each call, one-tap confirm','y','y'),('Recordings and transcripts','y','y'),('Upset callers passed to you','y','y'),('Call-back list of callers who didn’t book','y','y'),('Short report every Monday','y','y'),('Spam and wrong-number calls billed','Never','Never'),('Setup done for you','y','y'),('Setup fee','$0','$0'),('Contract','None','None')]
 
 def plans_html():
     cols = ''
-    for k, name, sub, price, day, mode, feats in PLANS:
-        rec = k == '1'
+    for k, name, sub, price, per, day, mode, feats in PLANS:
+        rec = k == '0'
         flw = ''.join(f'<li>{ic(CHK, 16, 3)}<span>{f}</span></li>' for f in feats)
         cols += f'''<div class="pl{' is-rec' if rec else ''}" data-plan="{k}">
           <div class="pl-tag">Recommended</div>
           <h3>{name}</h3><p class="pl-sub">{sub}</p>
-          <div class="pl-price"><b>${price}</b><span>/month</span></div>
-          <p class="pl-day">About ${day} a day</p>
+          <div class="pl-price"><b>${price}</b><span>{per}</span></div>
+          <p class="pl-day">{day}</p>
           {coverage(mode)}
           <ul>{flw}</ul>
-          <a class="b {'b-mint' if rec else 'b-line'}" href="#start">Start free pilot</a>
+          <a class="b {'b-mint' if rec else 'b-line'}" href="#start">Start free trial</a>
         </div>'''
     def cell(v):
         if v == 'y': return '<td><span class="ok" aria-label="Included">✓</span></td>'
         if v == 'n': return '<td><span class="no" aria-label="Not included">–</span></td>'
         return f'<td>{v}</td>'
-    rows = ''.join(f'<tr><th scope="row">{r[0]}</th>{cell(r[1])}{cell(r[2])}{cell(r[3])}</tr>' for r in CMP)
+    rows = ''.join(f'<tr><th scope="row">{r[0]}</th>{cell(r[1])}{cell(r[2])}</tr>' for r in CMP)
     return cols, rows
 
 def page():
@@ -77,7 +77,7 @@ def page():
     faqs = ''.join(f'<details><summary><span>{q}</span><i aria-hidden="true">+</i></summary><p>{a}</p></details>' for q, a in FAQ)
     header = B.HEADER.replace('class="nav on" href="/blog/"', 'class="nav" href="/blog/"').replace('href="/#pricing"', 'href="#pricing"')
     return HEAD_META + f'''<meta name="theme-color" content="#0B0A24">
-<title>BookedOrion · AI receptionist for HVAC in Dallas–Fort Worth</title>
+<title>BookedOrion · AI receptionist for HVAC companies</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,14 +95,14 @@ def page():
 <section class="hero" id="top">
   <div class="wrap hero-in">
     <div class="hero-copy">
-      <p class="kicker">AI receptionist for HVAC shops in Dallas–Fort Worth</p>
+      <p class="kicker">AI receptionist for HVAC shops</p>
       <h1>You fix the AC.<br><span>Molly answers the phone.</span></h1>
       <p class="hero-lede">When your team can’t pick up, Molly answers, books the visit on your calendar and texts you the details. Nights, weekends and busy days.</p>
       <div class="hero-cta">
-        <a class="b b-mint b-lg" href="#start">Start free pilot {ic(ARR, 18, 2.6)}</a>
+        <a class="b b-mint b-lg" href="#start">Start free trial {ic(ARR, 18, 2.6)}</a>
         <a class="b b-ghost b-lg" href="tel:+15705219710">{ic(PH, 18)}Hear Molly</a>
       </div>
-      <ul class="hero-facts"><li>{ic(CHK,15,3)}Free 14-day pilot</li><li>{ic(CHK,15,3)}Keep your number</li><li>{ic(CHK,15,3)}No contract</li></ul>
+      <ul class="hero-facts"><li>{ic(CHK,15,3)}Free 14-day trial</li><li>{ic(CHK,15,3)}Keep your number</li><li>{ic(CHK,15,3)}No contract</li></ul>
       <p class="hero-call">Hear her live anytime: <a href="tel:+15705219710">(570) 521-9710</a></p>
     </div>
 
@@ -111,7 +111,7 @@ def page():
       <ol class="con-steps">
         <li class="cs cs-call">
           <time>9:47 PM</time><span class="cs-dot">{ic(PH,14)}</span>
-          <div class="cs-body"><b>Incoming call</b><p>Maria G. · Plano, TX</p><span class="cchip cchip-warn">Office closed</span></div>
+          <div class="cs-body"><b>Incoming call</b><p>Maria G. · Homeowner</p><span class="cchip cchip-warn">Office closed</span></div>
         </li>
         <li class="cs cs-call">
           <time>9:47 PM</time><span class="cs-dot">{ic(MIC,14)}</span>
@@ -125,7 +125,7 @@ def page():
         </li>
         <li class="cs cs-note">
           <time>9:48 PM</time><span class="cs-dot">{ic(MSG,14)}</span>
-          <div class="cs-body"><b>Owner notified</b><div class="sms">New job booked: Maria G., 214 Oak Ln, Plano. AC blowing warm air. Wed 8–10 AM.</div></div>
+          <div class="cs-body"><b>Owner notified</b><div class="sms">New job booked: Maria G., 214 Oak Ln. AC blowing warm air. Wed 8–10 AM.</div></div>
         </li>
       </ol>
       <figcaption>Sample call for illustration. Not live customer data.</figcaption>
@@ -178,7 +178,7 @@ def page():
   <div class="wrap">
     <div class="sec-head"><p class="eyebrow-d">How it works</p><h2>How Molly handles a call.</h2><p class="lead">Same phone number. Nothing new to install. Here’s one call from ring to booked job.</p></div>
     <ol class="flow">
-      <li class="flw fl-call"><span class="fl-n">1</span><p class="fl-k">Call handling</p><h3>Answer</h3><p>Your phone rings first. No answer in about 20 seconds, busy, or after hours? Molly picks up with your company name.</p>
+      <li class="flw fl-call"><span class="fl-n">1</span><p class="fl-k">Call handling</p><h3>Answer</h3><p>Your phone rings first. No answer in about 10–15 seconds, busy, or after hours? Molly picks up with your company name.</p>
         <div class="frag"><span class="frag-ic">{ic(PH,14)}</span><span>“Thanks for calling ABC Heating &amp; Air…”</span></div></li>
       <li class="flw fl-call"><span class="fl-n">2</span><p class="fl-k">Call handling</p><h3>Qualify</h3><p>She asks what’s wrong, gets the name, address and ZIP, and checks you serve that area.</p>
         <div class="frag frag-list"><span>Name</span><span>Address</span><span>Problem</span><span>ZIP ✓</span></div></li>
@@ -227,7 +227,9 @@ def page():
         <li>{ic(CHK,16,3)}Book visits only into times you leave open</li>
         <li>{ic(CHK,16,3)}Quote only the fees you approve</li>
         <li>{ic(CHK,16,3)}Ring your cell for emergencies and upset callers</li>
-        <li>{ic(CHK,16,3)}Send a summary, recording and transcript of every call</li></ul></div>
+        <li>{ic(CHK,16,3)}Send a summary, recording and transcript of every call</li>
+        <li>{ic(CHK,16,3)}Send a call-back list of callers who didn’t book</li>
+        <li>{ic(CHK,16,3)}Send you a short report every Monday</li></ul></div>
       <div class="cap-col"><h3>Molly won’t</h3><ul class="cap-no">
         <li>{ic(X,16,2.6)}Take card numbers over the phone</li>
         <li>{ic(X,16,2.6)}Diagnose a system or promise a repair</li>
@@ -242,42 +244,42 @@ def page():
 <!-- PRICING -->
 <section class="sec" id="pricing">
   <div class="wrap">
-    <div class="sec-head center"><p class="eyebrow-d">Pricing</p><h2>Simple monthly plans.</h2><p class="lead">Every plan starts with a free 14-day pilot. We set it up. No contract, cancel anytime.</p></div>
-    <div class="finder" role="group" aria-label="Find your plan"><span>When do you miss calls?</span>
-      <button type="button" data-plan="0" aria-pressed="false">Only after hours</button>
-      <button type="button" data-plan="1" aria-pressed="true" class="on">After hours + busy days</button>
-      <button type="button" data-plan="2" aria-pressed="false">Both, plus follow-ups</button></div>
-    <div class="plans">{cols}</div>
+    <div class="sec-head center"><p class="eyebrow-d">Pricing</p><h2>Pay for booked jobs, or one flat price.</h2><p class="lead">Both plans start with a free 14-day trial. We set it up. No setup fee, no contract, cancel anytime.</p></div>
+    <div class="finder" role="group" aria-label="Find your plan"><span>Jobs Molly could book you each month?</span>
+      <button type="button" data-plan="0" aria-pressed="true" class="on">Up to 5</button>
+      <button type="button" data-plan="1" aria-pressed="false">6 or more</button></div>
+    <div class="plans two">{cols}</div>
+    <p class="pl-note"><b>Only need nights and weekends?</b> Night-only: $49 a month + $29 per booked job. Spam and wrong-number calls are never counted. <a href="/terms/">What counts as a booked job →</a></p>
     <details class="cmp"><summary>Compare all features <i aria-hidden="true">+</i></summary>
-      <div class="cmp-wrap"><table><thead><tr><th></th><th>Porchlight<small>$197/mo</small></th><th>Full Desk<small>$397/mo</small></th><th>Revenue Desk<small>$797/mo</small></th></tr></thead><tbody>{rows}</tbody></table></div></details>
+      <div class="cmp-wrap"><table><thead><tr><th></th><th>Pay-per-Job<small>$79 + $29/job</small></th><th>Flat<small>$249/mo</small></th></tr></thead><tbody>{rows}</tbody></table></div></details>
   </div>
 </section>
 
-<!-- FOUNDER + PILOT -->
+<!-- FOUNDER + TRIAL -->
 <section class="sec sec-navy" id="start">
   <div class="wrap pilot">
     <div class="pilot-l">
-      <p class="eyebrow-l">Free 14-day pilot</p>
-      <h2>If Molly doesn’t book you a job, you pay nothing.</h2>
+      <p class="eyebrow-l">Free 14-day trial</p>
+      <h2>Try Molly free for 14 days.</h2>
       <div class="founder">
         <img src="/siam-2.jpg" alt="Siam Ahmed, founder of BookedOrion" width="96" height="96">
-        <div><p class="fd-q">“I set up every pilot myself and check Molly’s calls with you in week one.”</p><p class="fd-n"><b>Siam Ahmed</b> · Founder, BookedOrion</p></div>
+        <div><p class="fd-q">“I set up every shop myself and check Molly’s calls with you in week one.”</p><p class="fd-n"><b>Siam Ahmed</b> · Founder, BookedOrion</p></div>
       </div>
-      <ol class="pilot-steps"><li><b>Day 1</b><span>Send your details. We reply within one business day.</span></li><li><b>Days 2–3</b><span>We build Molly for your shop. You hear a test call.</span></li><li><b>Day 14</b><span>Keep her, or walk away.</span></li></ol>
+      <ol class="pilot-steps"><li><b>Day 1</b><span>Send your details. We reply within one business day.</span></li><li><b>Days 2–3</b><span>We build Molly for your shop. You hear a test call.</span></li><li><b>Day 14</b><span>Keep her, or walk away. No setup fee, no contract.</span></li></ol>
       <a class="link-l" href="/getting-started/">See the full setup plan →</a>
     </div>
-    <form id="pilotForm" class="form" aria-label="Start your free pilot" novalidate>
-      <h3>Start your free pilot</h3>
+    <form id="pilotForm" class="form" aria-label="Start your free trial" novalidate>
+      <h3>Start your free trial</h3>
       <label for="f-name">Your name</label><input id="f-name" type="text" autocomplete="name" required>
       <label for="f-company">Company</label><input id="f-company" type="text" autocomplete="organization" required>
       <label for="f-email">Email</label><input id="f-email" type="email" autocomplete="email" required>
       <label for="f-phone">Phone <span>(optional)</span></label><input id="f-phone" type="tel" autocomplete="tel" inputmode="tel">
       <input type="checkbox" name="botcheck" id="f-bot" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
       <p class="f-err" id="fieldErr" role="alert" hidden></p>
-      <button type="submit" id="f-submit" class="b b-ink b-lg">Start my free pilot</button>
+      <button type="submit" id="f-submit" class="b b-ink b-lg">Start my free trial</button>
       <div id="formOk" class="f-ok" role="status" hidden><b>You’re in. ✓</b> Siam will email you within one business day with your setup questions.</div>
       <div id="formErr" class="f-bad" role="alert" hidden></div>
-      <div id="formDone" class="f-ok" hidden><b>One last step.</b> Send these details to <b>siam@bookedorion.com</b> and we’ll set up your pilot. <button type="button" id="copyBtn">Copy details</button><pre id="formText"></pre></div>
+      <div id="formDone" class="f-ok" hidden><b>One last step.</b> Send these details to <b>siam@bookedorion.com</b> and we’ll set up your trial. <button type="button" id="copyBtn">Copy details</button><pre id="formText"></pre></div>
       <p class="f-fine">We reply within one business day. No sales calls unless you ask. We never sell your details. Prefer email? <a href="mailto:siam@bookedorion.com">siam@bookedorion.com</a></p>
     </form>
   </div>
@@ -294,11 +296,11 @@ def page():
 <!-- FINAL CTA -->
 <section class="sec">
   <div class="wrap"><div class="final"><h2>Tonight’s calls can be tomorrow’s booked jobs.</h2><p>We set it all up. Free for 14 days.</p>
-    <div class="hero-cta"><a class="b b-mint b-lg" href="#start">Start free pilot {ic(ARR,18,2.6)}</a><a class="b b-ghost b-lg" href="tel:+15705219710">{ic(PH,18)}Hear Molly</a></div></div></div>
+    <div class="hero-cta"><a class="b b-mint b-lg" href="#start">Start free trial {ic(ARR,18,2.6)}</a><a class="b b-ghost b-lg" href="tel:+15705219710">{ic(PH,18)}Hear Molly</a></div></div></div>
 </section>
 </main>
 {B.FOOTER}
-<div class="mcta" aria-label="Quick actions"><a class="b b-ghost" href="tel:+15705219710">{ic(PH,16)}Hear Molly</a><a class="b b-mint" href="#start">Start free pilot</a></div>
+<div class="mcta" aria-label="Quick actions"><a class="b b-ghost" href="tel:+15705219710">{ic(PH,16)}Hear Molly</a><a class="b b-mint" href="#start">Start free trial</a></div>
 <script src="/home.js?v={B.CSSV}" defer></script>
 </body>
 </html>

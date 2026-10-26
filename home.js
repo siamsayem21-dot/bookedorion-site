@@ -10,7 +10,7 @@
       { label: 'AC not cooling', outcome: 'Job booked · Wed 8:00 AM · owner texted', lines: [
         ['c', 'Caller:', 'Hi, my AC is running but blowing warm air.'],
         ['m', 'Molly:', 'Sorry about that. I’m Molly, the AI assistant for ' + c + '. Can I get your name and address?'],
-        ['c', 'Caller:', 'Maria, 214 Oak Lane, Plano.'],
+        ['c', 'Caller:', 'Maria, 214 Oak Lane.'],
         ['m', 'Molly:', 'Thanks, Maria. I have Wednesday 8 to 10 AM open. Does that work?']
       ]},
       { label: 'Gas smell (emergency)', outcome: 'Owner called right away · caller told to get outside', lines: [
@@ -88,10 +88,10 @@
       var fe = el('fieldErr');
       if (bad.length) { fe.textContent = 'Please add your name, company and a valid email.'; fe.hidden = false; bad[0].focus(); return; }
       fe.hidden = true;
-      var t = 'Free pilot request\nName: ' + name.value.trim() + '\nCompany: ' + co.value.trim() + '\nEmail: ' + em.value.trim() + '\nPhone: ' + ph.value.trim();
+      var t = 'Free trial request\nName: ' + name.value.trim() + '\nCompany: ' + co.value.trim() + '\nEmail: ' + em.value.trim() + '\nPhone: ' + ph.value.trim();
       var btn = el('f-submit'); btn.disabled = true; btn.textContent = 'Sending…'; el('formErr').hidden = true;
       fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ access_key: 'd2b56b26-ace6-4f6d-a1ac-23340b566c8b', subject: 'New pilot request: ' + co.value.trim(), from_name: 'BookedOrion website',
+        body: JSON.stringify({ access_key: 'd2b56b26-ace6-4f6d-a1ac-23340b566c8b', subject: 'New trial request: ' + co.value.trim(), from_name: 'BookedOrion website',
           name: name.value.trim(), company: co.value.trim(), email: em.value.trim(), phone: ph.value.trim(), replyto: em.value.trim(), botcheck: el('f-bot').checked }) })
         .then(function (r) { return r.json(); })
         .then(function (d) {
@@ -99,7 +99,7 @@
           else { throw new Error((d && d.message) || 'failed'); }
         })
         .catch(function () {
-          btn.disabled = false; btn.textContent = 'Start my free pilot';
+          btn.disabled = false; btn.textContent = 'Start my free trial';
           el('formErr').textContent = 'We couldn’t send that just now. Please email the details below instead.'; el('formErr').hidden = false;
           el('formText').textContent = t; el('formDone').hidden = false;
         });
