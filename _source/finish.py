@@ -8,7 +8,7 @@
 import os, re
 
 OUT = os.path.join(os.path.dirname(__file__), '..', 'site')
-PREMIUM_V = '1'
+PREMIUM_V = '2'
 LINK = f'<link rel="stylesheet" href="/premium.css?v={PREMIUM_V}">'
 
 LABELS = {

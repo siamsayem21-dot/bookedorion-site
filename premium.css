@@ -179,3 +179,4 @@ h1,h2,h3,h4{font-family:var(--fh);color:var(--ink);font-weight:700;letter-spacin
 .home .foot a:not(.btn),.foot .fcol a{color:#C9C7EE}.home .foot a:not(.btn):hover,.foot .fcol a:hover{color:#FFFFFF}
 .home .foot .fcall{color:#FFFFFF}
 #start .b-ink{background:var(--indigo)}#start .b-ink:hover{background:var(--indigo-dk)}
+.pl-help{max-width:620px;margin:-20px auto 28px;text-align:center;font-size:15.5px;color:var(--muted)}

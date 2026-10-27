@@ -245,9 +245,7 @@ def page():
 <section class="sec" id="pricing">
   <div class="wrap">
     <div class="sec-head center"><p class="eyebrow-d">Pricing</p><h2>Two simple plans.</h2><p class="lead">$79 a month plus $29 per booked job, or $249 a month flat. Both start with a free 14-day trial. We set it up. No setup fee, no contract.</p></div>
-    <div class="finder" role="group" aria-label="Find your plan"><span>Jobs Molly could book you each month?</span>
-      <button type="button" data-plan="0" aria-pressed="true" class="on">Up to 5</button>
-      <button type="button" data-plan="1" aria-pressed="false">6 or more</button></div>
+    <p class="pl-help">Not sure which one? Start with Pay-per-Job. Each month we show you which plan would have cost you less.</p>
     <div class="plans two">{cols}</div>
     <p class="pl-note"><b>Only need nights and weekends?</b> Night-only: $49 a month + $29 per booked job. Spam and wrong-number calls are never counted. <a href="/terms/">What counts as a booked job →</a></p>
     <details class="cmp"><summary>Compare all features <i aria-hidden="true">+</i></summary>
