@@ -8,7 +8,7 @@ DATE = '2026-10-21'
 DATE_H = 'Oct 21, 2026'
 AUTHOR = 'Siam Ahmed'
 CSSV = '10'
-FONTS = '<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">'
+FONTS = '<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">'
 
 LOGO = ('<a href="/" class="logo" aria-label="BookedOrion home"><span>Booked</span>'
         '<svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#2BD9A0" stroke-width="8"/>'
