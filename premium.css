@@ -180,3 +180,31 @@ h1,h2,h3,h4{font-family:var(--fh);color:var(--ink);font-weight:700;letter-spacin
 .home .foot .fcall{color:#FFFFFF}
 #start .b-ink{background:var(--indigo)}#start .b-ink:hover{background:var(--indigo-dk)}
 .pl-help{max-width:620px;margin:-20px auto 28px;text-align:center;font-size:15.5px;color:var(--muted)}
+
+/* ---------- reviews: the second thing we do after answering the call ---------- */
+.rv{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px;align-items:center}
+.rv-l{display:flex;flex-direction:column;gap:18px;min-width:0}
+.rv-l h2{margin:0}
+.rv-new{display:inline-block;margin-right:10px;padding:2px 9px;border-radius:999px;background:var(--indigo);color:#FFFFFF;font-size:12.5px;font-weight:700}
+.rv-two{margin-top:6px;background:#FFFFFF;border:1px solid var(--line);border-radius:var(--r2);padding:18px 20px;box-shadow:var(--lift)}
+.rv-two-h{margin:0 0 6px;font-size:14px;font-weight:600;color:var(--soft)}
+.rv-fac{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:6px 18px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.rv-g{font-weight:700;font-size:16px;color:var(--ink)}
+.rv-us{display:flex;align-items:flex-start;gap:8px;font-size:15px;color:var(--ink)}
+.rv-us svg{flex-shrink:0;margin-top:4px;color:var(--mintdk)}
+.rv-src{margin:10px 0 0;padding-top:10px;border-top:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--soft)}
+.rv-src a{color:var(--indigo)}
+.rv-rules{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15.5px;color:var(--muted)}
+.rv-rules li{display:flex;align-items:flex-start;gap:9px}
+.rv-rules svg{flex-shrink:0;margin-top:4px;color:var(--indigo)}
+.rv-console{max-width:520px;width:100%;justify-self:end}
+.rv-console .sms u{color:var(--indigo);text-decoration-thickness:1px;text-underline-offset:2px;overflow-wrap:anywhere}
+.rv-stat{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.rv-stars{display:inline-flex;gap:2px;color:#E0A21B}
+@media (max-width:940px){
+ .rv{grid-template-columns:minmax(0,1fr);gap:36px}
+ .rv-console{justify-self:start;max-width:560px}
+}
+@media (max-width:520px){
+ .rv-fac{grid-template-columns:minmax(0,1fr)}
+}
