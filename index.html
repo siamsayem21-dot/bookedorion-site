@@ -26,13 +26,8 @@
 <link rel="stylesheet" href="/home.css?v=10">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is Molly different from other AI receptionists?", "acceptedAnswer": {"@type": "Answer", "text": "Most AI receptionist apps are built for any business and you set them up yourself. Molly is built only for HVAC, a real person sets her up for your shop, and your team can still answer first."}}, {"@type": "Question", "name": "Can my team still answer first?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Your phone rings as usual. If nobody picks up in about 10\u201315 seconds, or the line is busy, the call goes to Molly. After hours, she can answer every call. You choose, and you can switch anytime."}}, {"@type": "Question", "name": "Will callers know it\u2019s an AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Molly says she\u2019s an AI assistant and that the call may be recorded."}}, {"@type": "Question", "name": "How do the review requests work?", "acceptedAnswer": {"@type": "Answer", "text": "When a job is finished, you tap \u201cJob done\u201d in the text we sent you. Your customer then gets a short thank-you with your Google review link. Every customer gets the same message. We never offer rewards for reviews and never screen out unhappy customers. Texts start once your number is registered for business texting, which we handle during setup."}}, {"@type": "Question", "name": "What else can you do besides answering calls?", "acceptedAnswer": {"@type": "Answer", "text": "Every plan includes Google review requests, appointment reminders, website chat and Facebook/Instagram replies, and a monthly report. Optional add-ons: tune-up reminders for past customers who agreed to hear from you ($49 a month), estimate follow-up ($49 a month, or $79 for both), a one-time Google Business Profile tune-up ($199), and a website for your shop ($600 to build, then $49 a month)."}}, {"@type": "Question", "name": "Do I change my phone number?", "acceptedAnswer": {"@type": "Answer", "text": "No. You keep your number and your Google listing. Unanswered calls forward to Molly."}}, {"@type": "Question", "name": "What if a caller has a real emergency?", "acceptedAnswer": {"@type": "Answer", "text": "You pick the emergency words. When Molly hears one, she tells the caller how to stay safe and rings your phone first."}}, {"@type": "Question", "name": "What does it cost to try?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing. The first 14 days are free, with no setup fee and no contract. On Pay-per-Job, if Molly books no jobs in your first paid month, that month is free too."}}, {"@type": "Question", "name": "What counts as a booked job?", "acceptedAnswer": {"@type": "Answer", "text": "A new appointment from a call Molly handled, which you confirm with one tap in the text summary. Spam and wrong-number calls never count. If the customer cancels and there\u2019s a record of it, you aren\u2019t charged."}}, {"@type": "Question", "name": "Does it work with ServiceTitan, Jobber or Housecall Pro?", "acceptedAnswer": {"@type": "Answer", "text": "Every booking is sent to you by text and email with all the details, ready to add. There\u2019s no direct integration yet."}}, {"@type": "Question", "name": "What if Molly gets something wrong?", "acceptedAnswer": {"@type": "Answer", "text": "Tell us and we fix her script by the next business day. If she isn\u2019t sure, she takes a message and you call back."}}]}</script>
 <link rel="stylesheet" href="/premium.css?v=4">
-<link rel="stylesheet" href="/motion3d.css?v=1">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
-<script src="/motion3d.js?v=1" defer></script>
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
-<script type="module" src="/scene3d.js?v=1"></script>
+<link rel="stylesheet" href="/unslop.css?v=1">
+<script src="/motion.js?v=1" defer></script>
 </head>
 <body class="home">
 <a class="skip" href="#main">Skip to content</a>
@@ -45,7 +40,7 @@
   <div class="wrap hero-in">
     <div class="hero-copy">
       <p class="kicker">AI receptionist for HVAC shops</p>
-      <h1>You fix the AC.<br><span>Molly answers the phone.</span></h1>
+      <h1>You fix the AC.<br><span>Molly answers the phone</span></h1>
       <p class="hero-lede">When your team can’t pick up, Molly answers, books the visit on your calendar and texts you the details. Nights, weekends and busy days.</p>
       <div class="hero-cta">
         <a class="b b-mint b-lg" href="#start">Start free trial <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -55,6 +50,7 @@
       <p class="hero-call">Hear her live anytime: <a href="tel:+15705219710">(570) 521-9710</a></p>
     </div>
 
+    <div class="hero-vis">
     <figure class="console" aria-label="Demo: how one missed call becomes a booked job">
       <div class="con-bar"><span class="con-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="con-title">Molly · call log</span><span class="con-demo">Demo · sample data</span></div>
       <ol class="con-steps">
@@ -79,6 +75,14 @@
       </ol>
       <figcaption>Sample call for illustration. Not live customer data.</figcaption>
     </figure>
+    <div class="ticket" aria-hidden="true">
+      <div class="tk-in">
+        <div class="tk-day"><span>Wed</span><b>8</b></div>
+        <div class="tk-body"><span class="tk-k">Visit booked</span><b>8:00–10:00 AM</b><span>AC repair · Maria G.</span><span>214 Oak Ln</span></div>
+        <div class="tk-stamp"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M7.8 12.3l2.8 2.8 5.6-5.8"/></svg></div>
+      </div>
+    </div>
+    </div>
   </div>
 </section>
 
@@ -88,7 +92,7 @@
     <div class="split">
       <div class="split-l">
         <p class="eyebrow-d">The problem</p>
-        <h2>A missed call is a job your competitor books.</h2>
+        <h2>A missed call is a job your competitor books</h2>
         <p class="lead">When the AC dies, most homeowners don’t leave a voicemail. They call the next shop on Google.</p>
       </div>
       <div class="vs" role="group" aria-label="The same call, two ways">
@@ -125,7 +129,7 @@
 <!-- HOW MOLLY HANDLES A CALL -->
 <section class="sec" id="how">
   <div class="wrap">
-    <div class="sec-head"><p class="eyebrow-d">How it works</p><h2>How Molly handles a call.</h2><p class="lead">Same phone number. Nothing new to install. Here’s one call from ring to booked job.</p></div>
+    <div class="sec-head"><p class="eyebrow-d">How it works</p><h2>How Molly handles a call</h2><p class="lead">Same phone number. Nothing new to install. Here’s one call from ring to booked job.</p></div>
     <ol class="flow">
       <li class="flw fl-call"><span class="fl-n">1</span><p class="fl-k">Call handling</p><h3>Answer</h3><p>Your phone rings first. No answer in about 10–15 seconds, busy, or after hours? Molly picks up with your company name.</p>
         <div class="frag"><span class="frag-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span>“Thanks for calling ABC Heating &amp; Air…”</span></div></li>
@@ -145,8 +149,8 @@
 <section class="sec sec-paper" id="reviews">
   <div class="wrap rv">
     <div class="rv-l">
-      <p class="eyebrow-d"><span class="rv-new">New</span>Included on every plan</p>
-      <h2>After the job, we ask for the review.</h2>
+      <p class="eyebrow-d">Included on every plan</p>
+      <h2>After the job, we ask for the review</h2>
       <p class="lead">Molly gets the call answered. When the work is done, you tap “Job done” and your customer gets a thank-you with your Google review link. No chasing, no forgetting.</p>
       <div class="rv-two">
         <p class="rv-two-h">Google lists both of these for Local Services Ads ranking</p>
@@ -186,7 +190,7 @@
   <div class="wrap demo">
     <div class="demo-l">
       <p class="eyebrow-l">Hear Molly</p>
-      <h2>Test her yourself in 60 seconds.</h2>
+      <h2>Test her yourself in 60 seconds</h2>
       <p class="lead">Call the demo line and talk like a homeowner. No sign-up.</p>
       <ol class="steps3"><li><b>Call the demo line.</b> Any hour. She answers as a sample HVAC shop.</li><li><b>Say what’s wrong.</b> Try “My AC is blowing warm air.”</li><li><b>Listen to her book it.</b> She asks the right questions and offers a time.</li></ol>
       <a class="b b-mint b-lg" href="tel:+15705219710"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (570) 521-9710</a>
@@ -208,7 +212,7 @@
 <!-- CAPABILITIES & BOUNDARIES -->
 <section class="sec sec-paper" id="capabilities">
   <div class="wrap">
-    <div class="sec-head"><p class="eyebrow-d">What you get</p><h2>What Molly does, and what she never does.</h2></div>
+    <div class="sec-head"><p class="eyebrow-d">What you get</p><h2>What Molly does, and what she never does</h2></div>
     <div class="cap">
       <div class="cap-col"><h3>Molly will</h3><ul class="cap-yes">
         <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Answer missed, after-hours and busy-line calls</li>
@@ -234,7 +238,7 @@
 <!-- PRICING -->
 <section class="sec" id="pricing">
   <div class="wrap">
-    <div class="sec-head center"><p class="eyebrow-d">Pricing</p><h2>Two simple plans.</h2><p class="lead">$79 a month plus $29 per booked job, or $249 a month flat. Both start with a free 14-day trial. We set it up. No setup fee, no contract.</p></div>
+    <div class="sec-head center"><p class="eyebrow-d">Pricing</p><h2>Two simple plans</h2><p class="lead">$79 a month plus $29 per booked job, or $249 a month flat. Both start with a free 14-day trial. We set it up. No setup fee, no contract.</p></div>
     <p class="pl-help">Not sure which one? Start with Pay-per-Job. Each month we show you which plan would have cost you less.</p>
     <div class="plans two"><div class="pl is-rec" data-plan="0">
           <div class="pl-tag">Recommended</div>
@@ -289,7 +293,7 @@
   <div class="wrap pilot">
     <div class="pilot-l">
       <p class="eyebrow-l">Free 14-day trial</p>
-      <h2>Try Molly free for 14 days.</h2>
+      <h2>Try Molly free for 14 days</h2>
       <div class="founder">
         <img src="/siam-2.jpg" alt="Siam Ahmed, founder of BookedOrion" width="96" height="96">
         <div><p class="fd-q">“I set up every shop myself and check Molly’s calls with you in week one.”</p><p class="fd-n"><b>Siam Ahmed</b> · Founder, BookedOrion</p></div>
@@ -317,14 +321,14 @@
 <!-- FAQ -->
 <section class="sec sec-paper" id="faq">
   <div class="wrap faq">
-    <div class="faq-l"><p class="eyebrow-d">FAQ</p><h2>Questions owners ask.</h2><p class="lead">Still unsure? Email <a href="mailto:siam@bookedorion.com">siam@bookedorion.com</a> or call Molly and hear her for yourself.</p><a class="more-link" href="/how-it-works/">More answers on How it works</a></div>
+    <div class="faq-l"><p class="eyebrow-d">FAQ</p><h2>Questions owners ask</h2><p class="lead">Still unsure? Email <a href="mailto:siam@bookedorion.com">siam@bookedorion.com</a> or call Molly and hear her for yourself.</p><a class="more-link" href="/how-it-works/">More answers on How it works</a></div>
     <div class="faq-r"><details><summary><span>How is Molly different from other AI receptionists?</span><i aria-hidden="true">+</i></summary><p>Most AI receptionist apps are built for any business and you set them up yourself. Molly is built only for HVAC, a real person sets her up for your shop, and your team can still answer first.</p></details><details><summary><span>Can my team still answer first?</span><i aria-hidden="true">+</i></summary><p>Yes. Your phone rings as usual. If nobody picks up in about 10–15 seconds, or the line is busy, the call goes to Molly. After hours, she can answer every call. You choose, and you can switch anytime.</p></details><details><summary><span>Will callers know it’s an AI?</span><i aria-hidden="true">+</i></summary><p>Yes. Molly says she’s an AI assistant and that the call may be recorded.</p></details><details><summary><span>How do the review requests work?</span><i aria-hidden="true">+</i></summary><p>When a job is finished, you tap “Job done” in the text we sent you. Your customer then gets a short thank-you with your Google review link. Every customer gets the same message. We never offer rewards for reviews and never screen out unhappy customers. Texts start once your number is registered for business texting, which we handle during setup.</p></details><details><summary><span>What else can you do besides answering calls?</span><i aria-hidden="true">+</i></summary><p>Every plan includes Google review requests, appointment reminders, website chat and Facebook/Instagram replies, and a monthly report. Optional add-ons: tune-up reminders for past customers who agreed to hear from you ($49 a month), estimate follow-up ($49 a month, or $79 for both), a one-time Google Business Profile tune-up ($199), and a website for your shop ($600 to build, then $49 a month).</p></details><details><summary><span>Do I change my phone number?</span><i aria-hidden="true">+</i></summary><p>No. You keep your number and your Google listing. Unanswered calls forward to Molly.</p></details><details><summary><span>What if a caller has a real emergency?</span><i aria-hidden="true">+</i></summary><p>You pick the emergency words. When Molly hears one, she tells the caller how to stay safe and rings your phone first.</p></details><details><summary><span>What does it cost to try?</span><i aria-hidden="true">+</i></summary><p>Nothing. The first 14 days are free, with no setup fee and no contract. On Pay-per-Job, if Molly books no jobs in your first paid month, that month is free too.</p></details><details><summary><span>What counts as a booked job?</span><i aria-hidden="true">+</i></summary><p>A new appointment from a call Molly handled, which you confirm with one tap in the text summary. Spam and wrong-number calls never count. If the customer cancels and there’s a record of it, you aren’t charged.</p></details><details><summary><span>Does it work with ServiceTitan, Jobber or Housecall Pro?</span><i aria-hidden="true">+</i></summary><p>Every booking is sent to you by text and email with all the details, ready to add. There’s no direct integration yet.</p></details><details><summary><span>What if Molly gets something wrong?</span><i aria-hidden="true">+</i></summary><p>Tell us and we fix her script by the next business day. If she isn’t sure, she takes a message and you call back.</p></details></div>
   </div>
 </section>
 
 <!-- FINAL CTA -->
 <section class="sec">
-  <div class="wrap"><div class="final"><h2>Tonight’s calls can be tomorrow’s booked jobs.</h2><p>We set it all up. Free for 14 days.</p>
+  <div class="wrap"><div class="final"><h2>Tonight’s calls can be tomorrow’s booked jobs</h2><p>We set it all up. Free for 14 days.</p>
     <div class="hero-cta"><a class="b b-mint b-lg" href="#start">Start free trial <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="b b-ghost b-lg" href="tel:+15705219710"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Hear Molly</a></div></div></div>
 </section>
 </main>
