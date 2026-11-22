@@ -18,5 +18,6 @@
 - [Getting started](https://bookedorion.com/getting-started/): setup steps and what the shop provides
 - [About](https://bookedorion.com/about/): who runs BookedOrion
 - [Blog](https://bookedorion.com/blog/): advice for HVAC owners on missed calls, after-hours answering and call triage
+- [Do homeowners hang up on an AI receptionist?](https://bookedorion.com/blog/do-homeowners-hang-up-on-ai/): survey data with caveats, AI vs voicemail after hours, what keeps callers on the line
 - [How much does an AI receptionist cost for an HVAC shop?](https://bookedorion.com/blog/ai-receptionist-cost-hvac/): pricing models, hidden costs, cost per booked job
 - [Answering service vs AI receptionist](https://bookedorion.com/blog/answering-service-vs-ai-receptionist/)

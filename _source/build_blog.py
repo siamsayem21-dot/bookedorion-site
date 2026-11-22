@@ -105,6 +105,57 @@ POSTS = [
   sources=[('Moneypenny: Small business call report (2016)','https://moneypenny.com/us/resources/news/small-business-call-report/')],
  ),
  dict(
+  slug='do-homeowners-hang-up-on-ai',
+  art=('AI', 'Will callers', 'stay on the line?'),
+  cat='AI basics',
+  date='2026-11-22',
+  date_h='Nov 22, 2026',
+  title='Do homeowners hang up on an AI receptionist?',
+  desc='Some do. Here is what the surveys say, who paid for them, how AI compares with voicemail at 9 PM, and what keeps callers on the line.',
+  read='5 min read',
+  body='''
+<p class="lede">It’s a fair worry. You pay for ads and work hard on reviews to make the phone ring. The last thing you want is a homeowner hanging up because a robot answered. Here’s what the numbers say, what they leave out, and what makes callers stay.</p>
+
+<h2>The short answer</h2>
+<p>Some do. In recent surveys, <strong>between 22% and 31% of people say they would hang up</strong> if an AI answered when they called a business. That also means most people say they’d stay on the line. And the more useful question is what the AI is replacing. At 9 PM, it usually isn’t a person. It’s voicemail.</p>
+
+<h2>What the surveys say</h2>
+<ul class="list">
+<li>A May 2026 OnePoll survey of 6,000 adults in the US, UK and Canada found <strong>31% would hang up</strong> if connected to AI when calling a business, up from 29% a year earlier. 55% said they were less likely to become a customer when a business uses AI instead of people to answer calls.</li>
+<li>A 2026 survey of 2,000 US consumers found <strong>22% would end the call right away</strong> if they reached AI, and <strong>8 in 10 want to know</strong> whether they’re talking to a person or a machine.</li>
+</ul>
+<p>Two things to keep in mind. Both surveys were paid for by companies that sell human answering services, so they have a reason to make AI look bad. And both ask people what they think they would do, not what they actually do when the heat is out and it’s getting late.</p>
+
+<h2>Compare AI with the real alternative</h2>
+<p>During the day, a good person on your phone is hard to beat. An AI receptionist makes the most sense for the calls nobody can take: when the office line is busy, the techs are on roofs, or the shop is closed.</p>
+<p>After hours, the alternative is voicemail, and most callers don’t leave one. One call-handling study of 10,000 businesses found <strong>69% of callers who reach voicemail don’t leave a message</strong> (Moneypenny, 2016). Those numbers come from different studies with different methods, so don’t compare them too closely. But the direction is clear: a caller who reaches voicemail at night is more likely to be gone than one who reaches an AI that can book the visit.</p>
+
+<h2>What keeps callers on the line</h2>
+<h3>1. Say it’s an AI, right away</h3>
+<p>Most people want to know, and finding out later feels like a trick. Molly opens every call with the shop’s name and says she’s an AI assistant and that the call may be recorded.</p>
+<h3>2. Get straight to the problem</h3>
+<p>No “press 1 for service.” Ask what’s going on, in plain words, and listen.</p>
+<h3>3. Sound like your shop</h3>
+<p>Your company name, your service area, your diagnostic fee. A caller who hears the details they expected is more likely to keep talking.</p>
+<h3>4. Book the job, not just a message</h3>
+<p>A caller with no AC wants to hear a time. “Wednesday at 8 AM, does that work?” is a better reason to stay than “someone will call you back.”</p>
+<h3>5. Give an easy way to a person</h3>
+<p>If someone asks for a human, don’t argue. Take their number, tell them when they’ll hear back, and let the owner know right away.</p>
+<h3>6. Let your team answer first by day</h3>
+<p>Your phone can ring at the shop for 10 to 15 seconds before the AI picks up. Your regular customers still reach your people, and the AI only gets the calls that would have been missed. We explain the setup in <a href="/blog/call-forwarding-team-answers-first/">this guide</a>.</p>
+
+<h2>Check it on your own calls</h2>
+<p>Surveys are a starting point. Your callers are what count. During a trial, listen to the recordings and count two things: how many people hung up in the first 10 seconds, and how many booked a visit. With BookedOrion, every call is recorded and transcribed, and the 14-day trial is free. Judge it on your calls, not ours.</p>
+
+<h2>A note on the rules</h2>
+<p>In February 2024, the FCC ruled that calls made with AI-generated voices count as “artificial” under the Telephone Consumer Protection Act. That ruling is about robocalls, calls a business places to people. Answering calls that come in to your shop is a different thing. Molly never calls or texts anyone who didn’t contact the shop first. This isn’t legal advice; ask your own lawyer about your situation.</p>
+''',
+  sources=[('PR Newswire: “The Hidden Cost of AI on the Phone” (OnePoll survey, May 2026)','https://www.prnewswire.com/news-releases/the-hidden-cost-of-ai-on-the-phone-55-of-consumers-less-likely-to-buy-when-a-bot-answers-302945004.html'),
+           ('Restoration Industry Association blog: “Robots Reveal Yourself: The AI Call Report” (March 2026)','https://www.restorationindustry.org/restoration-blog/robots-reveal-yourself-ai-call-report'),
+           ('Moneypenny: Small business call report (2016)','https://moneypenny.com/us/resources/news/small-business-call-report/'),
+           ('FCC: FCC Makes AI-Generated Voices in Robocalls Illegal (2024)','https://www.fcc.gov/document/fcc-makes-ai-generated-voices-robocalls-illegal')],
+ ),
+ dict(
   slug='ai-receptionist-cost-hvac',
   art=('$/job', 'Your real cost', 'per booked job'),
   cat='AI basics',
