@@ -123,7 +123,7 @@ def plans():
 <a class="btn btn-line" href="/#start">Start free trial</a>
 </article>
 </div>
-<p class="prn"><b>Only need nights and weekends?</b> Night-only is ${NIGHT} a month plus ${PER_JOB} per booked job. Your team answers by day, Molly covers nights, weekends and holidays.</p>
+<p class="prn"><b>Only need nights and weekends?</b> Night-only is ${NIGHT} a month plus ${PER_JOB} per booked job. Your team answers by day, Molly covers nights, weekends and holidays. <a href="/after-hours-answering-hvac/">More on after-hours answering</a></p>
 <p class="prn">Both plans include 400 call minutes a month. Spam and wrong-number calls are never counted.</p>
 </section>'''
 

@@ -281,7 +281,7 @@ def main():
     os.makedirs(os.path.join(OUT,'getting-started'),exist_ok=True); open(os.path.join(OUT,'getting-started','gs.css'),'w').write(GS.CSS)
     os.makedirs(os.path.join(OUT,'about'),exist_ok=True); open(os.path.join(OUT,'about','about.css'),'w').write(AB.CSS)
     # sitemap
-    urls=['/','/pricing/','/how-it-works/','/getting-started/','/about/','/blog/']+[f"/blog/{p['slug']}/" for p in B.POSTS]+['/privacy/','/terms/','/sms-terms/']
+    urls=['/','/pricing/','/after-hours-answering-hvac/','/how-it-works/','/getting-started/','/about/','/blog/']+[f"/blog/{p['slug']}/" for p in B.POSTS]+['/privacy/','/terms/','/sms-terms/']
     sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{B.SITE}{u}</loc><lastmod>{B.DATE}</lastmod></url>\n' for u in urls)+'</urlset>\n'
     open(os.path.join(OUT,'sitemap.xml'),'w').write(sm)
     print('pages built')
