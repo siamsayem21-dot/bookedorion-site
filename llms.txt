@@ -1,0 +1,19 @@
+# BookedOrion
+
+> AI receptionist for HVAC companies in the United States. Molly answers missed and after-hours calls for HVAC shops, books jobs on the shop's calendar, texts the owner the details, and handles emergency calls by the shop's own rules. The shop's team can still answer first.
+
+## Key facts
+- Built only for HVAC shops; a real person sets Molly up for each shop.
+- The shop keeps its phone number; unanswered calls forward to Molly.
+- Callers are told Molly is an AI assistant.
+- Pricing: Pay-per-Job $79/month + $29 per booked job (max $449/month), or Flat $249/month (unlimited booked jobs, 400 call minutes).
+- 14-day free trial, no setup fee, no contract.
+- Contact: siam@bookedorion.com
+
+## Pages
+- [Home](https://bookedorion.com/): what Molly does, pricing, FAQ
+- [How it works](https://bookedorion.com/how-it-works/): step-by-step call flow, triage, booking, reports
+- [Getting started](https://bookedorion.com/getting-started/): setup steps and what the shop provides
+- [About](https://bookedorion.com/about/): who runs BookedOrion
+- [Blog](https://bookedorion.com/blog/): advice for HVAC owners on missed calls, after-hours answering and call triage
+- [Answering service vs AI receptionist](https://bookedorion.com/blog/answering-service-vs-ai-receptionist/)
