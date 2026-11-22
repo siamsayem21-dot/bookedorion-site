@@ -43,7 +43,7 @@ def head(title, desc, path, extra=''):
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:type" content="{'article' if path != '/blog/' else 'website'}">
 <meta property="og:url" content="{SITE}{path}">
-<meta property="og:image" content="https://bookedorion.com/og-image.png">
+<meta property="og:image" content="https://bookedorion.com/og-image.png?v=2">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0B0A24">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -103,6 +103,88 @@ POSTS = [
 </ul>
 ''',
   sources=[('Moneypenny: Small business call report (2016)','https://moneypenny.com/us/resources/news/small-business-call-report/')],
+ ),
+ dict(
+  slug='ai-receptionist-cost-hvac',
+  art=('$/job', 'Your real cost', 'per booked job'),
+  cat='AI basics',
+  date='2026-11-22',
+  date_h='Nov 22, 2026',
+  title='How much does an AI receptionist cost for an HVAC shop?',
+  desc='The four ways AI receptionists are priced, the costs hiding in the fine print, and how to work out what you would really pay per booked job.',
+  read='6 min read',
+  body='''
+<p class="lede">Most owners ask about price first, and that’s fair. But the monthly number on a pricing page rarely tells you what you’ll pay in July, when the phone doesn’t stop. Here’s how AI receptionist pricing works, what to watch for, and how to work out your real cost.</p>
+
+<h2>The short answer</h2>
+<p>An AI receptionist usually costs a monthly fee plus something tied to use: minutes, calls or booked jobs. BookedOrion, for example, is <strong>$79 a month plus $29 per booked job</strong>, never more than $449 in a month, or <strong>$249 a month flat</strong> with unlimited bookings. Whatever you compare, the number that matters most is your cost per booked job.</p>
+
+<h2>Four ways AI receptionists are priced</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Pricing model</th><th>How it works</th><th>Watch out for</th></tr></thead>
+<tbody>
+<tr><td><strong>Flat monthly</strong></td><td>One price with a set number of minutes</td><td>What happens when a busy month goes over</td></tr>
+<tr><td><strong>Per minute</strong></td><td>You pay for talk time</td><td>Long calls and summer spikes push the bill up</td></tr>
+<tr><td><strong>Per call</strong></td><td>You pay for each answered call</td><td>Whether spam, hang-ups and wrong numbers count</td></tr>
+<tr><td><strong>Base plus per booked job</strong></td><td>A small base, then a charge when a job lands on your calendar</td><td>How “booked” is defined, and what happens when a customer cancels</td></tr>
+</tbody></table></div>
+<p>No model is best for everyone. It depends on how many calls you get and how much that changes from spring to July. A per-minute plan can look cheap in April and expensive in a heat wave. A flat plan is easy to budget but you pay the same in a slow month.</p>
+
+<h2>Costs that hide in the fine print</h2>
+<ul class="list">
+<li><strong>Setup fees.</strong> Some charge to build your script and connect your calendar.</li>
+<li><strong>Contracts.</strong> An annual term or a long cancellation notice.</li>
+<li><strong>Overage rates.</strong> What each extra minute or call costs once your allowance runs out.</li>
+<li><strong>Spam.</strong> Whether robocalls and wrong numbers eat your minutes or count as calls.</li>
+<li><strong>Add-ons.</strong> Calendar booking, text alerts, recordings or a second number sold separately.</li>
+<li><strong>Your time.</strong> Self-serve software you have to set up, test and tune yourself.</li>
+</ul>
+<p>Ask for each of these in writing before you start a trial.</p>
+
+<h2>Work out your cost per booked job</h2>
+<p>Take what you’d pay in a month and divide it by the jobs it books for you. That one number lets you compare any two options, and compare them with what a job is worth to you.</p>
+<div class="calc">
+<div><span>Bill for the month</span><b>$195</b></div>
+<div><span>Jobs booked</span><b>4</b></div>
+<div class="tot"><span>Cost per booked job</span><b>$48.75</b></div>
+</div>
+<p class="note">Example only, using BookedOrion Pay-per-Job: $79 + 4 × $29 = $195, then $195 ÷ 4 jobs.</p>
+<p>Now put that next to your average ticket. If a single repair is worth several times your monthly bill, the price is the smaller question. What matters more is whether the calls really get answered and the jobs really get booked. A free trial on your own calls is the only honest way to find out.</p>
+
+<h2>What BookedOrion costs, in real numbers</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Jobs booked in a month</th><th>Pay-per-Job</th><th>Flat</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>$79 ($0 in your first paid month)</td><td>$249</td></tr>
+<tr><td>3</td><td>$166</td><td>$249</td></tr>
+<tr><td>5</td><td>$224</td><td>$249</td></tr>
+<tr><td>10</td><td>$369</td><td>$249</td></tr>
+<tr><td>13 or more</td><td>$449</td><td>$249</td></tr>
+</tbody></table></div>
+<ul class="list">
+<li>Both plans include 400 call minutes a month. We text you at 80%.</li>
+<li>Spam and wrong-number calls are never counted.</li>
+<li>Free 14-day trial, no setup fee, no contract.</li>
+<li>Only need nights and weekends? Night-only is $49 a month plus $29 per booked job.</li>
+</ul>
+<p>Try your own numbers with the bill calculator on our <a href="/pricing/">pricing page</a>.</p>
+
+<h2>How that compares to hiring someone</h2>
+<p>The median pay for receptionists in the US was <strong>$18.27 an hour</strong>, or $38,010 a year, in May 2025, according to the Bureau of Labor Statistics. That’s before payroll taxes and benefits, and it covers one shift. Answering nights, weekends and holidays would take more than one person.</p>
+<p>A good person brings things software can’t: judgment, warmth and knowing your regular customers. That’s why many shops do both. Someone answers by day, and an AI receptionist takes the calls they miss and everything after hours.</p>
+<p>Weighing a live answering service instead? We compare the two in <a href="/blog/answering-service-vs-ai-receptionist/">answering service vs. AI receptionist</a>.</p>
+
+<h2>Five questions to ask before you sign up</h2>
+<ul class="list">
+<li>What would a month twice as busy cost me?</li>
+<li>Do spam and wrong-number calls count toward my bill?</li>
+<li>What counts as a booked job, and what if the customer cancels?</li>
+<li>Is there a setup fee, a contract or a cancellation notice?</li>
+<li>Can I listen to the recording of every call?</li>
+</ul>
+''',
+  sources=[('U.S. Bureau of Labor Statistics: Receptionists, Occupational Outlook Handbook','https://www.bls.gov/ooh/office-and-administrative-support/receptionists.htm'),
+           ('BookedOrion pricing and Terms','https://bookedorion.com/pricing/')],
  ),
  dict(
   slug='answering-service-vs-ai-receptionist',
@@ -328,7 +410,7 @@ POSTS = [
 def article(p):
     path = f"/blog/{p['slug']}/"
     ld = {"@context":"https://schema.org","@type":"BlogPosting","headline":p['title'],"description":p['desc'],
-          "datePublished":DATE,"dateModified":DATE,"author":{"@type":"Person","name":AUTHOR},
+          "datePublished":p.get('date',DATE),"dateModified":p.get('date',DATE),"author":{"@type":"Person","name":AUTHOR},
           "publisher":{"@type":"Organization","name":"BookedOrion","url":SITE},"mainEntityOfPage":SITE+path}
     extra = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
     others = [o for o in POSTS if o is not p]
@@ -340,7 +422,7 @@ def article(p):
     return head(p['title']+' | BookedOrion', p['desc'], path, extra) + '<div class="rp" aria-hidden="true"></div>' + HEADER + f'''
 <header class="ahero"><div class="wrap ahin">
 <a class="back" href="/blog/">← All articles</a>
-<div class="meta"><span class="cat">{p['cat']}</span><span>{DATE_H}</span><span>{p['read']}</span></div>
+<div class="meta"><span class="cat">{p['cat']}</span><span>{p.get('date_h',DATE_H)}</span><span>{p['read']}</span></div>
 <h1>{html.escape(p['title'])}</h1>
 <p class="adesc">{html.escape(p['desc'])}</p>
 <div class="by2"><img src="/siam-2.jpg" alt="Siam Ahmed" width="44" height="44"><div><b>{AUTHOR}</b><span>Founder, BookedOrion</span></div></div>
@@ -381,13 +463,13 @@ def index():
     def cover(p,i):
         a=p.get('art',('','',''))
         return f'<div class="ccov v{i%3}" aria-hidden="true"><b>{a[0]}</b><span>{a[1]}</span><em>{a[2]}</em></div>'
-    cards = ''.join(f'''<a class="card" data-cat="{p['cat']}" href="/blog/{p['slug']}/">{cover(p,i)}<div class="cbody"><div class="meta"><span class="cat">{p['cat']}</span><span>{DATE_H}</span><span>{p['read']}</span></div>
+    cards = ''.join(f'''<a class="card" data-cat="{p['cat']}" href="/blog/{p['slug']}/">{cover(p,i)}<div class="cbody"><div class="meta"><span class="cat">{p['cat']}</span><span>{p.get('date_h',DATE_H)}</span><span>{p['read']}</span></div>
 <h3>{html.escape(p['title'])}</h3><p>{html.escape(p['desc'])}</p><span class="rm">Read article →</span></div></a>''' for i,p in enumerate(POSTS[1:]))
     cats=['All']+sorted({p['cat'] for p in POSTS})
     chips=''.join(f'<button type="button" class="chip{" on" if c=="All" else ""}" data-f="{c}" aria-pressed="{"true" if c=="All" else "false"}">{c}</button>' for c in cats)
     desc = 'Practical advice for HVAC owners: missed calls, after-hours answering, emergency triage and growing your shop.'
     ld = {"@context":"https://schema.org","@type":"Blog","name":"BookedOrion Blog","url":SITE+'/blog/',
-          "blogPost":[{"@type":"BlogPosting","headline":p['title'],"url":f"{SITE}/blog/{p['slug']}/","datePublished":DATE} for p in POSTS]}
+          "blogPost":[{"@type":"BlogPosting","headline":p['title'],"url":f"{SITE}/blog/{p['slug']}/","datePublished":p.get('date',DATE)} for p in POSTS]}
     return head('HVAC Owner Blog | BookedOrion', desc, '/blog/', f'<script type="application/ld+json">{json.dumps(ld)}</script>') + HEADER + f'''
 <main>
 <section class="bhero"><div class="wrap">
