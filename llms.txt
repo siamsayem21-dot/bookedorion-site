@@ -12,6 +12,7 @@
 
 ## Pages
 - [Home](https://bookedorion.com/): what Molly does, pricing, FAQ
+- [Services](https://bookedorion.com/services/): all nine services (Molly, chat/DM replies, appointment reminders, review requests, tune-up reminders, estimate follow-up, Google Business Profile tune-up, websites, monthly report), what is included vs add-on
 - [Pricing](https://bookedorion.com/pricing/): both plans, bill calculator, what counts as a booked job, add-ons, pricing FAQ
 - [After-hours answering](https://bookedorion.com/after-hours-answering-hvac/): how Molly handles night, weekend and holiday calls, urgent-call rules, Night-only plan, FAQ
 - [How it works](https://bookedorion.com/how-it-works/): step-by-step call flow, triage, booking, reports
