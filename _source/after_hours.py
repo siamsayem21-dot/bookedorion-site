@@ -44,7 +44,7 @@ FAQ = [
      'She tells the caller to get outside and call 911 and the gas company from outside. She doesn’t book a routine visit, '
      'and the call is marked urgent in your text.'),
     ('Does she cover weekends and holidays?',
-     'Yes. Night-only covers nights, weekends and holidays. You set the hours during setup and can change them by text.'),
+     'Yes. Night-only covers nights, weekends and holidays. You set the hours during setup. To change them later, send us a text and it’s done by the next business day.'),
     ('Which calendar does she book on?',
      'Your Google or Outlook calendar. She doesn’t connect directly to ServiceTitan, Jobber or Housecall Pro yet.'),
     ('Does Molly quote prices?',
@@ -60,7 +60,7 @@ def hero():
 <div class="eyebrow">After-hours answering</div>
 <h1>After-hours answering for HVAC shops</h1>
 <p>When your office closes, Molly answers. She takes the caller’s details, books the job on your calendar and texts you a summary. Your team keeps the daytime calls.</p>
-<div class="prh-cta"><a class="btn" href="/#start">Start free trial</a><a class="prh-call" href="tel:+15705219710">Hear her now: (570) 521-9710</a></div>
+<div class="prh-cta"><a class="btn" href="/#start">Start free trial</a><a class="prh-call" href="tel:+15705219710">Or call Molly: (570) 521-9710</a></div>
 </div></section>'''
 
 def short():
@@ -99,7 +99,7 @@ def hours():
 
 def why():
     return f'''<section class="blk"><div class="bh"><div class="eyebrow dk">Why it matters</div><h2>A missed call at night is often a job for someone else</h2>
-<p>A homeowner with no heat at 10 PM may not wait for a call back in the morning. They call the next shop on the list.</p>
+<p>A homeowner with no heat at 10 PM may not wait for a call back in the morning. If they can’t reach you, the next shop is one tap away.</p>
 <p>If you run Google Local Services Ads, Google’s own help page lists your responsiveness as a ranking factor and says <q>Missed calls may negatively affect your responsiveness.</q> Answering after hours is one way to miss fewer. Google decides rankings, so we never promise a position.</p>
 <p class="ahsrc">Source: <a href="{LSA}" rel="nofollow noopener" target="_blank">Google Local Services Ads Help, “About ad rankings”</a></p>
 <p><a href="/blog/answering-service-vs-ai-receptionist/">Comparing options? Read answering service vs AI receptionist</a></p></div></section>'''
