@@ -166,20 +166,18 @@ def hero():
          ('Wed', 'star', 'Job done, review request sent'),
          ('Next fall', 'cal', 'Tune-up reminder goes out')]
     li = ''.join(f'<li><span class="hj-ic">{ic(I[k], 16)}</span><div><time>{t}</time><b>{d}</b></div></li>' for t, k, d in j)
-    return f'''<section class="sv-hero"><div class="wrap sv-hin">
+    return f'''<section class="sv-hero">
+<img class="sv-hbg" src="/media/services/tech-condenser-2400.webp" srcset="/media/services/tech-condenser-1400.webp 1400w, /media/services/tech-condenser-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="" fetchpriority="high">
+<div class="wrap sv-hin">
 <div class="sv-htx">
-<p class="eyebrow">Services</p>
 <h1>One call, handled from first ring to five-star review</h1>
 <p class="sv-lead">Molly answers your phone and books the job. Then reminders, review requests and follow-ups keep that customer coming back. We set it all up for you.</p>
 <div class="sv-ctas"><a class="btn" href="/#start">Start the 14-day free trial</a><a class="sv-call" href="tel:+15705219710">Hear Molly: (570) 521-9710</a></div>
 </div>
-<div class="sv-media">
-<img class="sv-photo" src="/media/services/tech-condenser-1400.webp" srcset="/media/services/tech-condenser-800.webp 800w, /media/services/tech-condenser-1400.webp 1400w" sizes="(max-width:900px) 100vw, 46vw" width="1400" height="933" alt="HVAC technician checking an outdoor AC unit beside a house" fetchpriority="high">
 <figure class="sv-journey" aria-label="Sample: one customer, from first call to tune-up reminder">
 <div class="hj-head"><span>One customer, Maria G.</span>{SAMPLE}</div>
 <ol>{li}</ol>
 </figure>
-</div>
 </div></section>'''
 
 def index():
@@ -192,11 +190,12 @@ def index():
 def groups():
     out = ''
     for n, (gid, kick, title, sub, big, small) in enumerate(GROUPS):
-        out += f'''<section class="sv-group{' alt' if n % 2 else ''}" id="{gid}"><div class="wrap">
-<div class="sv-ghw"><div class="sv-gh"><p class="eyebrow dk">{kick}</p><h2>{title}</h2><p>{sub}</p></div>
-<img class="sv-gimg" src="/media/services/{PHOTO[gid][0]}-1400.webp" srcset="/media/services/{PHOTO[gid][0]}-800.webp 800w, /media/services/{PHOTO[gid][0]}-1400.webp 1400w" sizes="(max-width:900px) 100vw, 52vw" width="1400" height="933" alt="{PHOTO[gid][1]}" loading="lazy" decoding="async"></div>
-<div class="sv-grid">{card(big, True)}{''.join(card(a) for a in small)}</div>
-</div></section>'''
+        ph, alt = PHOTO[gid]
+        out += f'''<section class="sv-group" id="{gid}">
+<div class="sv-band"><img src="/media/services/{ph}-2400.webp" srcset="/media/services/{ph}-1400.webp 1400w, /media/services/{ph}-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="{alt}" loading="lazy" decoding="async">
+<div class="wrap sv-bandtx"><p class="sv-kick">{kick}</p><h2>{title}</h2><p>{sub}</p></div></div>
+<div class="wrap"><div class="sv-grid">{card(big, True)}{''.join(card(a) for a in small)}</div></div>
+</section>'''
     return out
 
 def included():
@@ -235,12 +234,11 @@ def cta():
 
 def home_block():
     tiles = ''.join(f'<a class="hs-t" href="/services/#{a}"><span class="si-ic">{ic(I[icn], 18)}</span><b>{name}</b><span class="hs-d">{d}</span>{tag(a)}</a>' for a, icn, name, d, _, _ in SVCS)
-    return f'''<section class="sec" id="services"><div class="wrap">
-<div class="hs-top"><div class="sec-head"><p class="eyebrow-d">Everything we do</p><h2>Molly answers. The rest keeps customers coming back.</h2><p class="lead">One setup, nine ways to book more work. Most of it is included on your plan.</p></div>
-<img class="hs-img" src="/media/services/tech-condenser-1400.webp" srcset="/media/services/tech-condenser-800.webp 800w, /media/services/tech-condenser-1400.webp 1400w" sizes="(max-width:900px) 100vw, 46vw" width="1400" height="933" alt="HVAC technician checking an outdoor AC unit beside a house" loading="lazy" decoding="async"></div>
-<div class="hs">{tiles}</div>
-<a class="hs-more" href="/services/">See every service</a>
-</div></section>'''
+    return f'''<section class="sv-group hs-sec" id="services">
+<div class="sv-band"><img src="/media/services/tech-condenser-2400.webp" srcset="/media/services/tech-condenser-1400.webp 1400w, /media/services/tech-condenser-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="HVAC technician checking an outdoor AC unit beside a house" loading="lazy" decoding="async">
+<div class="wrap sv-bandtx"><p class="sv-kick">Everything we do</p><h2>Molly answers. The rest keeps customers coming back.</h2><p>One setup, nine ways to book more work. Most of it is included on your plan.</p></div></div>
+<div class="wrap"><div class="hs">{tiles}</div><a class="hs-more" href="/services/">See every service</a></div>
+</section>'''
 
 CSS = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'services.css')).read() if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'services.css')) else ''
 
