@@ -7,7 +7,7 @@ def page():
         ('chat', 'Honest with your callers', 'Molly says she’s an AI assistant and that the call may be recorded. She never pretends to be a person.'),
         ('dollar', 'No surprises on your bill', 'No hidden fees, no contract. We text you before you reach your call allowance. Cancel anytime.'),
         ('user', 'A real person behind it', 'I set up every shop myself and review Molly’s calls with you in week one. You email me, not a ticket queue.'),
-        ('flag', 'Low risk to start', '14 days free, no setup fee. On Pay-per-Job, if Molly books no jobs in your first month, that month is free.'),
+        ('flag', 'Low risk to start', '14 days free, no setup fee. On Pay-per-Job, if Molly books no jobs in your first paid month, that month is free.'),
     ]
     pr = ''.join(f'<div class="apr"><span class="apic">{ic(P[k],22)}</span><b>{t}</b><p>{d}</p></div>' for k, t, d in promises)
     focus = [('One trade', 'HVAC only. Molly knows no-cool, no-heat, tune-up and emergency calls.'),

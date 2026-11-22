@@ -45,7 +45,7 @@ def coverage(mode):
     return f'<div class="cv" aria-hidden="true"><div class="cv-bar">{segs}</div><div class="cv-ax"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>12a</span></div><div class="cv-lg">{lg}</div></div>'
 
 PLANS = [
- ('0', 'Pay-per-Job', 'Low base, then pay per booked job', '79', '/month + $29 per booked job', 'Never more than $449 a month', 'full', ['Your team rings first, Molly answers what you miss', 'Nights, weekends and holidays answered', 'Jobs booked on your calendar', 'Emergencies ring you first', 'Text summary after every call, one-tap confirm', 'No jobs booked in your first month? That month is free']),
+ ('0', 'Pay-per-Job', 'Low base, then pay per booked job', '79', '/month + $29 per booked job', 'Never more than $449 a month', 'full', ['Your team rings first, Molly answers what you miss', 'Nights, weekends and holidays answered', 'Jobs booked on your calendar', 'Emergencies ring you first', 'Text summary after every call, one-tap confirm', 'No jobs booked in your first paid month? That month is free']),
  ('1', 'Flat', 'One price, unlimited bookings', '249', '/month', 'Unlimited booked jobs', 'full', ['Everything in Pay-per-Job', '400 call minutes a month included', 'No per-job charge, however many she books', 'Same setup, same rules, same support']),
 ]
 

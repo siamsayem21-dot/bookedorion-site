@@ -170,7 +170,7 @@ def addons():
 
 def compare():
     return '''<section class="blk"><div class="bh"><div class="eyebrow dk">Other options</div><h2>How this compares to an answering service</h2>
-<p>Many answering services bill by the minute or by the call, whether or not a job gets booked. With Pay-per-Job, most of what you pay is tied to jobs that land on your calendar.</p>
+<p>Many answering services bill by the minute or by the call, whether or not a job gets booked. With Pay-per-Job, you pay a $79 base, and the rest only for jobs that land on your calendar.</p>
 <p><a href="/blog/answering-service-vs-ai-receptionist/">Read the full comparison: answering service vs AI receptionist</a></p></div>
 </section>'''
 
