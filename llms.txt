@@ -12,6 +12,7 @@
 
 ## Pages
 - [Home](https://bookedorion.com/): what Molly does, pricing, FAQ
+- [Pricing](https://bookedorion.com/pricing/): both plans, bill calculator, what counts as a booked job, add-ons, pricing FAQ
 - [How it works](https://bookedorion.com/how-it-works/): step-by-step call flow, triage, booking, reports
 - [Getting started](https://bookedorion.com/getting-started/): setup steps and what the shop provides
 - [About](https://bookedorion.com/about/): who runs BookedOrion
