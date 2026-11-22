@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="/blog/blog.css?v=10">
 <link rel="stylesheet" href="/home.css?v=10">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is Molly different from other AI receptionists?", "acceptedAnswer": {"@type": "Answer", "text": "Most AI receptionist apps are built for any business and you set them up yourself. Molly is built only for HVAC, a real person sets her up for your shop, and your team can still answer first."}}, {"@type": "Question", "name": "Can my team still answer first?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Your phone rings as usual. If nobody picks up in about 10\u201315 seconds, or the line is busy, the call goes to Molly. After hours, she can answer every call. You choose, and you can switch anytime."}}, {"@type": "Question", "name": "Will callers know it\u2019s an AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Molly says she\u2019s an AI assistant and that the call may be recorded."}}, {"@type": "Question", "name": "How do the review requests work?", "acceptedAnswer": {"@type": "Answer", "text": "When a job is finished, you tap \u201cJob done\u201d in the text we sent you. Your customer then gets a short thank-you with your Google review link. Every customer gets the same message. We never offer rewards for reviews and never screen out unhappy customers. Texts start once your number is registered for business texting, which we handle during setup."}}, {"@type": "Question", "name": "What else can you do besides answering calls?", "acceptedAnswer": {"@type": "Answer", "text": "Every plan includes Google review requests, appointment reminders, website chat and Facebook/Instagram replies, and a monthly report. Optional add-ons: tune-up reminders for past customers who agreed to hear from you ($49 a month), estimate follow-up ($49 a month, or $79 for both), a one-time Google Business Profile tune-up ($199), and a website for your shop ($600 to build, then $49 a month)."}}, {"@type": "Question", "name": "Do I change my phone number?", "acceptedAnswer": {"@type": "Answer", "text": "No. You keep your number and your Google listing. Unanswered calls forward to Molly."}}, {"@type": "Question", "name": "What if a caller has a real emergency?", "acceptedAnswer": {"@type": "Answer", "text": "You pick the emergency words. When Molly hears one, she tells the caller how to stay safe and rings your phone first."}}, {"@type": "Question", "name": "What does it cost to try?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing. The first 14 days are free, with no setup fee and no contract. On Pay-per-Job, if Molly books no jobs in your first paid month, that month is free too."}}, {"@type": "Question", "name": "What counts as a booked job?", "acceptedAnswer": {"@type": "Answer", "text": "A new appointment from a call Molly handled, which you confirm with one tap in the text summary. Spam and wrong-number calls never count. If the customer cancels and there\u2019s a record of it, you aren\u2019t charged."}}, {"@type": "Question", "name": "Does it work with ServiceTitan, Jobber or Housecall Pro?", "acceptedAnswer": {"@type": "Answer", "text": "Every booking is sent to you by text and email with all the details, ready to add. There\u2019s no direct integration yet."}}, {"@type": "Question", "name": "What if Molly gets something wrong?", "acceptedAnswer": {"@type": "Answer", "text": "Tell us and we fix her script by the next business day. If she isn\u2019t sure, she takes a message and you call back."}}]}</script>
-<link rel="stylesheet" href="/premium.css?v=6">
+<link rel="stylesheet" href="/premium.css?v=7">
 <link rel="stylesheet" href="/unslop.css?v=1">
 <script src="/motion.js?v=1" defer></script>
 </head>
@@ -232,6 +232,33 @@
 </section>
 
 <!-- CAPABILITIES & BOUNDARIES -->
+<section class="sec" id="setup" aria-labelledby="setup-h">
+  <div class="wrap fit">
+    <div class="fit-l">
+      <p class="eyebrow-d">Setup</p>
+      <h2 id="setup-h">We set Molly up for your shop, by hand</h2>
+      <p class="fit-lead">Before Molly takes a single call, we go through your shop with you: how she greets callers, what she can say, what she must never say, which calls are urgent, and how she sounds on each kind of call. It takes about 30 minutes of your time. We do the rest.</p>
+      <dl class="fit-pts">
+        <div><dt>What she says</dt><dd>Your company name, service area, hours, diagnostic fee and maintenance plan. Only the prices you approve.</dd></div>
+        <div><dt>What she never says</dt><dd>No guesses at repair costs, no diagnoses, no promises you haven’t made. Add your own “never say” list.</dd></div>
+        <div><dt>How she handles each call</dt><dd>Which ZIPs you serve, which calls book straight onto your calendar, what counts as urgent for your shop, and who gets the alert.</dd></div>
+        <div><dt>How she sounds</dt><dd>Short and calm on a gas or CO call. Slower with an older caller. Quick with someone in a hurry. She never comments on how a caller feels.</dd></div>
+      </dl>
+      <p class="fit-ok"><b>You hear her first.</b> Molly goes live only after she passes our test calls and you’ve listened to the recordings. Want a change later? Text us and we update her.</p>
+    </div>
+    <figure class="fit-sheet" aria-label="Example setup sheet for a sample shop">
+      <div class="fs-top"><span class="fs-t">Molly setup · ABC Heating &amp; Air</span><span class="fs-demo">Demo · sample data</span></div>
+      <div class="fs-row"><p class="fs-k">Greeting</p><p class="fs-v fs-q">“Thanks for calling ABC Heating &amp; Air. This is Molly, the AI assistant. This call may be recorded.”</p></div>
+      <div class="fs-row"><p class="fs-k">Service area</p><p class="fs-v"><span class="fs-chip">75040</span><span class="fs-chip">75041</span><span class="fs-chip">75043</span><span class="fs-chip">75044</span><span class="fs-more">+ 8 more</span></p></div>
+      <div class="fs-row"><p class="fs-k">Fees she can quote</p><p class="fs-v">Diagnostic $89 <span class="fs-sep">/</span> After-hours visit $129</p></div>
+      <div class="fs-row"><p class="fs-k">Never says</p><p class="fs-v fs-no">Repair prices<br>“We’ll be there tonight”<br>Brand recommendations</p></div>
+      <div class="fs-row"><p class="fs-k">Urgent for this shop</p><p class="fs-v"><span class="fs-chip fs-u">Gas smell</span><span class="fs-chip fs-u">CO alarm</span><span class="fs-chip fs-u">No heat + older adult</span><span class="fs-chip fs-u">Water leak</span></p></div>
+      <div class="fs-row"><p class="fs-k">Tone</p><ul class="fs-v fs-tone"><li><b>Urgent call</b> Short, calm, safety first</li><li><b>Older caller</b> Slower, one question at a time</li><li><b>In a hurry</b> Name, address, problem only</li></ul></div>
+      <div class="fs-foot"><span class="fs-dot" aria-hidden="true"></span>Test calls passed · Owner approved</div>
+    </figure>
+  </div>
+</section>
+
 <section class="sec sec-paper" id="capabilities">
   <div class="wrap">
     <div class="sec-head"><p class="eyebrow-d">What you get</p><h2>What Molly does, and what she never does</h2></div>
