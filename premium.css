@@ -271,3 +271,6 @@ input,textarea{caret-color:var(--indigo)}
 .sec-navy .fine{color:#B8B6D6}
 .demo-r input::placeholder{color:#B3B1D4}
 .slot{border:1px solid #D6D3F7;border-left-width:1px;background:#F6F5FE}
+
+/* add-ons: bigger headings (22 Nov 2026) */
+.ao .ao-h{font-size:clamp(24px,2.4vw,30px);line-height:1.15;letter-spacing:-.02em;font-weight:600;margin:0 0 10px}
