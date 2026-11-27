@@ -101,7 +101,7 @@ tabs.forEach(function(t){{t.addEventListener('click',function(){{show(+t.dataset
 def how():
     modes = [
         ('Team first, Molly backup','Pay-per-Job or Flat','All day, every day','Your team still answers first. If nobody picks up in about 10–15 seconds, or the line is busy, Molly takes it. After hours she answers every call.', bar('full'), ''),
-        ('Night-only','$49/mo + $29 per job','After hours only','Your office answers during the day as usual. When you close, Molly answers nights, weekends and holidays.', bar('porch'), ''),
+        ('After hours only','Pay-per-Job or Flat','Nights, weekends, holidays','Your office answers during the day as usual. When you close, Molly answers nights, weekends and holidays.', bar('porch'), ''),
     ]
     BADGE='<div class="badge">RECOMMENDED</div>'
     mode_html=''.join(f'<div class="mode{" pop" if i==0 else ""}">{BADGE if i==0 else ""}<div class="mtop"><b>{n}</b><span>{p}</span></div><div class="mk">{k}</div>{viz}<p>{d}</p>{extra}</div>' for i,(n,p,k,d,viz,extra) in enumerate(modes))

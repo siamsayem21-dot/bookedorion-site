@@ -151,7 +151,6 @@ TERMS = '''
 <ul class="list">
 <li><b>Pay-per-Job:</b> $79 a month plus $29 for each booked job, never more than $449 in a month. If Molly books no jobs in your first paid month, that month is free.</li>
 <li><b>Flat:</b> $249 a month with unlimited booked jobs.</li>
-<li><b>Night-only:</b> Pay-per-Job with a $49 monthly base, covering nights, weekends and holidays only.</li>
 <li>Plans are month to month. There is no long-term contract.</li>
 <li>You can cancel at any time. Cancellation takes effect at the end of the current billing month.</li>
 <li>Each plan includes 400 call minutes a month. We text you when you reach 80% (320 minutes). One busy month is fine. If you go over two months in a row, we agree on a bigger plan together. No surprise bills.</li>

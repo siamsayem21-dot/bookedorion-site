@@ -86,7 +86,11 @@
       var emOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value.trim());
       em.setAttribute('aria-invalid', emOk ? 'false' : 'true'); if (!emOk) bad.push(em);
       var fe = el('fieldErr');
-      if (bad.length) { fe.textContent = 'Please add your name, company and a valid email.'; fe.hidden = false; bad[0].focus(); return; }
+      if (bad.length) {
+        var miss = bad.map(function (f) { return f === name ? 'your name' : f === co ? 'your company' : 'a valid email'; });
+        fe.textContent = 'Please add ' + (miss.length > 1 ? miss.slice(0, -1).join(', ') + ' and ' + miss[miss.length - 1] : miss[0]) + '.';
+        fe.hidden = false; bad[0].focus(); return;
+      }
       fe.hidden = true;
       var t = 'Free trial request\nName: ' + name.value.trim() + '\nCompany: ' + co.value.trim() + '\nEmail: ' + em.value.trim() + '\nPhone: ' + ph.value.trim();
       var btn = el('f-submit'); btn.disabled = true; btn.textContent = 'Sending…'; el('formErr').hidden = true;
@@ -103,6 +107,9 @@
           el('formErr').textContent = 'We couldn’t send that just now. Please email the details below instead.'; el('formErr').hidden = false;
           el('formText').textContent = t; el('formDone').hidden = false;
         });
+    });
+    [el('f-name'), el('f-company'), el('f-email')].forEach(function (f) {
+      f.addEventListener('input', function () { if (f.getAttribute('aria-invalid') === 'true') f.setAttribute('aria-invalid', 'false'); });
     });
     el('copyBtn').addEventListener('click', function () {
       var b = this, t = el('formText').textContent;
