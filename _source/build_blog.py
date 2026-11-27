@@ -216,7 +216,7 @@ POSTS = [
 <li>Both plans include 400 call minutes a month. We text you at 80%.</li>
 <li>Spam and wrong-number calls are never counted.</li>
 <li>Free 14-day trial, no setup fee, no contract.</li>
-<li>Only need nights and weekends? Night-only is $49 a month plus $29 per booked job.</li>
+<li>Nights, weekends and holidays are covered on both plans.</li>
 </ul>
 <p>Try your own numbers with the bill calculator on our <a href="/pricing/">pricing page</a>.</p>
 

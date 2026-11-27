@@ -247,7 +247,7 @@ def page():
     <div class="sec-head center"><p class="eyebrow-d">Pricing</p><h2>Two simple plans.</h2><p class="lead">$79 a month plus $29 per booked job, or $249 a month flat. Both start with a free 14-day trial. We set it up. No setup fee, no contract.</p></div>
     <p class="pl-help">Not sure which one? Start with Pay-per-Job. Each month we show you which plan would have cost you less.</p>
     <div class="plans two">{cols}</div>
-    <p class="pl-note"><b>Only need nights and weekends?</b> Night-only: $49 a month + $29 per booked job. Spam and wrong-number calls are never counted. <a href="/pricing/#booked-job">What counts as a booked job</a> · <a href="/pricing/">Full pricing details and bill calculator</a></p>
+    <p class="pl-note"><b>Both plans cover days, nights, weekends and holidays.</b> Spam and wrong-number calls are never counted. <a href="/pricing/#booked-job">What counts as a booked job</a> · <a href="/pricing/">Full pricing details and bill calculator</a></p>
     <details class="cmp"><summary>Compare all features <i aria-hidden="true">+</i></summary>
       <div class="cmp-wrap"><table><thead><tr><th></th><th>Pay-per-Job<small>$79 + $29/job</small></th><th>Flat<small>$249/mo</small></th></tr></thead><tbody>{rows}</tbody></table></div></details>
   </div>

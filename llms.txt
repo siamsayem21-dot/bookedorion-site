@@ -8,13 +8,16 @@
 - Callers are told Molly is an AI assistant.
 - Pricing: Pay-per-Job $79/month + $29 per booked job (max $449/month), or Flat $249/month (unlimited booked jobs, 400 call minutes).
 - 14-day free trial, no setup fee, no contract.
-- Contact: siam@bookedorion.com
+- Two plans only. Both cover days, nights, weekends and holidays.
+- BookedOrion is an online company run by founder Siam Ahmed from Dhaka, Bangladesh. It serves HVAC shops in the United States.
+- Contact: siam@bookedorion.com, demo line (570) 521-9710
+- Mailing address: BookedOrion, 44 Purana Paltan, Dhaka, Bangladesh
 
 ## Pages
 - [Home](https://bookedorion.com/): what Molly does, pricing, FAQ
 - [Services](https://bookedorion.com/services/): all nine services (Molly, chat/DM replies, appointment reminders, review requests, tune-up reminders, estimate follow-up, Google Business Profile tune-up, websites, monthly report), what is included vs add-on
 - [Pricing](https://bookedorion.com/pricing/): both plans, bill calculator, what counts as a booked job, add-ons, pricing FAQ
-- [After-hours answering](https://bookedorion.com/after-hours-answering-hvac/): how Molly handles night, weekend and holiday calls, urgent-call rules, Night-only plan, FAQ
+- [After-hours answering](https://bookedorion.com/after-hours-answering-hvac/): how Molly handles night, weekend and holiday calls, urgent-call rules, pricing, FAQ
 - [How it works](https://bookedorion.com/how-it-works/): step-by-step call flow, triage, booking, reports
 - [Getting started](https://bookedorion.com/getting-started/): setup steps and what the shop provides
 - [About](https://bookedorion.com/about/): who runs BookedOrion

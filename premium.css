@@ -302,3 +302,11 @@ input,textarea{caret-color:var(--indigo)}
 .fs-dot{width:8px;height:8px;border-radius:50%;background:var(--mint)}
 @media (max-width:900px){.fit{grid-template-columns:1fr;gap:36px}}
 @media (max-width:560px){.fit-pts{grid-template-columns:1fr}.fit-sheet{padding:4px 16px 0}.fs-row{grid-template-columns:1fr;gap:4px}.fs-top{flex-wrap:wrap}}
+
+/* proof section + required markers (Nov 2026) */
+.proofs .flw h3{font-size:20px;letter-spacing:-.01em}
+.proofs .flw a{color:inherit;font-weight:600}
+#proof .more-link{margin-top:20px}
+.form .req{color:#B4471B;text-decoration:none;font-weight:700;border:0;cursor:default}
+.form .f-req{margin:-4px 0 2px;font-size:13px;color:var(--soft)}
+.form input[aria-invalid=true]{border-color:#B4471B;box-shadow:0 0 0 3px #FBEDE6}
